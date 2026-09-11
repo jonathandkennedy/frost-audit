@@ -1,0 +1,261 @@
+{
+ "frost": {
+  "name": "Frost Law Group, LLC",
+  "rating": 4.8,
+  "reviews": 30,
+  "photos": 4,
+  "categories": [
+   "Attorney",
+   "Estate planning attorney"
+  ],
+  "website": "http://www.frostlawgroupsc.com/"
+ },
+ "queries": {
+  "estate planning attorney summerville sc": {
+   "frost_rank": 14,
+   "top": [
+    {
+     "name": "Charpia & Hammes",
+     "rating": 4.8,
+     "reviews": 119,
+     "photos": 32
+    },
+    {
+     "name": "Priest & Sands",
+     "rating": 4.8,
+     "reviews": 20,
+     "photos": 1
+    },
+    {
+     "name": "PMC Law Firm",
+     "rating": 5.0,
+     "reviews": 65,
+     "photos": 8
+    },
+    {
+     "name": "Shelbourne Law",
+     "rating": 4.7,
+     "reviews": 44,
+     "photos": 9
+    },
+    {
+     "name": "Butler & College",
+     "rating": 4.9,
+     "reviews": 514,
+     "photos": 16
+    },
+    {
+     "name": "DeMott Law Firm",
+     "rating": 5.0,
+     "reviews": 179,
+     "photos": 38
+    }
+   ]
+  },
+  "probate attorney summerville sc": {
+   "frost_rank": 13,
+   "top": [
+    {
+     "name": "PMC Law Firm",
+     "rating": 5.0,
+     "reviews": 65,
+     "photos": 8
+    },
+    {
+     "name": "Charpia & Hammes",
+     "rating": 4.8,
+     "reviews": 119,
+     "photos": 32
+    },
+    {
+     "name": "Priest & Sands",
+     "rating": 4.8,
+     "reviews": 20,
+     "photos": 1
+    },
+    {
+     "name": "Cobb Hammett",
+     "rating": 4.9,
+     "reviews": 120,
+     "photos": 17
+    },
+    {
+     "name": "Butler & College",
+     "rating": 4.9,
+     "reviews": 514,
+     "photos": 16
+    },
+    {
+     "name": "Shepherd Law Firm",
+     "rating": 4.8,
+     "reviews": 45,
+     "photos": 16
+    }
+   ]
+  },
+  "dui lawyer summerville sc": {
+   "frost_rank": null,
+   "top": [
+    {
+     "name": "Susan E. Williams",
+     "rating": 5.0,
+     "reviews": 161,
+     "photos": 217
+    },
+    {
+     "name": "Russell D. Hilton",
+     "rating": 5.0,
+     "reviews": 56,
+     "photos": 5
+    },
+    {
+     "name": "Thurmond Kirchner & Timbes",
+     "rating": 5.0,
+     "reviews": 64,
+     "photos": 13
+    },
+    {
+     "name": "The Justis Law Firm",
+     "rating": 4.9,
+     "reviews": 144,
+     "photos": 13
+    },
+    {
+     "name": "Greg McCollum",
+     "rating": 4.9,
+     "reviews": 32,
+     "photos": 10
+    },
+    {
+     "name": "Knight Law Firm",
+     "rating": 4.9,
+     "reviews": 53,
+     "photos": 6
+    }
+   ]
+  },
+  "criminal defense attorney summerville sc": {
+   "frost_rank": 17,
+   "top": [
+    {
+     "name": "Susan E. Williams",
+     "rating": 5.0,
+     "reviews": 161,
+     "photos": 217
+    },
+    {
+     "name": "Russell D. Hilton",
+     "rating": 5.0,
+     "reviews": 56,
+     "photos": 5
+    },
+    {
+     "name": "The Justis Law Firm",
+     "rating": 4.9,
+     "reviews": 144,
+     "photos": 13
+    },
+    {
+     "name": "Gil Gatch Law",
+     "rating": 4.9,
+     "reviews": 47,
+     "photos": 15
+    },
+    {
+     "name": "Thurmond Kirchner & Timbes",
+     "rating": 5.0,
+     "reviews": 64,
+     "photos": 13
+    },
+    {
+     "name": "Crantford Meehan",
+     "rating": 5.0,
+     "reviews": 99,
+     "photos": 15
+    }
+   ]
+  },
+  "car accident lawyer summerville sc": {
+   "frost_rank": 19,
+   "top": [
+    {
+     "name": "Crantford Meehan",
+     "rating": 5.0,
+     "reviews": 99,
+     "photos": 15
+    },
+    {
+     "name": "Steinberg Law Firm",
+     "rating": 4.8,
+     "reviews": 307,
+     "photos": 49
+    },
+    {
+     "name": "West Law Firm",
+     "rating": 5.0,
+     "reviews": 75,
+     "photos": 5
+    },
+    {
+     "name": "The Thumbs Up Guys",
+     "rating": 4.9,
+     "reviews": 428,
+     "photos": 52
+    },
+    {
+     "name": "Price Benowitz",
+     "rating": 5.0,
+     "reviews": 39,
+     "photos": 7
+    },
+    {
+     "name": "Christmas Injury Lawyers",
+     "rating": 4.8,
+     "reviews": 44,
+     "photos": 8
+    }
+   ]
+  },
+  "dog bite lawyer summerville sc": {
+   "frost_rank": 19,
+   "top": [
+    {
+     "name": "Crantford Meehan",
+     "rating": 5.0,
+     "reviews": 99,
+     "photos": 15
+    },
+    {
+     "name": "The Thumbs Up Guys",
+     "rating": 4.9,
+     "reviews": 428,
+     "photos": 52
+    },
+    {
+     "name": "Steinberg Law Firm",
+     "rating": 4.8,
+     "reviews": 307,
+     "photos": 49
+    },
+    {
+     "name": "Price Benowitz",
+     "rating": 5.0,
+     "reviews": 39,
+     "photos": 7
+    },
+    {
+     "name": "Knight Law Firm",
+     "rating": 4.9,
+     "reviews": 53,
+     "photos": 6
+    },
+    {
+     "name": "West Law Firm",
+     "rating": 5.0,
+     "reviews": 75,
+     "photos": 5
+    }
+   ]
+  }
+ }
+}

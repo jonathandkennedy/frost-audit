@@ -1,0 +1,78 @@
+[
+ {
+  "domain": "frostlawgroupsc.com",
+  "est_traffic": 52,
+  "keywords": 58,
+  "referring_domains": 79,
+  "backlinks": 99,
+  "rank": 18,
+  "spam_score": 31,
+  "refdomain_trend_12mo": null
+ },
+ {
+  "domain": "summervilleaccidentattorney.com",
+  "est_traffic": 0,
+  "keywords": 1,
+  "referring_domains": 51,
+  "backlinks": 52,
+  "rank": 3,
+  "spam_score": 55,
+  "refdomain_trend_12mo": null
+ },
+ {
+  "domain": "gilgatchlaw.com",
+  "est_traffic": 816,
+  "keywords": 165,
+  "referring_domains": 95,
+  "backlinks": 174,
+  "rank": 26,
+  "spam_score": 19,
+  "refdomain_trend_12mo": [
+   34,
+   34,
+   34,
+   38,
+   45,
+   51,
+   72,
+   74,
+   81,
+   77,
+   77,
+   92
+  ]
+ },
+ {
+  "domain": "shelbournelaw.com",
+  "est_traffic": 958,
+  "keywords": 175,
+  "referring_domains": 109,
+  "backlinks": 194,
+  "rank": 28,
+  "spam_score": 21,
+  "refdomain_trend_12mo": [
+   117,
+   110,
+   103,
+   101,
+   108,
+   106,
+   107,
+   117,
+   113,
+   108,
+   104,
+   109
+  ]
+ },
+ {
+  "domain": "pmclawfirm.com",
+  "est_traffic": 1553,
+  "keywords": 432,
+  "referring_domains": null,
+  "backlinks": null,
+  "rank": null,
+  "spam_score": null,
+  "refdomain_trend_12mo": null
+ }
+]

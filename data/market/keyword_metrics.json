@@ -1,0 +1,387 @@
+[
+ {
+  "keyword": "personal injury attorney charleston sc",
+  "volume": 1900,
+  "kd": 41,
+  "cpc": 43.68,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "car accident attorney charleston sc",
+  "volume": 1300,
+  "kd": 21,
+  "cpc": 47.08,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "car accident lawyer charleston sc",
+  "volume": 1300,
+  "kd": 28,
+  "cpc": 47.08,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "how much does estate planning cost",
+  "volume": 880,
+  "kd": 0,
+  "cpc": 3.63,
+  "intent": "informational"
+ },
+ {
+  "keyword": "south carolina durable power of attorney form",
+  "volume": 880,
+  "kd": 0,
+  "cpc": 4.27,
+  "intent": "navigational"
+ },
+ {
+  "keyword": "south carolina dui laws",
+  "volume": 720,
+  "kd": 9,
+  "cpc": 12.61,
+  "intent": "informational"
+ },
+ {
+  "keyword": "first offense dui south carolina",
+  "volume": 590,
+  "kd": 0,
+  "cpc": 8.9,
+  "intent": "informational"
+ },
+ {
+  "keyword": "attorney summerville sc",
+  "volume": 480,
+  "kd": 29,
+  "cpc": 39.02,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "divorce lawyer summerville sc",
+  "volume": 480,
+  "kd": 20,
+  "cpc": 21.33,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "lawyer summerville sc",
+  "volume": 480,
+  "kd": 28,
+  "cpc": 39.02,
+  "intent": "informational"
+ },
+ {
+  "keyword": "personal injury lawyer summerville sc",
+  "volume": 480,
+  "kd": 21,
+  "cpc": 219.47,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "expungement south carolina",
+  "volume": 390,
+  "kd": 10,
+  "cpc": 8.27,
+  "intent": "informational"
+ },
+ {
+  "keyword": "living will south carolina",
+  "volume": 390,
+  "kd": 0,
+  "cpc": 4.37,
+  "intent": "informational"
+ },
+ {
+  "keyword": "personal injury lawyer charleston sc",
+  "volume": 390,
+  "kd": 48,
+  "cpc": 14.6,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "south carolina power of attorney requirements",
+  "volume": 390,
+  "kd": 1,
+  "cpc": 3.29,
+  "intent": "informational"
+ },
+ {
+  "keyword": "family law attorney summerville sc",
+  "volume": 260,
+  "kd": 6,
+  "cpc": 26.92,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "probate lawyer charleston sc",
+  "volume": 260,
+  "kd": 0,
+  "cpc": 6.34,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "small estate affidavit south carolina",
+  "volume": 260,
+  "kd": 0,
+  "cpc": 3.74,
+  "intent": "informational"
+ },
+ {
+  "keyword": "personal injury lawyer north charleston sc",
+  "volume": 210,
+  "kd": 35,
+  "cpc": 52.67,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "personal injury statute of limitations south carolina",
+  "volume": 210,
+  "kd": 0,
+  "cpc": 0.06,
+  "intent": "informational"
+ },
+ {
+  "keyword": "south carolina motorcycle helmet law",
+  "volume": 210,
+  "kd": 0,
+  "cpc": 0.05,
+  "intent": "informational"
+ },
+ {
+  "keyword": "guardianship in south carolina",
+  "volume": 170,
+  "kd": 0,
+  "cpc": 1.45,
+  "intent": "informational"
+ },
+ {
+  "keyword": "how to avoid probate in south carolina",
+  "volume": 140,
+  "kd": 0,
+  "cpc": 0.56,
+  "intent": "informational"
+ },
+ {
+  "keyword": "real estate attorney summerville sc",
+  "volume": 140,
+  "kd": 1,
+  "cpc": 6.84,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "criminal defense attorney summerville sc",
+  "volume": 110,
+  "kd": 20,
+  "cpc": 11.51,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "criminal defense lawyer summerville sc",
+  "volume": 110,
+  "kd": null,
+  "cpc": 11.51,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "revocable living trust south carolina",
+  "volume": 110,
+  "kd": 0,
+  "cpc": 3.49,
+  "intent": "informational"
+ },
+ {
+  "keyword": "south carolina probate process",
+  "volume": 110,
+  "kd": 0,
+  "cpc": 7.35,
+  "intent": "informational"
+ },
+ {
+  "keyword": "dui penalties south carolina",
+  "volume": 90,
+  "kd": 0,
+  "cpc": 12.38,
+  "intent": "informational"
+ },
+ {
+  "keyword": "estate planning attorney summerville sc",
+  "volume": 90,
+  "kd": 0,
+  "cpc": 1.57,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "south carolina intestate succession",
+  "volume": 90,
+  "kd": 0,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "how long does probate take in south carolina",
+  "volume": 70,
+  "kd": 0,
+  "cpc": 0.03,
+  "intent": "informational"
+ },
+ {
+  "keyword": "probate attorney summerville sc",
+  "volume": 70,
+  "kd": 0,
+  "cpc": 15.16,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "uninsured motorist coverage south carolina",
+  "volume": 70,
+  "kd": 4,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "conservatorship south carolina",
+  "volume": 50,
+  "kd": 0,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "estate attorney summerville sc",
+  "volume": 50,
+  "kd": 7,
+  "cpc": 3.09,
+  "intent": "navigational"
+ },
+ {
+  "keyword": "duac south carolina",
+  "volume": 40,
+  "kd": 0,
+  "cpc": null,
+  "intent": "navigational"
+ },
+ {
+  "keyword": "dui attorney summerville sc",
+  "volume": 40,
+  "kd": 0,
+  "cpc": null,
+  "intent": "navigational"
+ },
+ {
+  "keyword": "dui lawyer summerville sc",
+  "volume": 40,
+  "kd": 0,
+  "cpc": null,
+  "intent": "navigational"
+ },
+ {
+  "keyword": "is south carolina an at fault state",
+  "volume": 40,
+  "kd": 0,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "south carolina car accident laws",
+  "volume": 40,
+  "kd": 0,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "south carolina comparative negligence",
+  "volume": 40,
+  "kd": 4,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "estate planning attorney mount pleasant sc",
+  "volume": 30,
+  "kd": 5,
+  "cpc": 17.55,
+  "intent": "navigational"
+ },
+ {
+  "keyword": "simple possession south carolina",
+  "volume": 30,
+  "kd": 0,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "south carolina dog bite law",
+  "volume": 30,
+  "kd": 0,
+  "cpc": 23.65,
+  "intent": "informational"
+ },
+ {
+  "keyword": "south carolina wrongful death statute",
+  "volume": 30,
+  "kd": 0,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "cdv south carolina",
+  "volume": 20,
+  "kd": 0,
+  "cpc": null,
+  "intent": "navigational"
+ },
+ {
+  "keyword": "elder law attorney summerville sc",
+  "volume": 20,
+  "kd": null,
+  "cpc": 29.77,
+  "intent": "navigational"
+ },
+ {
+  "keyword": "truck accident lawyer charleston sc",
+  "volume": 20,
+  "kd": null,
+  "cpc": null,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "wrongful death attorney charleston sc",
+  "volume": 20,
+  "kd": 0,
+  "cpc": null,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "bond hearing south carolina",
+  "volume": 10,
+  "kd": 0,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "car accident attorney summerville sc",
+  "volume": 10,
+  "kd": null,
+  "cpc": null,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "criminal defense attorney north charleston sc",
+  "volume": 10,
+  "kd": 40,
+  "cpc": null,
+  "intent": "commercial"
+ },
+ {
+  "keyword": "implied consent south carolina",
+  "volume": 10,
+  "kd": null,
+  "cpc": null,
+  "intent": "informational"
+ },
+ {
+  "keyword": "probate lawyer summerville sc",
+  "volume": 10,
+  "kd": 0,
+  "cpc": 23.28,
+  "intent": "commercial"
+ }
+]

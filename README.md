@@ -12,7 +12,7 @@ Deliverables for Frost Law Group, LLC (Summerville, SC), covering both websites:
 | `report/frost-law-group-search-audit.html` | The audit as a single self-contained web page (fonts and charts embedded; open in any browser) |
 | `report/frost-law-group-search-audit.pdf` | The same audit rendered to Letter-size PDF |
 
-Every number in the audit comes from the two Google Search Console properties. The report
+Search Console figures are the firm's own data; market figures (volumes, cost-per-click, competitor traffic, links, map-pack ranks) are third-party estimates and are presented without vendor attribution. The report
 contains: an executive summary, a plain-English explainer of how search works, a deep dive on
 each site, the cross-site cannibalization evidence and the two-site decision, the topical-authority
 plan (hub-and-spoke maps), high-intent and long-tail keyword targets, the fan-out playbook, the
@@ -21,7 +21,7 @@ measurement plan, and appendices (data tables, redirect map, proposed title tags
 
 ## Data
 
-`data/` holds the Search Console exports the report is built from:
+`data/` holds the Search Console exports the report is built from, and `data/market/` holds the market-data exports (keyword volumes and ad prices, map-pack snapshots, competitor visibility and domain/link benchmarks, competitor ranked keywords):
 
 - `frost_daily.csv`, `frost_nonbrand_daily.csv`, `sva_daily.csv` — daily clicks/impressions/position
 - `frost_pages.csv`, `sva_pages.csv` — page-level performance
