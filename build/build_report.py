@@ -270,7 +270,7 @@ mp_rows = []
 firms = {}
 for q, v in MAP["queries"].items():
     rk = v["frost_rank"]
-    mp_rows.append(dict(label=q, value=(rk if rk else 21), note=("not in the top 20" if rk is None else f"#{rk} of 20") + " · pack: " + " · ".join(t["name"] for t in v["top"][:3])))
+    mp_rows.append(dict(label=q, value=(rk if rk else 21), note="pack: " + " · ".join(t["name"] for t in v["top"][:3])))
     for t in v["top"][:3]:
         firms[t["name"]] = t
 firm_rows = sorted(firms.values(), key=lambda t: -t["reviews"])
@@ -398,7 +398,7 @@ chart_fan = C.hbar([dict(label=q, value=a["impressions"], note=f"avg. pos {pos(a
 
 # market charts
 chart_map = C.hbar([dict(label=r["label"], value=r["value"], note=r["note"], color=(C.ORANGE if r["value"] > 3 else C.AQUA)) for r in mp_rows],
-                   label_w=300, note_w=330, max_value=21, value_fmt=lambda v: (">20" if v >= 21 else f"#{int(v)}"), aria="Frost Law Group's position in the map results for six money searches")
+                   label_w=290, note_w=340, max_value=25, value_fmt=lambda v: ("not in top 20" if v >= 21 else f"#{int(v)}"), aria="Frost Law Group's position in the map results for six money searches")
 chart_reviews = C.hbar(review_rows, label_w=230, note_w=140, color=C.BLUE, aria="Google reviews: Frost vs. the firms in the map packs")
 chart_photos = C.hbar(photo_rows, label_w=230, note_w=0, color=C.BLUE, aria="Business Profile photos: Frost vs. the firms in the map packs")
 chart_traffic = C.hbar([dict(label=b["domain"], value=b["est_traffic"], note=f"{fmt(b['keywords'])} ranking keywords", color=(C.ORANGE if "frost" in b["domain"] or "summerville" in b["domain"] else C.BLUE)) for b in sorted(BENCH, key=lambda b: -b["est_traffic"])],
