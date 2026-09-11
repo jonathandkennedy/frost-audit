@@ -19,7 +19,7 @@ BLUE = "#2a78d6"
 ORANGE = "#eb6834"
 AQUA = "#1baf7a"
 GRAY = "#c4c9c6"
-NAVY = "#1f4e8c"
+NAVY = "#5b21b6"
 RAMP = ["#86b6ef", "#5598e7", "#256abf", "#184f95", "#0d366b"]
 FONT = "'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif"
 

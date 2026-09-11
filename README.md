@@ -10,7 +10,7 @@ Deliverables for Frost Law Group, LLC (Summerville, SC), covering both websites:
 | File | What it is |
 |---|---|
 | `report/frost-law-group-search-audit.html` | The audit as a single self-contained web page (fonts and charts embedded; open in any browser) |
-| `report/frost-law-group-search-audit.pdf` | The same audit rendered to Letter-size PDF |
+| `report/frost-law-group-search-audit.pdf` | The same audit rendered to Letter-size PDF with Legal Leads Group branding (full-bleed cover, logo header, page numbers, closing page) |
 
 Search Console figures are the firm's own data; market figures (volumes, cost-per-click, competitor traffic, links, map-pack ranks) are third-party estimates and are presented without vendor attribution. The report
 contains: an executive summary, a plain-English explainer of how search works, a deep dive on
@@ -34,8 +34,16 @@ Windows: main site Jun 22 – Sep 8, 2026; injury site Jul 20 – Sep 8, 2026.
 
 ```bash
 python3 build/build_report.py          # writes report/frost-law-group-search-audit.html
-node build/render.js                   # writes report/frost-law-group-search-audit.pdf (needs Playwright + Chromium)
+node build/render.js                   # writes report/frost-law-group-search-audit.pdf (needs Playwright + Chromium, and pymupdf for the merge)
 ```
 
-`build/charts.py` and `build/diagrams.py` draw the inline SVG charts and diagrams; `build/fonts/`
-holds the embedded Newsreader and Public Sans subsets.
+`build/render.js` renders the PDF in two passes (a full-bleed cover, then the body with the branded
+header and footer) and `build/merge_pdf.py` joins them. `build/charts.py` and `build/diagrams.py`
+draw the inline SVG charts and diagrams; `build/fonts/` holds the embedded Public Sans subset.
+
+## Branding
+
+`build/brand/` holds the Legal Leads Group assets used on the cover, page header and closing page
+(logo, logo tile, planet, rocket and moon artwork), taken from the LLG brand deck. The report's
+purple palette (`--brand`, `--brand-bright`, `--brand-lav`, `--space` in `build/build_report.py`)
+follows the same deck; chart colors stay on the accessible blue/orange/aqua set so the data reads clearly.

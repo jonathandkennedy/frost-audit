@@ -2,6 +2,7 @@
 """Build the Frost Law Group search audit (single-file HTML) from the
 Search Console exports and market-data exports in ../data.
 Run: python3 build/build_report.py   (set ART_OUT=<path> to also write an artifact fragment)"""
+import base64
 import csv
 import collections
 import json
@@ -19,6 +20,19 @@ DATA = os.path.join(ROOT, "data")
 MKT = os.path.join(DATA, "market")
 OUT = os.path.join(ROOT, "report", "frost-law-group-search-audit.html")
 FONTS = os.path.join(ROOT, "build", "fonts", "fonts-embedded.css")
+BRAND = os.path.join(ROOT, "build", "brand")
+
+
+def data_uri(name, mime):
+    with open(os.path.join(BRAND, name), "rb") as f:
+        return f"data:{mime};base64," + base64.b64encode(f.read()).decode()
+
+
+LOGO = data_uri("llg-logo.jpg", "image/jpeg")
+LOGO_TILE = data_uri("llg-logo-tile.jpg", "image/jpeg")
+MOON = data_uri("llg-moon.png", "image/png")
+PLANET = data_uri("llg-planet.png", "image/png")
+ROCKET = data_uri("llg-rocket.png", "image/png")
 
 esc = C.esc
 fmt = C.fmt
@@ -434,90 +448,119 @@ dia_gantt = D.gantt([
 # page
 # ----------------------------------------------------------------------------
 CSS = open(FONTS).read() + r"""
-:root{--paper:#eef1ee;--sheet:#ffffff;--ink:#101c2b;--ink2:#4a5566;--muted:#7c8694;--hair:#dfe4e2;--navy:#1f4e8c;--blue:#2a78d6;--orange:#eb6834;--aqua:#1baf7a;--azalea:#b8386f;--azalea-bg:#fbeef3;--tint:#eef4fb;--serif:'Newsreader',Georgia,'Times New Roman',serif;--sans:'Public Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
+:root{--paper:#f1eff6;--sheet:#ffffff;--ink:#12101c;--ink2:#4a4760;--muted:#7a7390;--hair:#e3e0ec;--brand:#6d28d9;--brand-strong:#5b21b6;--brand-bright:#a855f7;--brand-bg:#f5f0ff;--brand-lav:#c4b5fd;--space:#0a0118;--blue:#2a78d6;--orange:#eb6834;--aqua:#1baf7a;--tint:#f5f0ff;--sans:'Public Sans',system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
 html{color-scheme:light}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;padding-inline:16px;padding-block:24px}
 .sheet{max-width:980px;margin:0 auto;background:var(--sheet);border:1px solid var(--hair);border-radius:14px;padding:clamp(20px,4vw,56px)}
-h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
-h1{font-size:clamp(34px,5vw,52px);font-weight:700}
-h2{font-size:clamp(26px,3.4vw,34px);margin-top:6px}
-h3{font-size:22px;margin-top:36px;margin-bottom:8px}
+h1,h2,h3{font-family:var(--sans);font-weight:700;line-height:1.12;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(34px,5vw,52px)}
+h2{font-size:clamp(26px,3.4vw,34px);margin-top:6px;color:var(--ink)}
+h3{font-size:21px;margin-top:36px;margin-bottom:8px}
 h4{font-size:15.5px;font-weight:700;margin:22px 0 6px}
 p{margin:10px 0;max-width:74ch}
 ul,ol{max-width:76ch}
 li{margin:4px 0}
 .lead{font-size:17px;color:var(--ink2);max-width:70ch}
-.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);margin-bottom:8px}
+section.sec>.eyebrow::before{content:"★ ";color:var(--brand-bright)}
 section.sec{margin-top:60px;padding-top:28px;border-top:1px solid var(--hair)}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
-.kpi{border:1px solid var(--hair);border-radius:10px;padding:14px 16px}
-.kpi .l{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:700}
-.kpi .v{font-size:30px;font-weight:600;margin-top:4px;line-height:1.1}
+.kpi{border:1px solid var(--hair);border-radius:10px;padding:14px 16px;border-top:3px solid var(--brand-bright)}
+.kpi .l{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.kpi .v{font-size:30px;font-weight:700;margin-top:4px;line-height:1.1;color:var(--brand-strong)}
 .kpi .d{font-size:12.5px;color:var(--ink2);margin-top:4px}
 figure{margin:22px 0;padding:16px 16px 12px;border:1px solid var(--hair);border-radius:10px;background:#fff}
 figure .ft{font-weight:700;font-size:15px;margin-bottom:2px}
 figure .fs{font-size:13px;color:var(--muted);margin-bottom:10px}
 figcaption{font-size:13px;color:var(--ink2);margin-top:10px;max-width:84ch}
-.plain{border-left:4px solid var(--azalea);background:var(--azalea-bg);padding:12px 16px;border-radius:0 10px 10px 0;margin:18px 0;max-width:84ch}
-.plain .t{font-weight:700;color:var(--azalea);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
+.plain{border-left:4px solid var(--brand-bright);background:var(--brand-bg);padding:12px 16px;border-radius:0 10px 10px 0;margin:18px 0;max-width:84ch}
+.plain .t{font-weight:700;color:var(--brand);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase}
+.plain .t::before{content:"★ "}
 .plain p{margin:6px 0 0;max-width:none}
-.callout{border:1px solid var(--hair);border-left:4px solid var(--navy);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0;background:#fafbfa;max-width:84ch}
+.callout{border:1px solid var(--hair);border-left:4px solid var(--brand);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0;background:#fbfaff;max-width:84ch}
 table{border-collapse:collapse;width:100%;font-size:13.5px;margin:12px 0}
 th,td{padding:7px 10px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
-th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);font-weight:700;border-bottom:2px solid var(--brand-lav)}
 td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tblwrap{overflow-x:auto}
 .todo{list-style:none;padding:0;margin:12px 0;max-width:84ch}
 .todo li{padding:8px 0 8px 30px;position:relative;border-bottom:1px dashed var(--hair)}
-.todo li::before{content:"";position:absolute;left:2px;top:12px;width:13px;height:13px;border:2px solid var(--navy);border-radius:4px}
+.todo li::before{content:"";position:absolute;left:2px;top:12px;width:13px;height:13px;border:2px solid var(--brand);border-radius:4px}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:14px 0}
 .card{border:1px solid var(--hair);border-radius:10px;padding:16px}
 .card h4{margin-top:0}
 .pro{border-top:4px solid var(--aqua)} .con{border-top:4px solid var(--orange)}
 .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;letter-spacing:.04em;white-space:nowrap}
-.pill.crit{background:#fbe9e9;color:#8f2323} .pill.warn{background:#fff3d6;color:#7a5200} .pill.good{background:#e6f6e6;color:#0a5a0a} .pill.info{background:var(--tint);color:var(--navy)}
+.pill.crit{background:#fbe9e9;color:#8f2323} .pill.warn{background:#fff3d6;color:#7a5200} .pill.good{background:#e6f6e6;color:#0a5a0a} .pill.info{background:var(--tint);color:var(--brand-strong)}
 .finding{display:grid;grid-template-columns:48px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--hair);max-width:90ch}
-.finding .num{font-family:var(--serif);font-size:32px;color:var(--navy);line-height:1;font-weight:600}
+.finding .num{font-family:var(--sans);font-size:30px;color:var(--brand);line-height:1;font-weight:700}
 .finding p{margin:4px 0 0}
 .toc ol{columns:2;column-gap:32px;padding-left:20px;max-width:none} .toc li{margin:4px 0;break-inside:avoid}
-a{color:var(--navy)}
-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:#f3f5f3;padding:1px 5px;border-radius:4px}
-.cover{padding:30px 0 10px}
-.cover .meta{display:flex;flex-wrap:wrap;gap:28px;margin-top:28px;font-size:13px;color:var(--ink2)}
-.cover .meta b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+a{color:var(--brand)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:#f3f1f8;padding:1px 5px;border-radius:4px}
 .small{font-size:13px;color:var(--muted)}
 .channel{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--hair)}
-.channel h4{margin:0;font-family:var(--serif);font-size:20px;font-weight:600}
+.channel h4{margin:0;font-family:var(--sans);font-size:19px;font-weight:700;color:var(--brand-strong)}
 .channel .why{color:var(--ink2);font-size:13.5px}
 .tag{font-size:12px;color:var(--muted)}
 .two{columns:2;column-gap:32px;max-width:none}
-@media (max-width:640px){.channel{grid-template-columns:1fr}.toc ol,.two{columns:1}}
-@media print{body{background:#fff;padding:0} .sheet{border:0;border-radius:0;padding:0;max-width:none} section.sec{break-before:page;border-top:0;margin-top:0;padding-top:0} figure,table,.kpis,.plain,.card,.finding,.callout,.channel{break-inside:avoid} h2,h3,h4{break-after:avoid} .toc{break-before:page} a{text-decoration:none;color:inherit} .noprint{display:none} .cover{min-height:70vh}}
-@page{size:Letter;margin:14mm 12mm}
+/* ---- LLG cover (dark) ---- */
+.cover-dark{position:relative;overflow:hidden;max-width:980px;margin:0 auto 18px;background:var(--space);background-image:radial-gradient(ellipse 70% 45% at 50% 28%,rgba(124,58,237,.55),rgba(10,1,24,0) 70%),radial-gradient(circle at 12% 88%,rgba(168,85,247,.28),rgba(10,1,24,0) 40%),radial-gradient(1.5px 1.5px at 20% 14%,rgba(196,181,253,.8),transparent 60%),radial-gradient(1.5px 1.5px at 78% 22%,rgba(196,181,253,.7),transparent 60%),radial-gradient(1.5px 1.5px at 62% 68%,rgba(196,181,253,.6),transparent 60%),radial-gradient(1.5px 1.5px at 33% 76%,rgba(196,181,253,.6),transparent 60%),radial-gradient(1.5px 1.5px at 88% 58%,rgba(196,181,253,.7),transparent 60%),radial-gradient(1.5px 1.5px at 8% 40%,rgba(196,181,253,.6),transparent 60%);color:#f3efff;border-radius:14px;padding:clamp(28px,5vw,64px) clamp(24px,5vw,72px) 0;text-align:center;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.cover-dark .logo{display:block;width:min(420px,70%);margin:0 auto 26px;border-radius:10px;box-shadow:0 0 60px rgba(168,85,247,.35)}
+.cover-dark .eyebrow-dark{font-size:12px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--brand-lav);margin-bottom:14px}
+.cover-dark h1{font-size:clamp(40px,6vw,64px);color:#fff;letter-spacing:-.01em;line-height:1.05;text-shadow:0 0 30px rgba(168,85,247,.45)}
+.cover-dark h1 span{color:var(--brand-lav)}
+.cover-dark .lead{color:#d9d2f0;margin:18px auto 26px;max-width:62ch;font-size:17px}
+.cover-dark .pillbox{display:inline-block;border:1px solid rgba(168,85,247,.55);border-radius:999px;padding:9px 22px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#e9e3ff;background:rgba(124,58,237,.14);margin-bottom:26px}
+.cover-dark .meta-dark{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;font-size:12px;color:#b9b0d8;max-width:80ch;margin:0 auto}
+.cover-dark .meta-dark b{display:block;color:#8f86b3;font-size:10px;text-transform:uppercase;letter-spacing:.16em}
+.cover-dark .planet{position:absolute;left:3%;top:3%;width:120px;opacity:.55;pointer-events:none}
+.cover-dark .rocket{position:absolute;right:5%;bottom:20%;width:130px;opacity:.9;pointer-events:none;transform:rotate(-8deg)}
+.cover-dark .cover-foot{position:relative;z-index:1;margin:30px auto 0;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:#a89fcb}
+.cover-dark .moon{display:block;width:100%;margin-top:-8px;opacity:.9}
+/* ---- LLG closing band ---- */
+.closing{position:relative;overflow:hidden;background:var(--space);background-image:radial-gradient(ellipse 60% 60% at 50% 100%,rgba(124,58,237,.4),rgba(10,1,24,0) 70%);color:#e9e3ff;border-radius:12px;margin-top:40px;text-align:center;padding:40px 24px 0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.closing .end{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--brand-lav);font-weight:700}
+.closing .line{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#a89fcb;margin-top:10px}
+.closing .line2{font-size:11.5px;color:#8f86b3;margin-top:10px;letter-spacing:.04em}
+.closing img.tile{height:66px;border-radius:8px;margin-top:20px}
+.closing .moon{display:block;width:100%;margin-top:6px}
+footer.small{color:var(--muted)}
+@media (max-width:640px){.channel{grid-template-columns:1fr}.toc ol,.two{columns:1}.cover-dark .rocket,.cover-dark .planet{display:none}}
+@media print{body{background:#fff;padding:0} .sheet{border:0;border-radius:0;padding:0;max-width:none} section.sec{break-before:page;border-top:0;margin-top:0;padding-top:0} figure,table,.kpis,.plain,.card,.finding,.callout,.channel{break-inside:avoid} h2,h3,h4{break-after:avoid} .toc{break-before:page} a{text-decoration:none;color:inherit} .noprint{display:none} .closing{break-inside:avoid;border-radius:0}
+  .cover-dark{max-width:none;border-radius:0;margin:0}
+  html.pdf-cover .sheet{display:none} html.pdf-cover .cover-dark{width:215.9mm;height:279.4mm;box-sizing:border-box;padding:20mm 18mm 0;display:flex;flex-direction:column;justify-content:flex-start} html.pdf-cover .cover-dark .moon{margin-top:auto}
+  html.pdf-body .cover-dark{display:none} html.pdf-body .toc{break-before:auto}}
+@page{size:Letter;margin:17mm 12mm 16mm 12mm}
 """
 
 parts = []
 add = parts.append
 
 add(f"""<title>Frost Law Group Search Audit</title>
-<meta name="description" content="Search Console audit, market analysis and topical-authority plan for frostlawgroupsc.com and summervilleaccidentattorney.com">
+<meta name="description" content="Search Console audit, market analysis and topical-authority plan for frostlawgroupsc.com and summervilleaccidentattorney.com — prepared by Legal Leads Group">
 <style>{CSS}</style>
-<div class="sheet">
-<header class="cover">
-<div class="eyebrow">Search audit &amp; topical-authority plan · September 2026</div>
-<h1>Frost Law Group Search Audit</h1>
-<p class="lead" style="margin-top:14px">Two websites, one plan. What Google Search Console says about <strong>frostlawgroupsc.com</strong> and <strong>summervilleaccidentattorney.com</strong>, what the Summerville market looks like, what it all means in plain English, and exactly what to build next — on the sites, on YouTube, on LinkedIn, on Instagram, on your Google Business Profile and on Yelp.</p>
-<div class="meta">
-<div><b>Prepared for</b>Tara &amp; Jack Frost · Frost Law Group, LLC · Summerville, SC</div>
+<!--BODY-->
+<div class="cover-dark">
+<img class="planet" src="{PLANET}" alt="">
+<img class="logo" id="llg-logo" src="{LOGO}" alt="Legal Leads Group">
+<div class="eyebrow-dark">★ Search audit &amp; topical-authority plan ★</div>
+<h1>Frost Law Group<br><span>Search Audit</span></h1>
+<p class="lead">Two websites, one plan. What Google Search Console says about frostlawgroupsc.com and summervilleaccidentattorney.com, what the Summerville market looks like, what it all means in plain English, and exactly what to build next.</p>
+<div class="pillbox">Prepared for Tara &amp; Jack Frost · Frost Law Group, LLC · Summerville, SC</div>
+<div class="meta-dark">
+<div><b>Prepared by</b>Legal Leads Group</div>
 <div><b>Your own data</b>Google Search Console, both properties</div>
 <div><b>Market data</b>Search volumes, ad prices, competitor visibility, map-pack rankings</div>
 <div><b>Main site window</b>{F_FIRST.strftime('%b %-d')} – {F_LAST.strftime('%b %-d, %Y')} ({F_DAYS} days)</div>
 <div><b>Injury site window</b>{S_FIRST.strftime('%b %-d')} – {S_LAST.strftime('%b %-d, %Y')} ({S_DAYS} days)</div>
 <div><b>Report date</b>September 11, 2026</div>
 </div>
-<p class="small" style="margin-top:22px">Clicks, impressions and positions are the firm's own Search Console figures (exact; the last two or three days are provisional). Monthly search volumes, cost-per-click, competitor traffic and link counts are industry estimates, rounded. Map-pack rankings were checked from central Summerville on September 11, 2026. Where we describe the live pages or the Business Profile, we say so.</p>
-</header>
-
+<img class="rocket" src="{ROCKET}" alt="">
+<div class="cover-foot">Legal Leads Group · Confidential · September 2026</div>
+<img class="moon" src="{MOON}" alt="">
+</div>
+<div class="sheet">
 <nav class="toc"><div class="eyebrow">Contents</div><ol>
 <li><a href="#summary">The 60-second version</a></li>
 <li><a href="#how">How Google works, explained simply</a></li>
@@ -534,6 +577,7 @@ add(f"""<title>Frost Law Group Search Audit</title>
 <li><a href="#measure">How we'll know it's working</a></li>
 <li><a href="#appendix">Appendix: data tables, redirects, title tags, glossary</a></li>
 </ol></nav>
+<p class="small" style="margin:22px 0 0">Clicks, impressions and positions are the firm's own Search Console figures (exact; the last two or three days are provisional). Monthly search volumes, cost-per-click, competitor traffic and link counts are industry estimates, rounded. Map-pack rankings were checked from central Summerville on September 11, 2026. Where we describe the live pages or the Business Profile, we say so.</p>
 """)
 
 # ---------------------------------------------------------------- summary
@@ -1006,11 +1050,11 @@ add("<dl>" + "".join(f"<dt><strong>{t}</strong></dt><dd>{d}</dd>" for t, d in [
 add("<h3>G. Method notes</h3>")
 add(f"<p class=\"small\">Both properties are domain properties in Google Search Console. The main site has data from {F_FIRST.isoformat()}; the injury site from {S_FIRST.isoformat()}. Query, page and date tables use the property's own reported values; where we group pages by address or queries by topic, the grouping is ours and the underlying numbers are unchanged. Page-level impressions can exceed site-level impressions because one search can show two of your pages. Positions are impression-weighted averages. Search volumes, ad prices, difficulty scores, competitor traffic estimates and link counts are third-party market estimates for the United States, gathered September 11, 2026, and rounded. Map-pack rankings were checked once from central Summerville (mobile) on September 11, 2026; results vary with the searcher's exact location. Observations about the live pages (titles, headings, word counts, not-found pages) were made the same day; Business Profile details are as shown publicly on Google.</p>")
 add("</section>")
-add('<footer class="small" style="margin-top:48px;padding-top:16px;border-top:1px solid var(--hair)">Frost Law Group Search Audit · prepared September 11, 2026 · your data: Google Search Console · market data: industry estimates, September 2026</footer></div>')
+add(f'<div class="closing"><div class="end">★ End of audit ★</div><div class="line">Legal Leads Group · prepared for Frost Law Group, LLC · September 2026</div><div class="line2">Your data: Google Search Console, both properties · Market data: industry estimates · Report date: September 11, 2026</div><img class="tile" id="llg-tile" src="{LOGO_TILE}" alt="Legal Leads Group"><img class="moon" src="{MOON}" alt=""></div>')
+add('</div>')
 
 html = "\n".join(parts)
-head, body = html.split('<div class="sheet">', 1)
-body = '<div class="sheet">' + body
+head, body = html.split("<!--BODY-->", 1)
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 with open(OUT, "w") as f:
     f.write('<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n' + head + '</head><body>\n' + body + '\n</body></html>')

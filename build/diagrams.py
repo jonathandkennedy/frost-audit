@@ -2,8 +2,8 @@
 import math
 from charts import esc, tw, svg_open, INK, INK2, MUTED, GRID, AXIS, BLUE, ORANGE, AQUA, NAVY, GRAY, SURF
 
-PAPER = "#f3f5f3"
-AZALEA = "#b8386f"
+PAPER = "#f3f0fa"
+AZALEA = "#a855f7"
 
 
 def wrap(text, w, fs=12):
@@ -22,14 +22,16 @@ def wrap(text, w, fs=12):
 
 def box(x, y, w, h, text, fill=SURF, stroke=AXIS, fs=12, weight=400, color=INK, r=6, sub=None, sw=1):
     lines = wrap(text, w, fs)
+    sub_lines = wrap(sub, w, fs - 1) if sub else []
     out = [f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{r}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>']
-    total = len(lines) * (fs + 3) + ((fs - 1 + 3) if sub else 0)
+    total = len(lines) * (fs + 3) + len(sub_lines) * (fs - 1 + 3)
     ty = y + h / 2 - total / 2 + fs
     for ln in lines:
         out.append(f'<text x="{x + w / 2:.1f}" y="{ty:.1f}" text-anchor="middle" font-size="{fs}" font-weight="{weight}" fill="{color}">{esc(ln)}</text>')
         ty += fs + 3
-    if sub:
-        out.append(f'<text x="{x + w / 2:.1f}" y="{ty:.1f}" text-anchor="middle" font-size="{fs - 1}" fill="{MUTED if color == INK else color}" fill-opacity="{1 if color == INK else 0.85}">{esc(sub)}</text>')
+    for ln in sub_lines:
+        out.append(f'<text x="{x + w / 2:.1f}" y="{ty:.1f}" text-anchor="middle" font-size="{fs - 1}" fill="{MUTED if color == INK else color}" fill-opacity="{1 if color == INK else 0.85}">{esc(ln)}</text>')
+        ty += fs - 1 + 3
     return "".join(out)
 
 
