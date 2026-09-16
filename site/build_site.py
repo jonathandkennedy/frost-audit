@@ -381,9 +381,12 @@ def hero_html(p):
                 f'<span>Published {fmt_date(p["date"])}</span>' + (f'<span>Updated {fmt_date(p["modified"])}</span>' if p["modified"] != p["date"] else "") + "</div>")
     if p.get("hero_style") == "photo" and p["hero_image"]:
         src, w, h = image_info(p["hero_image"])
+        if " · " in p["eyebrow"]:  # keep only the first part (the tagline) on small screens
+            first, rest = esc(p["eyebrow"]).split(" · ", 1)
+            eyebrow = f'<div class="eyebrow">{first}<span class="eb2"> · {rest}</span></div>'
         text = f'<div>{kicker}{eyebrow}<h1>{p["h1"]}</h1>{lead}{actions}</div>'
         band_ = f'<div class="quote-band"><div class="wrap">{p["quote"]}</div></div>' if p["quote"] else ""
-        return (f'<section class="hero photo"><img class="bg" src="{src}" alt="{esc(p["hero_caption"] or "")}" width="{w}" height="{h}" fetchpriority="high"><div class="shade"></div>'
+        return (f'<section class="hero photo"><div class="media"><img class="bg" src="{src}" alt="{esc(p["hero_caption"] or "")}" width="{w}" height="{h}" fetchpriority="high"><div class="shade"></div></div>'
                 f'<div class="wrap">{text}</div></section>{band_}')
     text = f'<div>{crumbs_html(p)}{kicker}{eyebrow}<h1>{p["h1"]}</h1>{meta}{lead}{actions}{quote}</div>'
     if p["hero_image"]:
