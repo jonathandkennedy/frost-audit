@@ -9,6 +9,7 @@ Content lives in site/content/*.py; assets in site/assets/.
 import argparse
 import base64
 import datetime
+import hashlib
 import io
 import json
 import os
@@ -38,6 +39,11 @@ BUILD_DATE = firm.BUILD_DATE
 ORIGIN = firm.ORIGIN
 MODE = "prod"
 WARNINGS = []
+CSS_HREF = "/assets/site.css"
+
+
+def file_hash(path, n=8):
+    return hashlib.sha1(open(path, "rb").read()).hexdigest()[:n]
 
 
 def warn(msg):
@@ -72,14 +78,14 @@ def image_info(name):
             if m:
                 w, h = int(m.group(1)), int(m.group(2))
             if MODE == "prod":
-                src = f"/assets/img/{name}"
+                src = f"/assets/img/{name}?v={file_hash(path)}"
             else:
                 src = "data:image/svg+xml;base64," + base64.b64encode(open(path, "rb").read()).decode()
         else:
             im = Image.open(path)
             w, h = im.size
             if MODE == "prod":
-                src = f"/assets/img/{name}"
+                src = f"/assets/img/{name}?v={file_hash(path)}"
             else:
                 buf = io.BytesIO()
                 im2 = im.convert("RGB") if im.mode not in ("RGB", "RGBA") else im
@@ -554,7 +560,7 @@ def head_html(p):
         '<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">'
         '<link rel="preload" href="/assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>'
         '<link rel="preload" href="/assets/fonts/public-sans-var.woff2" as="font" type="font/woff2" crossorigin>'
-        '<link rel="stylesheet" href="/assets/site.css">'
+        f'<link rel="stylesheet" href="{CSS_HREF}">'
         f'<script type="application/ld+json">{ld}</script>'
         '</head><body>')
 
@@ -565,10 +571,14 @@ def render_prod(p):
 
 
 def write_prod():
+    global CSS_HREF
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
     os.makedirs(os.path.join(OUT, "assets", "img"))
-    shutil.copy(os.path.join(ASSETS, "site.css"), os.path.join(OUT, "assets", "site.css"))
+    css_src = os.path.join(ASSETS, "site.css")
+    css_name = f"site.{file_hash(css_src)}.css"
+    CSS_HREF = f"/assets/{css_name}"
+    shutil.copy(css_src, os.path.join(OUT, "assets", css_name))
     shutil.copytree(os.path.join(ASSETS, "fonts"), os.path.join(OUT, "assets", "fonts"))
     # pages
     for p in PAGES:

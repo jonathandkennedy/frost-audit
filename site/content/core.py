@@ -92,7 +92,7 @@ home_body = "".join((
 page("home", kind="home", layout="raw", hero_style="photo",
      title="Summerville, SC Estate Planning, Probate & Criminal Defense Attorneys | Frost Law Group",
      description="Frost Law Group is a husband-and-wife law firm in Summerville, SC handling estate planning, probate and criminal defense for Dorchester, Berkeley and Charleston County families. Call (843) 419-6653.",
-     h1='Estate Planning, Probate &amp; Criminal Defense Attorneys<span class="sub">in Summerville, South Carolina</span>',
+     h1='Estate Planning, Probate &amp; Criminal Defense Attorneys <span class="sub">in Summerville, South Carolina</span>',
      eyebrow="Frost First · Your Summerville, SC law firm",
      cta=[("contact-us", "Schedule a consultation", "btn light"), ("tel:" + firm.PHONE_E164, firm.PHONE, "btn ghost")],
      lead="Wills and trusts, probate and estate administration, and criminal defense for Dorchester, Berkeley and Charleston County families. Injury claims, too, through our dedicated accident practice.",
