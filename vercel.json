@@ -1,0 +1,87 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
+  "outputDirectory": "website",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/probate-2",
+      "destination": "/probate/",
+      "permanent": true
+    },
+    {
+      "source": "/probate-2/",
+      "destination": "/probate/",
+      "permanent": true
+    },
+    {
+      "source": "/motor-vehicle-personal-injury",
+      "destination": "/personal-injury/",
+      "permanent": true
+    },
+    {
+      "source": "/motor-vehicle-personal-injury/",
+      "destination": "/personal-injury/",
+      "permanent": true
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/durable-power-of-attorney",
+      "destination": "/power-of-attorney/",
+      "permanent": true
+    },
+    {
+      "source": "/durable-power-of-attorney/",
+      "destination": "/power-of-attorney/",
+      "permanent": true
+    },
+    {
+      "source": "/healthcare-power-of-attorney",
+      "destination": "/power-of-attorney/",
+      "permanent": true
+    },
+    {
+      "source": "/healthcare-power-of-attorney/",
+      "destination": "/power-of-attorney/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ]
+}

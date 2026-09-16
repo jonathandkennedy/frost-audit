@@ -25,11 +25,11 @@ measurement plan, and appendices (data tables, redirect map, proposed title tags
 
 ```bash
 python3 site/build_local_data.py       # optional: regenerate site/content/local_data.json from facts.json (uses OSRM for routes)
-python3 site/build_site.py             # writes website/ (production build with sitemap, robots.txt, .htaccess, llms.txt)
+python3 site/build_site.py             # writes website/ (production build with sitemap, robots.txt, .htaccess, llms.txt) and vercel.json
 python3 site/build_site.py --preview out.html   # single-file clickable preview (used for the shared artifact)
 ```
 
-Content lives in `site/content/` (`core.py`, `estate.py`, `probate.py`, `criminal.py`, `cities.py`, `posts.py`, `firm.py` for name/address/links, `meta.py` for titles and descriptions). `website/BUILD-NOTES.md` explains the design decisions, the recommendations (blog authorship, the "Frost First" tagline, the no-DUI home page) and the pre-launch checklist.
+Content lives in `site/content/` (`core.py`, `estate.py`, `probate.py`, `criminal.py`, `cities.py`, `posts.py`, `firm.py` for name/address/links, `meta.py` for titles and descriptions). `site/BUILD-NOTES.md` explains the design decisions, the recommendations (blog authorship, the "Frost First" tagline, the no-DUI home page) and the pre-launch checklist.
 
 ## Data
 

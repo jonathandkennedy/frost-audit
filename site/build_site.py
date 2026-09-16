@@ -558,7 +558,6 @@ def write_prod():
         shutil.rmtree(OUT)
     os.makedirs(os.path.join(OUT, "assets", "img"))
     shutil.copy(os.path.join(ASSETS, "site.css"), os.path.join(OUT, "assets", "site.css"))
-    shutil.copy(os.path.join(SITE, "BUILD-NOTES.md"), os.path.join(OUT, "BUILD-NOTES.md"))
     shutil.copytree(os.path.join(ASSETS, "fonts"), os.path.join(OUT, "assets", "fonts"))
     # pages
     for p in PAGES:
@@ -597,6 +596,7 @@ def write_prod():
     open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\nDisallow: /assets/fonts/\n\nSitemap: {ORIGIN}/sitemap.xml\n")
     open(os.path.join(OUT, ".htaccess"), "w", encoding="utf-8").write(htaccess())
     open(os.path.join(OUT, "llms.txt"), "w", encoding="utf-8").write(llms_txt())
+    write_vercel_json()
     p404 = dict(BY_SLUG["home"], slug="404", title="Page not found | Frost Law Group", description="That page has moved.", h1="We couldn't find that page", kind="page", layout="one", noindex=True,
                 eyebrow="Page not found", lead="The address may have changed when we rebuilt the site. The links below will get you where you were headed.", kicker="", quote="", hero_image=None, cta=None, faqs=[], related=[], sources=[],
                 body='<p>Try one of these: <a href="[[estate-planning-attorney]]">Estate planning</a>, <a href="[[probate]]">Probate</a>, <a href="[[criminal-defense]]">Criminal defense</a>, <a href="[[contact-us]]">Contact us</a>, or call <a href="tel:' + firm.PHONE_E164 + '">' + firm.PHONE + "</a>.</p>")
@@ -620,6 +620,34 @@ def htaccess():
               '<FilesMatch "\\.(woff2|css|svg|jpg|png)$">', 'Header set Cache-Control "public, max-age=31536000, immutable"', "</FilesMatch>", "</IfModule>", "",
               "<IfModule mod_deflate.c>", "AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml", "</IfModule>", ""]
     return "\n".join(lines)
+
+
+def write_vercel_json():
+    """Vercel equivalent of the .htaccess rules: serve website/, keep trailing slashes, redirect old addresses, cache assets."""
+    redirects = []
+    for old, new in firm.REDIRECTS:
+        base = old.rstrip("/?").rstrip("?")
+        if base.endswith(".*"):
+            src = "/" + base[:-2].rstrip("/") + "/:path*"
+            redirects.append({"source": src, "destination": new, "permanent": True})
+        else:
+            redirects.append({"source": "/" + base, "destination": new, "permanent": True})
+            redirects.append({"source": "/" + base + "/", "destination": new, "permanent": True})
+    cfg = {
+        "$schema": "https://openapi.vercel.sh/vercel.json",
+        "framework": None,
+        "buildCommand": None,
+        "installCommand": None,
+        "outputDirectory": "website",
+        "trailingSlash": True,
+        "redirects": redirects,
+        "headers": [
+            {"source": "/assets/(.*)", "headers": [{"key": "Cache-Control", "value": "public, max-age=31536000, immutable"}]},
+            {"source": "/(.*)", "headers": [{"key": "X-Content-Type-Options", "value": "nosniff"}, {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},
+                                             {"key": "X-Frame-Options", "value": "SAMEORIGIN"}, {"key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()"}]},
+        ],
+    }
+    open(os.path.join(ROOT, "vercel.json"), "w", encoding="utf-8").write(json.dumps(cfg, indent=2) + "\n")
 
 
 def llms_txt():

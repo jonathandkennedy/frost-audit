@@ -1,6 +1,6 @@
 # frostlawgroupsc.com rebuild — build notes and recommendations
 
-This folder is a complete, deployable rebuild of frostlawgroupsc.com: 77 static pages, one stylesheet, self-hosted fonts, a sitemap, robots.txt, an `.htaccess` with the redirect map from the search audit, and `llms.txt`. It is generated from `site/` in the repository (`python3 site/build_site.py`), so copy changes go in the content files, not in this folder.
+`website/` is a complete, deployable rebuild of frostlawgroupsc.com: 77 static pages, one stylesheet, self-hosted fonts, a sitemap, robots.txt, an `.htaccess` with the redirect map from the search audit (for Apache hosts), and `llms.txt`; `vercel.json` at the repository root carries the same rules for Vercel. The folder is generated from `site/` (`python3 site/build_site.py`), so copy changes go in the content files, not in the output. These notes stay in `site/` and are not published with the site.
 
 ## What changed versus the current site
 
@@ -54,6 +54,14 @@ What moves the needle is not "two authors" but *credible* authors writing consis
 6. **Analytics.** No tracking is included, which is also why there is no cookie banner: the site sets no cookies and loads no third-party scripts on page load. If GA4, a chat widget, call tracking or a pixel is added in `head_html()` in `build_site.py`, add a consent tool at the same time and update the privacy policy.
 7. **Legal pages.** The privacy policy, the terms of use and legal disclaimer, and the accessibility statement were drafted to match what the site does and the South Carolina advertising rules as we understand them. The attorneys should review all three before launch.
 8. **The Dorchester County Probate Court's Summerville office**: the county's official page lists only St. George, so the site does not claim a Summerville office. If one exists, add it to `courts` in `site/build_local_data.py`.
+
+## Deploying on Vercel
+
+1. In Vercel, import the GitHub repository and set the production branch to `main`. Leave the framework as "Other"; `vercel.json` at the repository root tells Vercel to serve the prebuilt `website/` folder with no build step, to keep trailing slashes, to apply the redirect map, and to cache assets.
+2. Add both `frostlawgroupsc.com` and `www.frostlawgroupsc.com` under the project's Domains and make the apex the primary domain. Vercel then 301-redirects www to the apex and issues the HTTPS certificate; the `.htaccess` file in `website/` is ignored on Vercel and only matters on an Apache host.
+3. Point DNS at Vercel when you are ready to cut over (an A record for the apex and a CNAME for www, per the values Vercel shows). Until then the deployment is reachable at its `*.vercel.app` address for review.
+4. `404.html` in `website/` is served automatically for unknown addresses.
+5. To change content: edit `site/content/*.py`, run `python3 site/build_site.py`, commit `website/` and `vercel.json`, and push to `main`. Vercel deploys on push.
 
 ## Deploying on SiteGround (or any Apache host)
 
