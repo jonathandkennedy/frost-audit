@@ -476,7 +476,11 @@ def person_ld(key):
     return {"@type": "Person", "@id": abs_url(a["slug"]) + "#person", "name": a["name"], "givenName": a["first"], "familyName": "Frost",
             "jobTitle": "Attorney at Law", "url": abs_url(a["slug"]), "image": ORIGIN + "/assets/img/" + a["headshot"],
             "worksFor": {"@id": ORIGIN + "/#firm"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": s} for s in a["alumni"]],
-            "knowsAbout": a["knows"], "sameAs": [s for s in a["same_as"] if s], "description": a["ld_description"]}
+            "knowsAbout": a["knows"], "sameAs": [s for s in a["same_as"] if s], "description": a["ld_description"],
+            "email": a.get("email"), "telephone": firm.PHONE_E164,
+            "identifier": {"@type": "PropertyValue", "propertyID": "South Carolina Bar Number", "value": a.get("bar_number")},
+            "hasCredential": {"@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Admitted to the South Carolina Bar", "dateCreated": a.get("admitted_iso"),
+                              "recognizedBy": {"@type": "Organization", "name": "Supreme Court of South Carolina"}}}
 
 
 def page_ld(p):

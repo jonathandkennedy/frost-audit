@@ -64,7 +64,7 @@ sp("dui-lawyer-summerville-sc", card_new=True,
    title="Summerville DUI Lawyer | First-Offense DUI & DUAC Defense | Frost Law Group",
    description="Charged with DUI or DUAC in Summerville, Dorchester or Berkeley County? Former detective Jack Frost explains SC's video requirement, the 30-day license hearing deadline, first-offense penalties and how these cases are defended.",
    h1="Summerville DUI Lawyer", nav_label="DUI &amp; DUAC defense",
-   lead="Two clocks start the night you are charged: the criminal case and your driver's license. A former officer who has made these arrests explains both.",
+   lead="Two clocks start the night you are charged: the criminal case and your driver's license. A former officer who has made these arrests, and who now prosecutes them for the Town of Summerville, explains both.",
    summary="Video rules, the 30-day license deadline, first-offense penalties and the defenses that work.",
    body=(
        '<h2>The first 30 days: your license</h2>'
@@ -80,8 +80,8 @@ sp("dui-lawyer-summerville-sc", card_new=True,
                  "<b>Blood draws.</b> Warrant, chain of custody and lab procedures.",
                  "<b>The video.</b> What it shows, what it does not, and whether the statute's requirements were met.",
                  "<b>The paperwork.</b> Implied-consent advisements, the ticket itself and the officer's report, compared line by line to the video."]) +
-       '<h2>Court</h2>'
-       '<p>First-offense DUI is tried in magistrate or municipal court—Summerville Municipal Court, the Dorchester County magistrate, or the court for the town where you were stopped—with a right to a jury trial. Higher offenses go to General Sessions. Jack appears in all of them.</p>'
+       '<h2>Court, and one case we cannot take</h2>'
+       '<p>First-offense DUI is tried in magistrate or municipal court—the Dorchester or Berkeley County magistrate, or the municipal court for the town where you were stopped—with a right to a jury trial. Higher offenses go to General Sessions. One exception: Jack serves as the Town of Summerville\'s DUI prosecutor, so the firm does not defend DUI charges brought by the Summerville Police Department in Summerville Municipal Court. If that is your case, call anyway and we will refer you to a defense attorney we trust.</p>'
        + callout("<b>Frost first:</b> if you have not yet requested the administrative hearing, that is the first call. The criminal case can wait a day; the license deadline cannot.")
        + band("Charged with DUI in Dorchester or Berkeley County?", "Call today. The 30-day license clock is already running.")
    ),

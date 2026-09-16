@@ -144,19 +144,24 @@ jack_body = (
     ]) +
     '<h2>Education and credentials</h2>'
     + ul([
-        "Juris Doctor, Charleston School of Law",
+        "Juris Doctor, Charleston School of Law (2016)",
+        "Admitted to the South Carolina Bar November 27, 2018; South Carolina Bar No. 103633, regular member in good standing (" + ext(firm.BAR_DIRECTORY_URL, "SC Judicial Branch attorney directory") + ")",
+        "Town of Summerville DUI prosecutor, appointed November 2023 (" + ext("https://www.summervillepolice.com/m/newsflash/Home/Detail/106", "Town announcement") + ")",
         "Bachelor of Science in Criminal Justice and Police Administration, Strayer University",
         "Associate of Science in Criminal Justice, Trident Technical College",
         "Political science studies, College of Charleston",
         "Type 1 SWAT Operator designation, U.S. Department of Homeland Security",
         "DEA Basic Narcotics Investigations certification",
-        "Member of the South Carolina Bar",
     ]) +
+    '<h2>Prosecutor and defender</h2>'
+    '<p>In November 2023 the Town of Summerville appointed Jack its DUI prosecutor, citing his years as a Charleston County narcotics detective and a Summerville police officer. Prosecuting impaired-driving cases for the Town means he sees the evidence, the video and the procedure from the State\'s side every week. Because of that role, the firm does not defend DUI charges brought by the Town of Summerville in Summerville Municipal Court; Jack defends those charges in the other courts of Dorchester, Berkeley and Charleston counties, and every other kind of criminal charge everywhere.</p>' +
     '<h2>Practice focus</h2>'
     f'<p>Jack leads the firm\'s {A("criminal-defense", "criminal defense practice")}: {A("drug-charges", "drug charges")}, {A("domestic-violence-defense", "domestic violence")}, {A("bond-hearings", "bond hearings")}, {A("arrest-warrants", "arrest warrants")}, {A("traffic-tickets", "traffic offenses")} and {A("expungements", "expungements")}, along with the alcohol-related driving charges described on the criminal defense page. He also works with Tara on {A("estate-planning-attorney", "estate plans")}, particularly for law-enforcement, military and first-responder families.</p>'
     '<h2>Off the clock</h2>'
     '<p>An avid golfer, Jack credits his attention to client service to his years as a caddy at the Ocean Course on Kiawah Island, where he also served as personal security for Tiger Woods and Vijay Singh during the 2012 PGA Championship. He and Tara, his Summerville High School sweetheart, live in Summerville with their Golden Retrievers.</p>'
     '<h2>Articles by Jack</h2><p>Jack writes the criminal-defense articles in [[blog]]—what a charge actually means, what happens at the first court date, and what to do before you talk to anyone.</p>'
+    '<h2>Reach Jack</h2>'
+    f'<p>Email <a href="mailto:{firm.ATTORNEYS["jack"]["email"]}">{firm.ATTORNEYS["jack"]["email"]}</a>, call {TEL}, or connect on {ext(firm.ATTORNEYS["jack"]["linkedin"], "LinkedIn")}. Please do not send details of a pending criminal case by email until we have spoken.</p>'
     + band("Facing a charge? Talk to Jack first.", "If your case requires experience, a steadfast resolve, or involves a complex investigation, call before you answer any questions.")
 )
 page("attorneys/jack-frost", kind="attorney", author="jack", hub="about-us",
@@ -173,10 +178,10 @@ tara_body = (
     '<p>Before becoming an attorney, Tara spent roughly sixteen years in the hospitality industry and later owned a window-covering company with her father. Those years taught her customer service, communication, and how to understand what people need during stressful times. Her personal motto—“Don\'t mistake my kindness for weakness”—describes how she approaches every case: with compassion and honesty, and with a firm hand when an opposing party or insurance company refuses to do what is right.</p>'
     '<h2>Education and credentials</h2>'
     + ul([
-        "Juris Doctor, Charleston School of Law—Vice President of the Student Trial Lawyers Association; helped institute the law school's Trial Advocacy Board",
+        "Juris Doctor, Charleston School of Law (2012)—Vice President of the Student Trial Lawyers Association; helped institute the law school's Trial Advocacy Board",
+        "Admitted to the South Carolina Bar November 13, 2012; South Carolina Bar No. 100610, regular member in good standing (" + ext(firm.BAR_DIRECTORY_URL, "SC Judicial Branch attorney directory") + ")",
         "Dorchester County Associate Probate Judge, August 2025 – June 2026",
         "Dorchester County Magistrate Judge, July 2022 – August 2025",
-        "Member of the South Carolina Bar",
         "WealthCounsel member firm (estate planning)",
     ]) +
     '<h2>Practice focus</h2>'
@@ -186,6 +191,8 @@ tara_body = (
     '<h2>Off the clock</h2>'
     '<p>Tara enjoys church and Bible study, reading, movies, swimming and fair-weather golf, and time with Jack, family and their Golden Retrievers, Mistoc and Palmer, who occasionally come to the office to greet clients with wagging tails.</p>'
     '<h2>Articles by Tara</h2><p>Tara writes the probate and estate-planning articles in [[blog]]—what to do in the first weeks after a death, how guardianship works for an aging parent, and what new Summerville residents should update.</p>'
+    '<h2>Reach Tara</h2>'
+    f'<p>Email <a href="mailto:{firm.ATTORNEYS["tara"]["email"]}">{firm.ATTORNEYS["tara"]["email"]}</a>, call {TEL}, or connect on {ext(firm.ATTORNEYS["tara"]["linkedin"], "LinkedIn")}.</p>'
     + band("Settling an estate or planning one?", "Tara will tell you what the probate court will need and what you can do yourself.")
 )
 page("attorneys/tara-frost", kind="attorney", author="tara", hub="about-us",
@@ -208,7 +215,7 @@ contact_form = (
     '<div><button class="btn" type="submit">Send message</button></div></form>')
 
 contact_body = (
-    section('[[nap]]' + '[[map]]', wrap=True),
+    section('[[nap]]' + f'<div class="nap"><div><h3>Email</h3><p><a href="mailto:{firm.ATTORNEYS["jack"]["email"]}">{firm.ATTORNEYS["jack"]["email"]}</a><br><a href="mailto:{firm.ATTORNEYS["tara"]["email"]}">{firm.ATTORNEYS["tara"]["email"]}</a></p><p class="small">For a new matter, a call gets a faster answer.</p></div><div><h3>Mail</h3><p>{firm.NAME}<br>{firm.PO_BOX}</p><p class="small">Please send documents to the P.O. Box, and come to Linwood Lane in person.</p></div><div><h3>Attorneys</h3><p><a href="[[attorneys/jack-frost]]">Jack C. Frost</a>, SC Bar No. 103633<br><a href="[[attorneys/tara-frost]]">Tara L. Frost</a>, SC Bar No. 100610</p></div></div>' + '[[map]]', wrap=True),
     section(
         f'<p class="lead">{local.office_roads_sentence() or "Linwood Lane is a short residential street in Summerville; the office is the house with our sign out front."}</p>'
         + local.directions_cards(["i26-199", "goose-creek", "ladson", "moncks-corner", "north-charleston", "charleston", "st-george", "ridgeville", "knightsville", "nexton", "cane-bay", "mount-pleasant"])
@@ -237,7 +244,7 @@ page("contact-us", kind="page", layout="raw", cta=[("tel:" + firm.PHONE_E164, fi
 # ----------------------------------------------------------------------------- REVIEWS
 reviews_body = (
     f'<p class="lead">Frost Law Group is rated {firm.RATING[0]} out of 5 on Google from {firm.RATING[1]} reviews. We are a two-attorney firm, so every review below is about work Jack or Tara did personally.</p>'
-    '[[reviews:3]]'
+    '[[reviews:12]]'
     f'<div class="links"><a href="{esc(firm.GBP_URL)}" rel="noopener" target="_blank">Read every Google review</a><a href="{esc(firm.YELP_URL)}" rel="noopener" target="_blank">Reviews on Yelp</a></div>'
     '<h2>Leave a review</h2>'
     '<p>If we helped your family, two minutes on Google helps the next family find us. Reviews are also how Google decides which three firms appear on the map when someone in Summerville searches for a probate or estate attorney.</p>'

@@ -19,6 +19,8 @@ STATE = "SC"
 ZIP = "29483"
 PHONE = "(843) 419-6653"
 PHONE_E164 = "+18434196653"
+PO_BOX = "PO Box 1986, Summerville, SC 29484"  # mailing address on the SC Bar record
+BAR_DIRECTORY_URL = "https://www.sccourts.org/attorneys/detail/"  # SC Judicial Branch attorney directory (search by name or bar number)
 GEO = None  # (lat, lon) filled from local_data when verified
 
 MAP_QUERY = "128 Linwood Lane, Summerville, SC 29483"
@@ -51,28 +53,32 @@ ASIDE_BLURB = "Jack and Tara answer their own phones. Tell us what happened and 
 LLMS_SUMMARY = ("Frost Law Group, LLC is a husband-and-wife law firm in Summerville, South Carolina handling estate planning, "
                 "probate and criminal defense for families in Dorchester, Berkeley and Charleston counties. Personal injury cases are handled at summervilleaccidentattorney.com.")
 
-LOGO = "logo.svg"  # placeholder wordmark until the firm's PNG logo is dropped into site/assets/img/logo.png
+LOGO = "logo.svg"  # SVG redrawing of the firm's round scales-of-justice logo; drop the original PNG in as site/assets/img/logo.png and set LOGO = "logo.png"
 OG_SOURCE = "couple.jpg"
 FORM_ENDPOINT = "https://formspree.io/f/REPLACE_WITH_FORM_ID"  # TODO: swap for the firm's form handler before launch
 
 ATTORNEYS = {
     "jack": dict(
         key="jack", slug="attorneys/jack-frost", name="Jack C. Frost", short="Jack Frost", first="Jack", headshot="headshot-jack.jpg", bio_photo="jack-bio.jpg",
+        full_name="Jack Christian Frost", email="jack@frostlawgroupsc.com", bar_number="103633", admitted="November 27, 2018", admitted_iso="2018-11-27", jd_year="2016",
+        linkedin="https://www.linkedin.com/in/jack-c-frost-9a951253/",
         byline="Attorney at Law · 14 years in Lowcountry law enforcement before law school",
         aside="Jack spent fourteen years as a Summerville police officer and a Charleston County Sheriff's Office detective and SWAT operator before earning his law degree. He knows how cases are built because he built them.",
         alumni=["Charleston School of Law", "Strayer University", "Trident Technical College", "College of Charleston"],
         knows=["Criminal defense", "Drug charges", "Bond hearings", "Expungements", "Traffic offenses", "Arrest warrants", "Estate planning"],
-        same_as=[],  # TODO: LinkedIn and SC Bar profile URLs
-        ld_description="Summerville, SC criminal defense and estate planning attorney; former Summerville Police Department officer and Charleston County Sheriff's Office detective and SWAT team member.",
+        same_as=["https://www.linkedin.com/in/jack-c-frost-9a951253/"],
+        ld_description="Summerville, SC criminal defense and estate planning attorney; former Summerville Police Department officer and Charleston County Sheriff's Office narcotics detective and SWAT team member; South Carolina Bar No. 103633.",
     ),
     "tara": dict(
         key="tara", slug="attorneys/tara-frost", name="Tara L. Frost", short="Tara Frost", first="Tara", headshot="headshot-tara.jpg", bio_photo="tara-bio.jpg",
+        full_name="Tara Leigh Frost", email="tara@frostlawgroupsc.com", bar_number="100610", admitted="November 13, 2012", admitted_iso="2012-11-13", jd_year="2012",
+        linkedin="https://www.linkedin.com/in/tara-frost-7b394551/",
         byline="Attorney at Law · former Dorchester County Magistrate and Associate Probate Judge",
         aside="Tara served as a Dorchester County Magistrate Judge (2022–2025) and Associate Probate Judge (2025–2026). She has sat on the other side of the probate bench and knows what the court needs to see.",
         alumni=["Charleston School of Law"],
         knows=["Probate and estate administration", "Estate planning", "Guardianship and conservatorship", "Wills and trusts", "Personal injury"],
-        same_as=[],  # TODO: LinkedIn and SC Bar profile URLs
-        ld_description="Summerville, SC probate, estate planning and personal injury attorney; former Dorchester County Magistrate Judge and Associate Probate Judge.",
+        same_as=["https://www.linkedin.com/in/tara-frost-7b394551/"],
+        ld_description="Summerville, SC probate, estate planning and personal injury attorney; former Dorchester County Magistrate Judge and Associate Probate Judge; South Carolina Bar No. 100610.",
     ),
 }
 
@@ -83,13 +89,20 @@ TEAM = {
     "dogs": dict(name="The Frost Pups", role="Comfort specialists · Mistoc and Palmer", photo="dogs.jpg", alt="The firm's Golden Retrievers, Mistoc and Palmer", slug=None),
 }
 
-# Client words quoted on the current site (kept verbatim). Source labels stay generic until the firm confirms where each came from.
+# Google reviews of the firm (public listing, 4.8 from 30), quoted as written; reviewers shown as first name and last initial.
 REVIEWS = [
-    dict(name="Beth Z.", stars=5, source="Client review · estate planning", text="Frost Law Group made our Estate Planning a relatively simple process. All our concerns were answered with clarity. They go out of their way to make you feel comfortable. Everything was handled promptly—just a great experience. We HIGHLY recommend. Thank you!!! The best!!"),
-    dict(name="Maya J.", stars=5, source="Client review", text="The Frost Law Group went above and beyond for my family. They are passionate about their clients and their client's families. I will always recommend this group and will use them in the future."),
+    dict(name="Randall G.", stars=5, source="Google review · trust", text="5.0 for sure. Fantastic! Jack was very personable and knowledgeable. I didn't feel like I was going to a big corporate law firm and all my questions were answered quickly by phone and email. Highly recommend! I filed a trust. They were very specific on laying out all the options that fit my needs regarding estate planning."),
+    dict(name="Beth Z.", stars=5, source="Google review · estate planning", text="Frost Law Group made our Estate Planning a relatively simple process. All our concerns were answered with clarity. They go out of their way to make you feel comfortable. Everything was handled promptly—just a great experience. We HIGHLY recommend. Thank you!!! The best!!"),
+    dict(name="Mary J.", stars=5, source="Google review · wills", text="Jack and his staff are so easy to work with. He made getting our wills up to date a breeze. I highly recommend them. Besides what other law firm has fun loving golden retrievers greet you at the door."),
+    dict(name="David J.", stars=5, source="Google review · trust", text="Frost Law Group LLC SC helped us with creating a trust. They were patient and well versed in explaining the myriads of forms, the intent of the laws, and what our responsibility were. They were a joy to work with. We will be referring our acquaintances to them!!"),
+    dict(name="Michelle F.", stars=5, source="Google review · probate", text="Very warm, helpful and willing to explain the process so that we clearly understood when we were devastated by grief. Since our initial meeting Tara, Jack and Lauren have kept in touch and kept us aware of every step. Not what I expected of an attorney. Highly recommend!"),
     dict(name="Leonard J.", stars=5, source="Google review · injury claim", text="My family settled our claim with this company following a car accident last year. The staff was professional, courteous and polite throughout the entire process. I would highly recommend their services."),
-    dict(name="Mary J.", stars=5, source="Google review", text="Jack and his staff are so easy to work with."),
-    dict(name="Stacy R.", stars=5, source="Google review", text="The energy and vibe when you walk into the building is amazing!"),
+    dict(name="Maya J.", stars=5, source="Google review", text="The Frost Law Group went above and beyond for my family. They are passionate about their clients and their client's families. I will always recommend this group and will use them in the future."),
+    dict(name="Kevin O.", stars=5, source="Google review", text="Excellent representation! Very honest and genuinely concerned for the client. They care about you and will keep you in the loop regarding your case every step of the way. They are professionals in every sense of the word."),
+    dict(name="Shannon D.", stars=5, source="Google review", text="The Frost Law Group took on our case when several other firms would not. Upon meeting with Tara and Jack to review our case, we knew we were in good hands."),
+    dict(name="Nick P.", stars=5, source="Google review", text="Mr. Frost and his staff were very professional and helpful. They gave me hope where everyone else had given up on me."),
+    dict(name="Tony S.", stars=5, source="Google review", text="Professional, fast, and their two dogs are awesome."),
+    dict(name="Stacy R.", stars=5, source="Google review", text="They are an awesome group of people. The energy and vibe when you walk into the building is amazing!"),
 ]
 
 # Hubs and their spokes (order = order in menus and sidebars). DUI is a spoke but is kept out of the
