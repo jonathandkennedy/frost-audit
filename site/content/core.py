@@ -220,11 +220,6 @@ contact_form = (
 contact_body = (
     section('[[nap]]' + f'<div class="nap"><div><h3>Email</h3><p><a href="mailto:{firm.ATTORNEYS["jack"]["email"]}">{firm.ATTORNEYS["jack"]["email"]}</a><br><a href="mailto:{firm.ATTORNEYS["tara"]["email"]}">{firm.ATTORNEYS["tara"]["email"]}</a></p><p class="small">For a new matter, a call gets a faster answer.</p></div><div><h3>Mail</h3><p>{firm.NAME}<br>{firm.PO_BOX}</p><p class="small">Please send documents to the P.O. Box, and come to Linwood Lane in person.</p></div><div><h3>Attorneys</h3><p><a href="[[attorneys/jack-frost]]">Jack C. Frost</a>, SC Bar No. 103633<br><a href="[[attorneys/tara-frost]]">Tara L. Frost</a>, SC Bar No. 100610</p></div></div>' + '[[map]]', wrap=True),
     section(
-        f'<p class="lead">{local.office_roads_sentence() or "Linwood Lane is a short residential street in Summerville; the office is the house with our sign out front."}</p>'
-        + local.directions_cards(["i26-199", "goose-creek", "ladson", "moncks-corner", "north-charleston", "charleston", "st-george", "ridgeville", "knightsville", "nexton", "cane-bay", "mount-pleasant"])
-        + f'<p><a class="btn ghost sm" href="{esc(firm.DIRECTIONS_URL)}" rel="noopener" target="_blank">Open turn-by-turn directions in Google Maps</a></p>',
-        cls="tint", label="Directions", title="Getting here on local roads", lead="Written for people who know the area by road names, not GPS pins."),
-    section(
         twocol(
             '<h3 style="margin-top:0">What to expect at your first visit</h3>' + checks([
                 "Free parking in front of the office; the entrance is at ground level.",
@@ -233,8 +228,13 @@ contact_body = (
                 "Consultations are scheduled so an attorney has uninterrupted time; please call ahead rather than dropping in.",
                 "Our Golden Retrievers may say hello. Tell us when you book if you would prefer they stay in the back.",
             ]) + f'<p>{img("office-exterior.jpg", "The Frost Law Group office at 128 Linwood Lane, Summerville", "")}</p>',
-            '<h3 style="margin-top:0">Send us a message</h3>' + contact_form),
-        label="Visit", title="Plan your visit"),
+            '<h3 style="margin-top:0">Send us a message</h3><p class="small" style="margin:0 0 .8rem">Answered by the next business day. For anything urgent, call.</p>' + contact_form),
+        label="Send us a message", title="Send a message or plan your visit"),
+    section(
+        f'<p class="lead">{local.office_roads_sentence() or "Linwood Lane is a short residential street in Summerville; the office is the house with our sign out front."}</p>'
+        + local.directions_cards(["i26-199", "goose-creek", "ladson", "moncks-corner", "north-charleston", "charleston", "st-george", "ridgeville", "knightsville", "nexton", "cane-bay", "mount-pleasant"])
+        + f'<p><a class="btn ghost sm" href="{esc(firm.DIRECTIONS_URL)}" rel="noopener" target="_blank">Open turn-by-turn directions in Google Maps</a></p>',
+        cls="tint", label="Directions", title="Getting here on local roads", lead="Written for people who know the area by road names, not GPS pins."),
     section('[[findus]]' + '<p>Reviews on Google and Yelp are how most of our neighbors find us; if we helped you, a sentence or two makes a real difference to a two-attorney firm.</p>', label="Online", title="Find and follow Frost Law Group"),
 )
 page("contact-us", kind="page", layout="raw", cta=[("tel:" + firm.PHONE_E164, firm.PHONE, "btn"), (firm.DIRECTIONS_URL, "Get directions", "btn ghost")],
