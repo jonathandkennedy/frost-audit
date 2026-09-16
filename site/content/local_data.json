@@ -1,0 +1,997 @@
+{
+ "generated": "2026-09-16",
+ "office": {
+  "lat": 33.0117332,
+  "lon": -80.1891496,
+  "roads_sentence": "Our office is in the southwest corner of Summerville's historic core, just off West Carolina Avenue near the Pine Forest Inn historical marker: about a mile southwest of Town Hall and Hutchinson Square, a third of a mile northwest of South Main Street (US-17A), half a mile from Berlin G. Myers Parkway, under a mile north of the Bacons Bridge Road and Old Trolley Road junction, and three miles southwest of I-26 exits 199A and 199B. Linwood Lane runs between West Carolina Avenue and Salisbury Drive."
+ },
+ "office_geo": [
+  33.0117332,
+  -80.1891496
+ ],
+ "courts": {
+  "dorchester_courthouse": {
+   "name": "Dorchester County Courthouse (Clerk of Court; General Sessions and Common Pleas)",
+   "street": "5200 E. Jim Bilton Blvd.",
+   "city": "St. George",
+   "zip": "29477",
+   "phone": "(843) 563-0160",
+   "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/clerk-of-court",
+   "note": "Family Court sits at the Troy Knight Judicial Complex, 212 Deming Way, Summerville."
+  },
+  "dorchester_probate": {
+   "name": "Dorchester County Probate Court",
+   "street": "5200 E. Jim Bilton Blvd.",
+   "city": "St. George",
+   "zip": "29477",
+   "phone": "(843) 563-0105",
+   "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/probate-court",
+   "note": "Estates, guardianships and conservatorships for Dorchester County residents. Call before visiting; hearings are by appointment."
+  },
+  "dorchester_magistrate_summerville": {
+   "name": "Dorchester County Magistrate Court – Summerville (Troy Knight Judicial Complex)",
+   "street": "212 Deming Way",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "(843) 832-0370",
+   "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/magistrate-court",
+   "note": "Bond hearings, misdemeanors and tickets written by the Sheriff's Office or Highway Patrol in the Summerville area."
+  },
+  "dorchester_magistrate_stgeorge": {
+   "name": "Dorchester County Magistrate Court – St. George",
+   "street": "5200 E. Jim Bilton Blvd.",
+   "city": "St. George",
+   "zip": "29477",
+   "phone": "(843) 563-0370",
+   "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/magistrate-court",
+   "note": ""
+  },
+  "summerville_municipal": {
+   "name": "Summerville Municipal Court",
+   "street": "200 S. Main Street, 2nd Floor (Town Hall)",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "(843) 875-2010",
+   "url": "https://www.summervillesc.gov/227/Municipal-Court",
+   "note": "Tickets and ordinance cases from the Summerville Police Department."
+  },
+  "berkeley_courthouse": {
+   "name": "Berkeley County Courthouse (Clerk of Court; General Sessions and Common Pleas)",
+   "street": "300-B California Avenue",
+   "city": "Moncks Corner",
+   "zip": "29461",
+   "phone": "(843) 719-4400",
+   "url": "https://berkeleycountysc.gov/dept/clerk/",
+   "note": ""
+  },
+  "berkeley_probate": {
+   "name": "Berkeley County Probate Court",
+   "street": "300-B California Avenue",
+   "city": "Moncks Corner",
+   "zip": "29461",
+   "phone": "(843) 719-4519",
+   "url": "https://berkeleycountysc.gov/dept/probate/",
+   "note": "Estates, guardianships and conservatorships for Berkeley County residents, including Goose Creek, Hanahan, Nexton, Cane Bay and Daniel Island."
+  },
+  "goose_creek_municipal": {
+   "name": "Goose Creek Municipal Court (Marguerite H. Brown Municipal Center)",
+   "street": "519 N. Goose Creek Blvd.",
+   "city": "Goose Creek",
+   "zip": "29445",
+   "phone": "(843) 569-4230",
+   "url": "https://www.goosecreeksc.gov/government/departments/municipal-court",
+   "note": ""
+  },
+  "hanahan_municipal": {
+   "name": "Hanahan Municipal Court (City Hall)",
+   "street": "1255 Yeamans Hall Road",
+   "city": "Hanahan",
+   "zip": "29410",
+   "phone": "(843) 576-5262",
+   "url": "https://www.cityofhanahan.com/court",
+   "note": ""
+  },
+  "charleston_judicial": {
+   "name": "Charleston County Judicial Center (Clerk of Court; General Sessions and Common Pleas)",
+   "street": "100 Broad Street, Suite 106",
+   "city": "Charleston",
+   "zip": "29401",
+   "phone": "(843) 958-5000",
+   "url": "https://charlestoncounty.org/departments/clerk-of-court/",
+   "note": ""
+  },
+  "charleston_probate": {
+   "name": "Charleston County Probate Court",
+   "street": "100 Broad Street, Suite 469 (Historic Courthouse, 84 Broad Street)",
+   "city": "Charleston",
+   "zip": "29401",
+   "phone": "(843) 958-5180",
+   "url": "https://www.charlestoncounty.gov/departments/probate/",
+   "note": "Estates, guardianships and conservatorships for Charleston County residents, including North Charleston, Mount Pleasant, West Ashley, James Island and Johns Island."
+  },
+  "north_charleston_municipal": {
+   "name": "North Charleston Municipal Court",
+   "street": "2500 City Hall Lane",
+   "city": "North Charleston",
+   "zip": "29406",
+   "phone": "(843) 740-2602",
+   "url": "https://www.northcharleston.org/government/city_departments/court/",
+   "note": ""
+  },
+  "charleston_municipal": {
+   "name": "City of Charleston Municipal Court",
+   "street": "180 Lockwood Boulevard, Suite B",
+   "city": "Charleston",
+   "zip": "29403",
+   "phone": "(843) 724-7460",
+   "url": "https://www.charleston-sc.gov/821/Municipal-Court",
+   "note": "Charleston Police cases from downtown, West Ashley, James Island, Johns Island and Daniel Island."
+  },
+  "colleton_courthouse": {
+   "name": "Colleton County Courthouse (Clerk of Court)",
+   "street": "101 Hampton Street",
+   "city": "Walterboro",
+   "zip": "29488",
+   "phone": "(843) 549-5791",
+   "url": "https://www.colletoncounty.org/department/clerk-court",
+   "note": ""
+  },
+  "colleton_probate": {
+   "name": "Colleton County Probate Court",
+   "street": "239 N. Jefferies Blvd.",
+   "city": "Walterboro",
+   "zip": "29488",
+   "phone": "(843) 549-7216",
+   "url": "https://www.colletoncounty.org/probate",
+   "note": ""
+  },
+  "dorchester_sheriff": {
+   "name": "Dorchester County Sheriff's Office",
+   "street": "212 Deming Way",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "(843) 832-0300",
+   "url": "https://www.dorchestercountysc.gov/government/public-safety/sheriff-s-office",
+   "note": "St. George office: 101 Ridge Street, Suite 1."
+  },
+  "summerville_pd": {
+   "name": "Summerville Police Department",
+   "street": "300 W. 2nd North Street",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "(843) 871-2463",
+   "url": "https://www.summervillepolice.com/541/Contact-Us",
+   "note": ""
+  },
+  "dorchester_detention": {
+   "name": "Dorchester County Detention Center",
+   "street": "220 Hodge Road (off US-78)",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "(843) 832-0215",
+   "url": "https://www.dorchestercountysc.gov/government/public-safety/sheriff-s-office/detention-center",
+   "note": "Bond hearings for Dorchester County arrests are held here, in Summerville—not in St. George."
+  },
+  "hill_finklea": {
+   "name": "Hill-Finklea Detention Center (Berkeley County)",
+   "street": "300 California Avenue",
+   "city": "Moncks Corner",
+   "zip": "29461",
+   "phone": "(843) 719-4546",
+   "url": "https://sheriff.berkeleycountysc.gov/about/divisions/hill-finklea-detention-center/",
+   "note": "Bond hearings for Berkeley County arrests."
+  },
+  "al_cannon": {
+   "name": "Sheriff Al Cannon Detention Center (Charleston County)",
+   "street": "3841 Leeds Avenue",
+   "city": "North Charleston",
+   "zip": "29405",
+   "phone": "(843) 202-7200",
+   "url": "https://www.charlestoncounty.gov/departments/sheriff/detention.php",
+   "note": "Bond hearings for Charleston County arrests."
+  }
+ },
+ "routes": {
+  "i26-199": {
+   "from": "I-26 exit 199A (N. Main Street / US-17A)",
+   "text": "Follow North Main Street (US-17A) to West 2nd South Street, then Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "3.6",
+   "minutes": "8"
+  },
+  "goose-creek": {
+   "from": "Goose Creek (City Hall)",
+   "text": "Follow North Goose Creek Boulevard (US-52) to Old Mount Holly Road, then Saint James Avenue (US-176), Myers Road, North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "11",
+   "minutes": "22"
+  },
+  "ladson": {
+   "from": "Ladson (College Park Road at US-78)",
+   "text": "Follow College Park Road to US-78, then North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "6.7",
+   "minutes": "12"
+  },
+  "moncks-corner": {
+   "from": "Moncks Corner (Berkeley County Courthouse)",
+   "text": "Follow Broughton Road to West Main Street (SC-6), then South Live Oak Drive (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "18",
+   "minutes": "30"
+  },
+  "north-charleston": {
+   "from": "North Charleston (Tanger Outlets, I-26 exit 213)",
+   "text": "Follow Fashion Avenue to Centre Pointe Drive, then International Boulevard, Michaux Parkway, Dorchester Road (SC-642), Old Trolley Road, East Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "16",
+   "minutes": "28"
+  },
+  "charleston": {
+   "from": "downtown Charleston (100 Broad Street)",
+   "text": "Follow Meeting Street to I-26 to exit 199A, then North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "27",
+   "minutes": "39"
+  },
+  "ridgeville": {
+   "from": "Ridgeville (SC-27 at US-78)",
+   "text": "Follow West 5th North Street (US-78) to North Cedar Street, then Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "12",
+   "minutes": "20"
+  },
+  "st-george": {
+   "from": "St. George (Dorchester County Courthouse)",
+   "text": "Follow East Jim Bilton Boulevard (US-78) to North Cedar Street, then Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "28",
+   "minutes": "44"
+  },
+  "knightsville": {
+   "from": "Knightsville (Central Avenue at Orangeburg Road)",
+   "text": "Follow Orangeburg Road to Tupperway Drive, then South Main Street (US-17A), Marion Avenue, Salisbury Drive, and turn onto Linwood Lane.",
+   "miles": "3.9",
+   "minutes": "8"
+  },
+  "nexton": {
+   "from": "Nexton (I-26 exit 197)",
+   "text": "Follow I-26 to exit 199A to North Main Street (US-17A), then West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "5.4",
+   "minutes": "10"
+  },
+  "cane-bay": {
+   "from": "Cane Bay (Cane Bay Boulevard at US-176)",
+   "text": "Follow State Road (US-176) to North Main Street (US-17A), then West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "10",
+   "minutes": "18"
+  },
+  "walterboro": {
+   "from": "Walterboro (Colleton County Courthouse)",
+   "text": "Follow Hampton Street (SC-63) to Robertson Boulevard (SC-64), then US-17A, Marion Avenue, Salisbury Drive, and turn onto Linwood Lane.",
+   "miles": "32",
+   "minutes": "48"
+  },
+  "mount-pleasant": {
+   "from": "Mount Pleasant (Coleman Boulevard)",
+   "text": "Follow Coleman Boulevard (SC-703) to Arthur Ravenel Jr Bridge (US-17), then I-26 to exit 199A, North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "29",
+   "minutes": "41"
+  },
+  "hanahan": {
+   "from": "Hanahan (City Hall)",
+   "text": "Follow Yeamans Hall Road to Remount Road, then I-26 to exit 199A, North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "17",
+   "minutes": "25"
+  },
+  "harleyville": {
+   "from": "Harleyville",
+   "text": "Follow East Main Street (US-178) to Judge Street (SC-453), then I-26 to exit 199A, North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "27",
+   "minutes": "33"
+  },
+  "lincolnville": {
+   "from": "Lincolnville",
+   "text": "Follow Railroad Avenue to Owens Drive, then East Richardson Avenue, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "2.5",
+   "minutes": "8"
+  },
+  "sangaree": {
+   "from": "Sangaree",
+   "text": "Follow Kershaw Road to Longstreet Street, then North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "5.0",
+   "minutes": "11"
+  },
+  "daniel-island": {
+   "from": "Daniel Island",
+   "text": "Follow Daniel Island Drive to Saint Thomas Island Drive, then Clements Ferry Road, Mark Clark Expressway (I-526), Rivers Avenue (US-52/US-78), I-26, North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "24",
+   "minutes": "35"
+  },
+  "west-ashley": {
+   "from": "West Ashley",
+   "text": "Follow Ashley River Road (SC-61) to Cook's Cross Road, then Bacons Bridge Road, Old Trolley Road (SC-165), East Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "20",
+   "minutes": "34"
+  },
+  "james-island": {
+   "from": "James Island",
+   "text": "Follow Folly Road (SC-171) to SC-30, then Courtenay Drive, Septima P. Clark Parkway (US-17), I-26, North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "31",
+   "minutes": "44"
+  },
+  "johns-island": {
+   "from": "Johns Island",
+   "text": "Follow Inez Way to Cape Road, then Plow Ground Road, Bohicket Road, Main Road, Bees Ferry Road (S-10-57), Ashley River Road (SC-61), Cook's Cross Road, Bacons Bridge Road, Old Trolley Road (SC-165), East Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "31",
+   "minutes": "58"
+  },
+  "ravenel": {
+   "from": "Ravenel",
+   "text": "Follow SC-165 to Bacons Bridge Road, then Old Trolley Road (SC-165), East Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "21",
+   "minutes": "38"
+  },
+  "hollywood": {
+   "from": "Hollywood",
+   "text": "Follow SC-162 to SC-165, then Bacons Bridge Road, Old Trolley Road (SC-165), East Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "23",
+   "minutes": "41"
+  },
+  "reevesville": {
+   "from": "Reevesville",
+   "text": "Follow Main Street to Johnston Avenue (US-78), then North Cedar Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "33",
+   "minutes": "52"
+  },
+  "carnes-crossroads": {
+   "from": "Carnes Crossroads",
+   "text": "Follow 3rd Avenue to Saint James Avenue (US-176), then North Main Street (US-17A), West 2nd South Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "7.5",
+   "minutes": "14"
+  },
+  "jedburg": {
+   "from": "Jedburg",
+   "text": "Follow Mallard Road to West 5th North Street (US-78), then North Cedar Street, Central Avenue, South Laurel Street, West Carolina Avenue, and turn onto Linwood Lane.",
+   "miles": "6.1",
+   "minutes": "11"
+  }
+ },
+ "places": {
+  "summerville": {
+   "county_note": "Dorchester County, Berkeley County, Charleston County",
+   "status": "Incorporated town",
+   "zips": [
+    "29483",
+    "29485",
+    "29486"
+   ],
+   "population": "50,915",
+   "landmarks": [
+    "Azalea Park (site of the Flowertown Festival, held since 1972/73)",
+    "Hutchinson Square (downtown square on S Main St, restaurants/shops, Third Thursday events)",
+    "Summerville Historic District (NRHP) / Colonial Dorchester State Historic Site / Summerville Medical Center"
+   ]
+  },
+  "goose-creek": {
+   "county_note": "Berkeley County",
+   "status": "Incorporated city",
+   "zips": [
+    "29445"
+   ],
+   "population": "45,946",
+   "landmarks": [
+    "Joint Base Charleston - Naval Weapons Station / Naval Support Activity Charleston (most of it is in Goose Creek)",
+    "Otranto Plantation Indigo Vats & St. James Church (NRHP)",
+    "Marguerite H. Brown Municipal Center (City Hall, police, court) at 519 N Goose Creek Blvd"
+   ]
+  },
+  "ladson": {
+   "county_note": "Berkeley County, Charleston County, Dorchester County",
+   "status": "Census-designated place (unincorporated), spanning three counties",
+   "zips": [
+    "29456"
+   ],
+   "population": "15,550",
+   "landmarks": [
+    "Exchange Park Fairgrounds, 9850 Hwy 78 - home of the Coastal Carolina Fair (since 1924)",
+    "College Park Road / I-26 exit 203",
+    "US-78 & Ladson Rd/College Park Rd crossroads"
+   ]
+  },
+  "north-charleston": {
+   "county_note": "Charleston County, Berkeley County, Dorchester County",
+   "status": "Incorporated city",
+   "zips": [
+    "29405",
+    "29406",
+    "29410",
+    "29415",
+    "29418",
+    "29419",
+    "29420",
+    "29423"
+   ],
+   "population": "114,852",
+   "landmarks": [
+    "North Charleston Coliseum / Riverfront Park (former Navy base)",
+    "Charleston International Airport / Joint Base Charleston / Boeing 787 plant",
+    "Park Circle; Charleston Southern University; Trident Technical College; Tanger Outlets (4840 Tanger Outlet Blvd, I-26 exit 213)"
+   ]
+  },
+  "moncks-corner": {
+   "county_note": "Berkeley County",
+   "status": "Incorporated town; Berkeley County seat",
+   "zips": [
+    "29430",
+    "29461"
+   ],
+   "population": "13,297",
+   "landmarks": [
+    "Berkeley County Courthouse, 300-B California Ave",
+    "Santee Cooper headquarters; Lake Moultrie to the north",
+    "Biggin Church Ruins, Mulberry Plantation, Santee Canal (NRHP)"
+   ]
+  },
+  "hanahan": {
+   "county_note": "Berkeley County",
+   "status": "Incorporated city",
+   "zips": [
+    "29410"
+   ],
+   "population": "20,325",
+   "landmarks": [
+    "Naval Weapons Station Charleston portions incl. Naval Consolidated Brig and Nuclear Power School",
+    "Tanner Plantation (residential/commercial district); Yeamans Hall Club",
+    "Goose Creek Reservoir; Otranto Plantation (NRHP)"
+   ]
+  },
+  "charleston": {
+   "county_note": "Charleston County, Berkeley County",
+   "status": "Incorporated city; Charleston County seat",
+   "zips": [
+    "29401",
+    "29407",
+    "29409",
+    "29410",
+    "29412",
+    "29420",
+    "29422",
+    "29425",
+    "29492"
+   ],
+   "population": "150,227",
+   "landmarks": [
+    "Historic City Market; Fort Sumter National Monument",
+    "The Battery and Rainbow Row",
+    "Medical University of South Carolina (MUSC); College of Charleston; Charleston County Judicial Center at 100 Broad St"
+   ]
+  },
+  "mount-pleasant": {
+   "county_note": "Charleston County",
+   "status": "Incorporated town",
+   "zips": [
+    "29429",
+    "29464",
+    "29465",
+    "29466"
+   ],
+   "population": "90,801",
+   "landmarks": [
+    "Patriots Point Naval & Maritime Museum (USS Yorktown) at the foot of the Arthur Ravenel Jr. Bridge",
+    "Shem Creek; Old Village / Pitt Street Bridge",
+    "Boone Hall Plantation; Coleman Blvd (SC-703) corridor"
+   ]
+  },
+  "ridgeville": {
+   "county_note": "Dorchester County",
+   "status": "Incorporated town",
+   "zips": [
+    "29472"
+   ],
+   "population": "1,672",
+   "landmarks": [
+    "Givhans Ferry State Park (988 acres on the Edisto River near Ridgeville)",
+    "Volvo Cars USA plant / Camp Hall Commerce Park (Ridgeville mailing address; site is in Berkeley County)",
+    "SC-27 & US-78 junction; I-26 exit 187 (SC-27)"
+   ]
+  },
+  "st-george": {
+   "county_note": "Dorchester County",
+   "status": "Incorporated town; Dorchester County seat",
+   "zips": [
+    "29477"
+   ],
+   "population": "1,843",
+   "landmarks": [
+    "Dorchester County Courthouse, 5200 E Jim Bilton Blvd (clerk, probate, magistrate)",
+    "World Grits Festival (annual since 1986)",
+    "Indian Fields Methodist Campground, Appleby's Methodist Church, Carroll Place (NRHP)"
+   ]
+  },
+  "harleyville": {
+   "county_note": "Dorchester County",
+   "status": "Incorporated town",
+   "zips": [
+    "29448"
+   ],
+   "population": "666",
+   "landmarks": [
+    "St. Paul Camp Ground (NRHP, 1998)",
+    "Audubon's Francis Beidler Forest / Four Holes Swamp boardwalks just outside town",
+    "US-178 through town; SC-453 north to I-26 exit 177"
+   ]
+  },
+  "walterboro": {
+   "county_note": "Colleton County",
+   "status": "Incorporated city; Colleton County seat",
+   "zips": [
+    "29488"
+   ],
+   "population": "5,544",
+   "landmarks": [
+    "Colleton County Courthouse, 101 Hampton Street",
+    "University of South Carolina Salkehatchie campus",
+    "Lowcountry Regional Airport (former WWII airfield used by Tuskegee Airmen trainees)"
+   ]
+  },
+  "knightsville": {
+   "county_note": "Dorchester County",
+   "status": "Unincorporated community straddling the Summerville town line",
+   "zips": [
+    "29483"
+   ],
+   "population": null,
+   "landmarks": [
+    "Central Avenue & Orangeburg Road crossroads",
+    "Knightsville Elementary School (Dorchester School District Two), 847 Orangeburg Rd, Summerville 29483",
+    "SCDOT 1939 county map shows the community (roadsidethoughts.com)"
+   ]
+  },
+  "sangaree": {
+   "county_note": "Berkeley County",
+   "status": "Census-designated place (unincorporated)",
+   "zips": [
+    "29486"
+   ],
+   "population": "7,781",
+   "landmarks": [
+    "Berkeley County satellite office, 102 Sangaree Park Court, Court 1, Summerville 29483",
+    "Off N Main St / US-17A just east of I-26 exit 199",
+    "Sangaree subdivision"
+   ]
+  },
+  "nexton": {
+   "county_note": "Berkeley County",
+   "status": "Master-planned community inside the Summerville town limits",
+   "zips": [
+    "29483",
+    "29486"
+   ],
+   "population": null,
+   "landmarks": [
+    "Nexton Square",
+    "Nexton Parkway / I-26 exit 197",
+    "Brighton Park Boulevard & One Nexton"
+   ]
+  },
+  "cane-bay": {
+   "county_note": "Berkeley County",
+   "status": "Master-planned community, unincorporated Berkeley County",
+   "zips": [
+    "29486"
+   ],
+   "population": null,
+   "landmarks": [
+    "Cane Bay Family YMCA (opened 2019; first YMCA in the US with a county library inside)",
+    "Cane Bay High School (2008), Cane Bay Middle (2012), Cane Bay Elementary (2009) - Berkeley County School District",
+    "Cane Bay Blvd at US-176 (State Rd) entrance"
+   ]
+  },
+  "lincolnville": {
+   "county_note": "Charleston County",
+   "status": "Incorporated town",
+   "zips": [
+    "29485"
+   ],
+   "population": "1,147",
+   "landmarks": [
+    "Founded 1867 by seven African-American men incl. Rev. Richard Harvey Cain, on the South Carolina Railroad stop known as 'Pump Pond'",
+    "Railroad Avenue / rail corridor (OSRM route)",
+    "Adjacent to Summerville's E Richardson Ave corridor (2.5 mi from office)"
+   ]
+  },
+  "daniel-island": {
+   "county_note": "Berkeley County",
+   "status": "Neighborhood of the City of Charleston",
+   "zips": [
+    "29492"
+   ],
+   "population": null,
+   "landmarks": [
+    "Credit One Stadium (tennis; Volvo Car Open) and the Daniel Island Club (Fazio/Rees Jones golf)",
+    "Bishop England High School; Daniel Island School",
+    "Between the Cooper and Wando rivers; eight neighborhood parks incl. Smythe Park"
+   ]
+  },
+  "west-ashley": {
+   "county_note": "Charleston County",
+   "status": "Area of the City of Charleston",
+   "zips": [
+    "29407",
+    "29414"
+   ],
+   "population": null,
+   "landmarks": [
+    "Citadel Mall (region's largest indoor mall) and Bon Secours St. Francis Hospital",
+    "Charles Towne Landing State Historic Site (1670 first settlement)",
+    "Ashley River Road (SC-61) plantations: Magnolia Plantation & Gardens, Drayton Hall, Middleton Place; West Ashley Greenway"
+   ]
+  },
+  "james-island": {
+   "county_note": "Charleston County",
+   "status": "Town of James Island and City of Charleston",
+   "zips": [
+    "29412"
+   ],
+   "population": "11,621",
+   "landmarks": [
+    "McLeod Plantation Historic Site (Charleston County Parks)",
+    "Fort Johnson (site of the first shot of the Civil War)",
+    "Riverland Terrace (oak-lined entrance); neighborhoods incl. Stiles Point, Harbor Woods"
+   ]
+  },
+  "johns-island": {
+   "county_note": "Charleston County",
+   "status": "Largely unincorporated, with City of Charleston portions",
+   "zips": [
+    "29455"
+   ],
+   "population": null,
+   "landmarks": [
+    "Angel Oak (400-500-year-old live oak)",
+    "Charleston Executive Airport (general aviation)",
+    "Stono River / Legareville; gateway to Kiawah and Seabrook islands"
+   ]
+  },
+  "ravenel": {
+   "county_note": "Charleston County",
+   "status": "Incorporated town",
+   "zips": [
+    "29470"
+   ],
+   "population": "2,542",
+   "landmarks": [
+    "Caw Caw Interpretive Center (Charleston County Parks), 5200 Savannah Hwy - 660-acre former rice plantation preserve",
+    "US-17 (Savannah Highway) corridor in western Charleston County",
+    "Borders the Town of Hollywood to the south"
+   ]
+  },
+  "hollywood": {
+   "county_note": "Charleston County",
+   "status": "Incorporated town",
+   "zips": [
+    "29449"
+   ],
+   "population": "5,339",
+   "landmarks": [
+    "Between the Stono and Edisto rivers; bordered by Ravenel (N) and Meggett (S)",
+    "Baptist Hill High School, 5117 Baptist Hill Rd (est. 1948)",
+    "Old Wide Awake Park (Serenity Park) waterfront park; The Links at Stono Ferry golf course"
+   ]
+  },
+  "reevesville": {
+   "county_note": "Dorchester County",
+   "status": "Incorporated town",
+   "zips": [
+    "29471"
+   ],
+   "population": "201",
+   "landmarks": [
+    "Agrarian community between Cattle Creek and Polk Swamp near the Edisto River",
+    "Part of the Charleston-North Charleston-Summerville MSA",
+    "(no further landmarks verified)"
+   ]
+  },
+  "jedburg": {
+   "county_note": "Berkeley County",
+   "status": "Unincorporated community",
+   "zips": [
+    "29483",
+    "29486"
+   ],
+   "population": null,
+   "landmarks": [
+    "I-26 exit 194 (Jedburg Road) diamond interchange with Flying J travel center (opened 2018)",
+    "Jedburg Road/I-26 interchange widening project (Berkeley County)",
+    "Sheep Island community/cemetery (Find a Grave - secondary source)"
+   ]
+  },
+  "carnes-crossroads": {
+   "county_note": "Berkeley County",
+   "status": "Master-planned community, unincorporated Berkeley County",
+   "zips": [
+    "29486"
+   ],
+   "population": null,
+   "landmarks": [
+    "Roper St. Francis Berkeley Hospital (opened 2019, 50 beds, 24-hour ER) on the community's medical campus",
+    "'Agrihood' with a working farm; NAHB Community of the Year (2026)",
+    "Intersection of US-17A and US-176 (State Rd)"
+   ]
+  }
+ },
+ "statutes": {
+  "will_execution": {
+   "label": "S.C. Code § 62-2-502",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php"
+  },
+  "self_proved": {
+   "label": "S.C. Code § 62-2-503",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php"
+  },
+  "intestacy": {
+   "label": "S.C. Code §§ 62-2-102 and 62-2-103",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php"
+  },
+  "elective_share": {
+   "label": "S.C. Code § 62-2-201",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php"
+  },
+  "will_delivery": {
+   "label": "S.C. Code § 62-2-901",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php"
+  },
+  "creditor_period": {
+   "label": "S.C. Code § 62-3-801",
+   "url": "https://www.scstatehouse.gov/code/t62c003.php"
+  },
+  "small_estate": {
+   "label": "S.C. Code § 62-3-1201",
+   "url": "https://www.scstatehouse.gov/code/t62c003.php"
+  },
+  "estate_time_limit": {
+   "label": "S.C. Code § 62-3-108",
+   "url": "https://www.scstatehouse.gov/code/t62c003.php"
+  },
+  "guardianship": {
+   "label": "S.C. Code Title 62, Article 5",
+   "url": "https://www.scstatehouse.gov/code/t62c005.php"
+  },
+  "hcpoa": {
+   "label": "S.C. Code §§ 62-5-503 and 62-5-504",
+   "url": "https://www.scstatehouse.gov/code/t62c005.php"
+  },
+  "trust_code": {
+   "label": "S.C. Code § 62-7-813",
+   "url": "https://www.scstatehouse.gov/code/t62c007.php"
+  },
+  "poa_act": {
+   "label": "S.C. Code Title 62, Article 8 (Uniform Power of Attorney Act)",
+   "url": "https://www.scstatehouse.gov/code/t62c008.php"
+  },
+  "living_will_act": {
+   "label": "S.C. Code § 44-77-10 et seq. (Death with Dignity Act)",
+   "url": "https://www.scstatehouse.gov/code/t44c077.php"
+  },
+  "probate_fees": {
+   "label": "S.C. Code § 8-21-770",
+   "url": "https://www.scstatehouse.gov/code/t08c021.php"
+  },
+  "pti": {
+   "label": "S.C. Code § 17-22-10 et seq.",
+   "url": "https://www.scstatehouse.gov/code/t17c022.php"
+  },
+  "expungement": {
+   "label": "Act 254 of 2018; S.C. Code § 17-22-910 et seq.",
+   "url": "https://www.scstatehouse.gov/sess122_2017-2018/bills/3209.htm"
+  },
+  "expungement_misdemeanor": {
+   "label": "S.C. Code § 22-5-910",
+   "url": "https://www.scstatehouse.gov/code/t22c005.php"
+  },
+  "yoa": {
+   "label": "S.C. Code § 22-5-920",
+   "url": "https://www.scstatehouse.gov/code/t22c005.php"
+  },
+  "conditional_discharge": {
+   "label": "S.C. Code § 44-53-450",
+   "url": "https://www.scstatehouse.gov/code/t44c053.php"
+  },
+  "drugs": {
+   "label": "S.C. Code § 44-53-370",
+   "url": "https://www.scstatehouse.gov/code/t44c053.php"
+  },
+  "cdv": {
+   "label": "S.C. Code § 16-25-20",
+   "url": "https://www.scstatehouse.gov/code/t16c025.php"
+  },
+  "bond": {
+   "label": "S.C. Code § 22-5-510",
+   "url": "https://www.scstatehouse.gov/code/t22c005.php"
+  },
+  "warrants": {
+   "label": "S.C. Code § 22-5-110",
+   "url": "https://www.scstatehouse.gov/code/t22c005.php"
+  },
+  "points": {
+   "label": "S.C. Code § 56-1-720",
+   "url": "https://www.scstatehouse.gov/code/t56c001.php"
+  },
+  "dui": {
+   "label": "S.C. Code § 56-5-2930",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  "duac": {
+   "label": "S.C. Code § 56-5-2933",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  "implied_consent": {
+   "label": "S.C. Code §§ 56-5-2950 and 56-5-2951",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  "dui_video": {
+   "label": "S.C. Code § 56-5-2953",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  }
+ },
+ "links": {
+  "pc_summerville": {
+   "label": "The Post and Courier – Summerville",
+   "url": "https://www.postandcourier.com/summerville/",
+   "nofollow": false
+  },
+  "pc_journal_scene": {
+   "label": "Summerville Journal Scene (Post and Courier)",
+   "url": "https://www.postandcourier.com/journal-scene/",
+   "nofollow": false
+  },
+  "berkeley_independent": {
+   "label": "The Berkeley Independent (Post and Courier)",
+   "url": "https://www.postandcourier.com/berkeley-independent/",
+   "nofollow": false
+  },
+  "moultrie_news": {
+   "label": "Moultrie News (Post and Courier)",
+   "url": "https://www.postandcourier.com/moultrie-news/",
+   "nofollow": false
+  },
+  "live5": {
+   "label": "Live 5 News (WCSC)",
+   "url": "https://www.live5news.com/news/",
+   "nofollow": false
+  },
+  "abcnews4": {
+   "label": "ABC News 4 (WCIV) – local news",
+   "url": "https://abcnews4.com/news/local",
+   "nofollow": false
+  },
+  "wcbd": {
+   "label": "WCBD News 2 – local news",
+   "url": "https://www.counton2.com/news/local-news/",
+   "nofollow": false
+  },
+  "city_paper": {
+   "label": "Charleston City Paper – news",
+   "url": "https://charlestoncitypaper.com/category/news/",
+   "nofollow": false
+  },
+  "nextdoor_summerville": {
+   "label": "Nextdoor – Summerville, SC",
+   "url": "https://nextdoor.com/city/summerville--sc/",
+   "nofollow": true
+  },
+  "nextdoor_goose_creek": {
+   "label": "Nextdoor – Goose Creek, SC",
+   "url": "https://nextdoor.com/city/goose-creek--sc/",
+   "nofollow": true
+  },
+  "nextdoor_ladson": {
+   "label": "Nextdoor – Ladson, SC",
+   "url": "https://nextdoor.com/city/ladson--sc/",
+   "nofollow": true
+  },
+  "nextdoor_moncks_corner": {
+   "label": "Nextdoor – Moncks Corner, SC",
+   "url": "https://nextdoor.com/city/moncks-corner--sc/",
+   "nofollow": true
+  },
+  "nextdoor_north_charleston": {
+   "label": "Nextdoor – North Charleston, SC",
+   "url": "https://nextdoor.com/city/north-charleston--sc/",
+   "nofollow": true
+  },
+  "reddit_charleston": {
+   "label": "r/Charleston on Reddit",
+   "url": "https://www.reddit.com/r/Charleston/",
+   "nofollow": true
+  },
+  "reddit_summerville": {
+   "label": "r/SummervilleSC on Reddit",
+   "url": "https://www.reddit.com/r/SummervilleSC/",
+   "nofollow": true
+  },
+  "reddit_southcarolina": {
+   "label": "r/southcarolina on Reddit",
+   "url": "https://www.reddit.com/r/southcarolina/",
+   "nofollow": true
+  },
+  "dorchester_news": {
+   "label": "Dorchester County – news and notices",
+   "url": "https://www.dorchestercountysc.gov/services/advanced-components/news-list",
+   "nofollow": false
+  },
+  "berkeley_newsroom": {
+   "label": "Berkeley County – newsroom",
+   "url": "https://berkeleycountysc.gov/newsroom/",
+   "nofollow": false
+  },
+  "summerville_news": {
+   "label": "Town of Summerville – news flash",
+   "url": "https://www.summervillesc.gov/CivicAlerts.aspx",
+   "nofollow": false
+  },
+  "sccourts_roster": {
+   "label": "SC Judicial Branch – court roster search",
+   "url": "https://www.sccourts.org/court-roster-search/",
+   "nofollow": false
+  },
+  "sccourts_probate_forms": {
+   "label": "SC Judicial Branch – court forms",
+   "url": "https://www.sccourts.org/forms/",
+   "nofollow": false
+  },
+  "scemd": {
+   "label": "South Carolina Emergency Management Division",
+   "url": "https://www.scemd.org/",
+   "nofollow": false
+  },
+  "dorchester_emd": {
+   "label": "Dorchester County Emergency Management",
+   "url": "https://www.dorchestercountysc.gov/government/public-safety/emergency-management",
+   "nofollow": false
+  },
+  "trident_aging": {
+   "label": "Trident Area Agency on Aging",
+   "url": "https://www.tridentaaa.org/",
+   "nofollow": false
+  },
+  "dd2": {
+   "label": "Dorchester School District Two",
+   "url": "https://www.ddtwo.org/",
+   "nofollow": false
+  },
+  "my_sisters_house": {
+   "label": "My Sister's House (24-hour line and shelter)",
+   "url": "https://mysistershouse.org/",
+   "nofollow": false
+  },
+  "summerville_pd": {
+   "label": "Summerville Police Department",
+   "url": "https://www.summervillepolice.com/",
+   "nofollow": false
+  },
+  "dorchester_sheriff": {
+   "label": "Dorchester County Sheriff's Office",
+   "url": "https://www.dorchestercountysc.gov/government/public-safety/sheriff-s-office",
+   "nofollow": false
+  },
+  "dorchester_probate_site": {
+   "label": "Dorchester County Probate Court",
+   "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/probate-court",
+   "nofollow": false
+  },
+  "berkeley_probate_site": {
+   "label": "Berkeley County Probate Court",
+   "url": "https://berkeleycountysc.gov/dept/probate/",
+   "nofollow": false
+  },
+  "charleston_probate_site": {
+   "label": "Charleston County Probate Court",
+   "url": "https://www.charlestoncounty.gov/departments/probate/",
+   "nofollow": false
+  },
+  "dorchester_county": {
+   "label": "Dorchester County government",
+   "url": "https://www.dorchestercountysc.gov/",
+   "nofollow": false
+  },
+  "berkeley_county": {
+   "label": "Berkeley County government",
+   "url": "https://berkeleycountysc.gov/",
+   "nofollow": false
+  }
+ }
+}

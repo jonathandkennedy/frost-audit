@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Frost Law Group">
+  <rect width="96" height="96" rx="20" fill="#0f2a4a"/>
+  <g fill="none" stroke="#7fb3dd" stroke-width="2.2" stroke-linecap="round" opacity=".9">
+    <path d="M48 14v68M18.6 31l58.8 34M18.6 65l58.8-34"/>
+    <path d="M48 22l-6 6M48 22l6 6M48 74l-6-6M48 74l6-6M24.7 34.5l2.2 8.2M24.7 34.5l8.2-2.2M71.3 61.5l-2.2-8.2M71.3 61.5l-8.2 2.2M24.7 61.5l8.2 2.2M24.7 61.5l2.2-8.2M71.3 34.5l-8.2-2.2M71.3 34.5l-2.2 8.2"/>
+  </g>
+  <circle cx="48" cy="48" r="21" fill="#0f2a4a" stroke="#c9a54a" stroke-width="2.5"/>
+  <text x="48" y="59" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="32" fill="#ffffff">F</text>
+</svg>

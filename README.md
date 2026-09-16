@@ -19,6 +19,18 @@ plan (hub-and-spoke maps), high-intent and long-tail keyword targets, the fan-ou
 channel playbook (YouTube, LinkedIn, Instagram, Google Business Profile, Yelp), a 90-day plan, a
 measurement plan, and appendices (data tables, redirect map, proposed title tags, glossary).
 
+## Website rebuild
+
+`website/` is a deployable static rebuild of frostlawgroupsc.com (78 pages) generated from `site/`:
+
+```bash
+python3 site/build_local_data.py       # optional: regenerate site/content/local_data.json from facts.json (uses OSRM for routes)
+python3 site/build_site.py             # writes website/ (production build with sitemap, robots.txt, .htaccess, llms.txt)
+python3 site/build_site.py --preview out.html   # single-file clickable preview (used for the shared artifact)
+```
+
+Content lives in `site/content/` (`core.py`, `estate.py`, `probate.py`, `criminal.py`, `cities.py`, `posts.py`, `firm.py` for name/address/links, `meta.py` for titles and descriptions). `website/BUILD-NOTES.md` explains the design decisions, the recommendations (blog authorship, the "Frost First" tagline, the no-DUI home page) and the pre-launch checklist.
+
 ## Data
 
 `data/` holds the Search Console exports the report is built from, and `data/market/` holds the market-data exports (keyword volumes and ad prices, map-pack snapshots, competitor visibility and domain/link benchmarks, competitor ranked keywords):

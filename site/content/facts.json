@@ -1,0 +1,3588 @@
+{
+ "meta": {
+  "generated": "2026-09-16",
+  "purpose": "Local facts for Frost Law Group city/service-area and directions pages",
+  "method": "Each item was checked against the URL(s) in its 'source'/'sources' field on 2026-09-16. Items that could not be confirmed are marked 'unverified'. Statute texts were downloaded from scstatehouse.gov and quoted from the current code. Geodata: OpenStreetMap (Nominatim, raw OSM API), OSRM demo router, U.S. Census Bureau geocoder.",
+  "limitations": [
+   "Overpass API (overpass-api.de and mirrors) was unreachable through the sandbox egress; the raw OSM map API was used instead.",
+   "reddit.com, counton2.com, berkeleycountysc.gov/newsroom, hmdb.org and sheriff.berkeleycountysc.gov block automated fetches; those items are marked accordingly.",
+   "api.census.gov requires an API key here ('Missing Key'); 2020 populations therefore come from Wikipedia infoboxes citing the 2020 Census, while county/place/ZCTA were confirmed with the Census geocoder.",
+   "OSRM travel times are free-flow estimates, not live traffic."
+  ],
+  "corrections_to_task_brief": [
+   "Dorchester County Detention Center is at 220 Hodge Rd, Summerville (not St. George).",
+   "§ 62-2-901 will-delivery window is 30 days, not 10 days.",
+   "§ 62-3-1201 small-estate ceiling is now $45,000 (raised from $25,000 effective May 8, 2025).",
+   "HCPOA execution requirements are in § 62-5-503; § 62-5-504 is the form.",
+   "No Summerville office of the Dorchester County Probate Court is listed on the county's official page as of 2026-09-16.",
+   "I-26 exit 199 is signed as 199A/199B at US-17A (N Main St); exit 197 (Nexton Pkwy) is signed 197/197A/197B."
+  ]
+ },
+ "office": {
+  "firm": {
+   "name": "Frost Law Group, LLC",
+   "street": "128 Linwood Ln",
+   "city": "Summerville",
+   "state": "SC",
+   "zip": "29483",
+   "phone": "(843) 419-6653",
+   "practice_areas": [
+    "estate planning",
+    "probate",
+    "criminal defense"
+   ],
+   "source": "client-provided in task brief; firm name/phone NOT independently verified in this research"
+  },
+  "geocode": {
+   "lat": 33.0117332,
+   "lon": -80.1891496,
+   "osm_type": "way",
+   "osm_id": 12356084,
+   "display_name": "128, Linwood Lane, Pineforest Inn, Summerville, Dorchester County, South Carolina, 29483, United States",
+   "source": "https://nominatim.openstreetmap.org/search?q=128+Linwood+Ln,+Summerville,+SC+29483&format=json&addressdetails=1",
+   "cross_check": {
+    "census_geocoder_match": "128 LINWOOD LN, SUMMERVILLE, SC, 29483 at 33.01167,-80.18917",
+    "source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=128+Linwood+Ln,+Summerville,+SC&benchmark=Public_AR_Current&format=json"
+   }
+  },
+  "jurisdiction": {
+   "county": "Dorchester County",
+   "incorporated_place": "Summerville town (inside town limits)",
+   "zcta_2020": "29483",
+   "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1891496&y=33.0117332&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+  },
+  "street_context": {
+   "linwood_lane_connects_to": [
+    "President Circle",
+    "Salisbury Drive",
+    "West Carolina Avenue"
+   ],
+   "osm_neighbourhood_label": "Pineforest Inn (OSM hamlet/neighbourhood tag; the historic Pine Forest Inn resort site)",
+   "pine_forest_inn_marker": {
+    "text": "Historical marker 'Pine Forest Inn' at the intersection of Salisbury Drive and Linwood Lane (near 114 Salisbury Dr, Summerville 29483); inn opened 1891/92, hosted Presidents T. Roosevelt (1902) and Taft (1908), torn down c. 1960",
+    "source": "https://www.hmdb.org/m.asp?m=224490 (content taken from search-engine summary; hmdb.org returned 403 to automated fetch - verify manually)",
+    "status": "partially verified"
+   },
+   "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+  },
+  "side_of_town": {
+   "summary": "The office sits in the south-west quadrant of Summerville's historic core ('Old Summerville'), just off West Carolina Avenue, about 0.9 mi (1.4 km) south-west of Town Hall (200 S Main St) and Hutchinson Square, roughly 0.3 mi north-west of South Main Street (US-17A), 0.6 mi north-west of Berlin G. Myers Parkway, about 0.8 mi north of the Bacons Bridge Rd (SC-165)/Old Trolley Rd junction, 1.5 mi south of US-78 (W 5th North St), 3 mi south-west of I-26 exits 199A/B, and roughly 3.2 mi north of Dorchester Road (SC-642).",
+   "basis": "straight-line distances computed from OSM/Nominatim geometry (see roads_within_1500m, farther_roads, i26_exits, landmarks)"
+  },
+  "roads_within_1500m": [
+   {
+    "name": "Linwood Lane",
+    "ref": null,
+    "osm_highway_class": "residential",
+    "min_straight_line_m": 11,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 33.01164,
+     "lon": -80.189111
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Gadsden Street",
+    "ref": null,
+    "osm_highway_class": "residential",
+    "min_straight_line_m": 85,
+    "direction_from_office": "NW",
+    "nearest_point": {
+     "lat": 33.012434,
+     "lon": -80.189523
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "West Carolina Avenue",
+    "ref": null,
+    "osm_highway_class": "residential",
+    "min_straight_line_m": 124,
+    "direction_from_office": "E",
+    "nearest_point": {
+     "lat": 33.01166,
+     "lon": -80.187821
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Sumter Avenue",
+    "ref": null,
+    "osm_highway_class": "residential",
+    "min_straight_line_m": 142,
+    "direction_from_office": "E",
+    "nearest_point": {
+     "lat": 33.012209,
+     "lon": -80.187737
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Salisbury Drive",
+    "ref": null,
+    "osm_highway_class": "residential",
+    "min_straight_line_m": 240,
+    "direction_from_office": "W",
+    "nearest_point": {
+     "lat": 33.012079,
+     "lon": -80.191689
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "South Laurel Street",
+    "ref": null,
+    "osm_highway_class": "tertiary",
+    "min_straight_line_m": 294,
+    "direction_from_office": "NE",
+    "nearest_point": {
+     "lat": 33.013948,
+     "lon": -80.187424
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "South Main Street",
+    "ref": "US 17 Alternate",
+    "osm_highway_class": "primary",
+    "min_straight_line_m": 488,
+    "direction_from_office": "SE",
+    "nearest_point": {
+     "lat": 33.008677,
+     "lon": -80.185387
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "East Carolina Avenue",
+    "ref": null,
+    "osm_highway_class": "primary",
+    "min_straight_line_m": 553,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 33.00694,
+     "lon": -80.187577
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Central Avenue",
+    "ref": null,
+    "osm_highway_class": "tertiary",
+    "min_straight_line_m": 717,
+    "direction_from_office": "N",
+    "nearest_point": {
+     "lat": 33.017794,
+     "lon": -80.191781
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Sumter Avenue",
+    "ref": null,
+    "osm_highway_class": "tertiary",
+    "min_straight_line_m": 759,
+    "direction_from_office": "NE",
+    "nearest_point": {
+     "lat": 33.016081,
+     "lon": -80.182869
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "West 5th South Street",
+    "ref": null,
+    "osm_highway_class": "tertiary",
+    "min_straight_line_m": 760,
+    "direction_from_office": "NE",
+    "nearest_point": {
+     "lat": 33.0159816,
+     "lon": -80.1827698
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "South Main Street",
+    "ref": "US 17 Alt",
+    "osm_highway_class": "primary",
+    "min_straight_line_m": 793,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 33.0046432,
+     "lon": -80.1900827
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "East 6th South Street",
+    "ref": null,
+    "osm_highway_class": "tertiary",
+    "min_straight_line_m": 815,
+    "direction_from_office": "E",
+    "nearest_point": {
+     "lat": 33.0129275,
+     "lon": -80.1805214
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": null,
+    "ref": "SC 165",
+    "osm_highway_class": "primary_link",
+    "min_straight_line_m": 913,
+    "direction_from_office": "SE",
+    "nearest_point": {
+     "lat": 33.0062752,
+     "lon": -80.1818322
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Berlin G Myers Parkway",
+    "ref": "SC 91;US 17 Alternate Truck",
+    "osm_highway_class": "primary",
+    "min_straight_line_m": 925,
+    "direction_from_office": "SE",
+    "nearest_point": {
+     "lat": 33.0066059,
+     "lon": -80.1813355
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Berlin G Myers Parkway",
+    "ref": "SC 91;SC 165;US 17 Alternate Truck",
+    "osm_highway_class": "primary",
+    "min_straight_line_m": 927,
+    "direction_from_office": "SE",
+    "nearest_point": {
+     "lat": 33.0071803,
+     "lon": -80.1808263
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Bacons Bridge Road",
+    "ref": "SC 165",
+    "osm_highway_class": "secondary",
+    "min_straight_line_m": 1264,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 33.0011677,
+     "lon": -80.1841596
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Old Trolley Road",
+    "ref": "SC 165",
+    "osm_highway_class": "primary",
+    "min_straight_line_m": 1264,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 33.0011677,
+     "lon": -80.1841596
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "South Cedar Street",
+    "ref": null,
+    "osm_highway_class": "tertiary",
+    "min_straight_line_m": 1264,
+    "direction_from_office": "NE",
+    "nearest_point": {
+     "lat": 33.0186856,
+     "lon": -80.1784286
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": null,
+    "ref": "SC 165",
+    "osm_highway_class": "secondary_link",
+    "min_straight_line_m": 1421,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 32.9998988,
+     "lon": -80.1834069
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Old Trolley Road",
+    "ref": null,
+    "osm_highway_class": "primary",
+    "min_straight_line_m": 1421,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 32.9998988,
+     "lon": -80.1834069
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "North Main Street",
+    "ref": "US 17 Alternate",
+    "osm_highway_class": "primary",
+    "min_straight_line_m": 1476,
+    "direction_from_office": "NE",
+    "nearest_point": {
+     "lat": 33.0188851,
+     "lon": -80.1758149
+    },
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   }
+  ],
+  "farther_roads": [
+   {
+    "name": "West Richardson Avenue",
+    "min_straight_line_m": 1344,
+    "min_straight_line_mi": 0.84,
+    "direction_from_office": "NE",
+    "nearest_point": {
+     "lat": 33.0212361,
+     "lon": -80.1802399
+    },
+    "source": "Nominatim polygon_geojson geometry (https://nominatim.openstreetmap.org/search?polygon_geojson=1&q=<road>, Summerville, South Carolina), min distance computed locally"
+   },
+   {
+    "name": "Dorchester Road (SC-642)",
+    "min_straight_line_m": 5193,
+    "min_straight_line_mi": 3.23,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 32.9652117,
+     "lon": -80.1940645
+    },
+    "source": "Nominatim polygon_geojson geometry (https://nominatim.openstreetmap.org/search?polygon_geojson=1&q=<road>, Summerville, South Carolina), min distance computed locally"
+   },
+   {
+    "name": "West 5th North Street (US-78)",
+    "min_straight_line_m": 2487,
+    "min_straight_line_mi": 1.55,
+    "direction_from_office": "N",
+    "nearest_point": {
+     "lat": 33.0340204,
+     "lon": -80.1913749
+    },
+    "source": "Nominatim polygon_geojson geometry (https://nominatim.openstreetmap.org/search?polygon_geojson=1&q=<road>, Summerville, South Carolina), min distance computed locally"
+   },
+   {
+    "name": "Ladson Road",
+    "min_straight_line_m": 6290,
+    "min_straight_line_mi": 3.91,
+    "direction_from_office": "SE",
+    "nearest_point": {
+     "lat": 32.9650868,
+     "lon": -80.1510006
+    },
+    "source": "Nominatim polygon_geojson geometry (https://nominatim.openstreetmap.org/search?polygon_geojson=1&q=<road>, Summerville, South Carolina), min distance computed locally"
+   },
+   {
+    "name": "Old Trolley Road",
+    "min_straight_line_m": 1264,
+    "min_straight_line_mi": 0.79,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 33.0011677,
+     "lon": -80.1841596
+    },
+    "source": "Nominatim polygon_geojson geometry (https://nominatim.openstreetmap.org/search?polygon_geojson=1&q=<road>, Summerville, South Carolina), min distance computed locally"
+   },
+   {
+    "name": "Bacons Bridge Road (SC-165)",
+    "min_straight_line_m": 1574,
+    "min_straight_line_mi": 0.98,
+    "direction_from_office": "S",
+    "nearest_point": {
+     "lat": 32.9981192,
+     "lon": -80.1845081
+    },
+    "source": "Nominatim polygon_geojson geometry (https://nominatim.openstreetmap.org/search?polygon_geojson=1&q=<road>, Summerville, South Carolina), min distance computed locally"
+   },
+   {
+    "name": "Berlin G Myers Parkway",
+    "min_straight_line_m": 943,
+    "min_straight_line_mi": 0.59,
+    "direction_from_office": "SE",
+    "nearest_point": {
+     "lat": 33.0058884,
+     "lon": -80.1818154
+    },
+    "source": "Nominatim polygon_geojson geometry (https://nominatim.openstreetmap.org/search?polygon_geojson=1&q=<road>, Summerville, South Carolina), min distance computed locally"
+   },
+   {
+    "name": "Central Avenue",
+    "min_straight_line_m": 717,
+    "min_straight_line_mi": 0.45,
+    "direction_from_office": "N",
+    "nearest_point": {
+     "lat": 33.017794,
+     "lon": -80.191781
+    },
+    "source": "Nominatim polygon_geojson geometry (https://nominatim.openstreetmap.org/search?polygon_geojson=1&q=<road>, Summerville, South Carolina), min distance computed locally"
+   }
+  ],
+  "i26_exits": [
+   {
+    "name": "I-26 exit 199A (OSM motorway_junction node 318644577)",
+    "lat": 33.0380785,
+    "lon": -80.1483346,
+    "straight_line_km": 4.8,
+    "straight_line_mi": 2.98,
+    "direction_from_office": "NE",
+    "bearing_deg": 52.4,
+    "source": "https://api.openstreetmap.org/api/0.6/map (motorway_junction nodes); exit numbering corroborated by https://www.aaroads.com/guides/i-026-east-summerville-sc and https://en.wikipedia.org/wiki/Summerville,_South_Carolina"
+   },
+   {
+    "name": "I-26 exit 199B (OSM motorway_junction node 318644579)",
+    "lat": 33.03575,
+    "lon": -80.1459691,
+    "straight_line_km": 4.83,
+    "straight_line_mi": 3.0,
+    "direction_from_office": "NE",
+    "bearing_deg": 56.4,
+    "source": "https://api.openstreetmap.org/api/0.6/map (motorway_junction nodes); exit numbering corroborated by https://www.aaroads.com/guides/i-026-east-summerville-sc and https://en.wikipedia.org/wiki/Summerville,_South_Carolina"
+   },
+   {
+    "name": "I-26 exit 199A (OSM motorway_junction node 318725932)",
+    "lat": 33.0407024,
+    "lon": -80.1514639,
+    "straight_line_km": 4.77,
+    "straight_line_mi": 2.96,
+    "direction_from_office": "NE",
+    "bearing_deg": 47.5,
+    "source": "https://api.openstreetmap.org/api/0.6/map (motorway_junction nodes); exit numbering corroborated by https://www.aaroads.com/guides/i-026-east-summerville-sc and https://en.wikipedia.org/wiki/Summerville,_South_Carolina"
+   },
+   {
+    "name": "I-26 exit 199B (OSM motorway_junction node 318728136)",
+    "lat": 33.0382965,
+    "lon": -80.1489678,
+    "straight_line_km": 4.77,
+    "straight_line_mi": 2.96,
+    "direction_from_office": "NE",
+    "bearing_deg": 51.7,
+    "source": "https://api.openstreetmap.org/api/0.6/map (motorway_junction nodes); exit numbering corroborated by https://www.aaroads.com/guides/i-026-east-summerville-sc and https://en.wikipedia.org/wiki/Summerville,_South_Carolina"
+   },
+   {
+    "name": "I-26 exit 197B (OSM motorway_junction node 5939528877)",
+    "lat": 33.0498669,
+    "lon": -80.1603096,
+    "straight_line_km": 5.02,
+    "straight_line_mi": 3.12,
+    "direction_from_office": "NE",
+    "bearing_deg": 32.4,
+    "source": "https://api.openstreetmap.org/api/0.6/map (motorway_junction nodes); exit numbering corroborated by https://www.aaroads.com/guides/i-026-east-summerville-sc and https://en.wikipedia.org/wiki/Summerville,_South_Carolina"
+   },
+   {
+    "name": "I-26 exit 197A (OSM motorway_junction node 5939529692)",
+    "lat": 33.053917,
+    "lon": -80.1647472,
+    "straight_line_km": 5.21,
+    "straight_line_mi": 3.24,
+    "direction_from_office": "NE",
+    "bearing_deg": 25.9,
+    "source": "https://api.openstreetmap.org/api/0.6/map (motorway_junction nodes); exit numbering corroborated by https://www.aaroads.com/guides/i-026-east-summerville-sc and https://en.wikipedia.org/wiki/Summerville,_South_Carolina"
+   },
+   {
+    "name": "I-26 exit 197 (OSM motorway_junction node 5939529705)",
+    "lat": 33.0570843,
+    "lon": -80.1697597,
+    "straight_line_km": 5.36,
+    "straight_line_mi": 3.33,
+    "direction_from_office": "N",
+    "bearing_deg": 19.7,
+    "source": "https://api.openstreetmap.org/api/0.6/map (motorway_junction nodes); exit numbering corroborated by https://www.aaroads.com/guides/i-026-east-summerville-sc and https://en.wikipedia.org/wiki/Summerville,_South_Carolina"
+   }
+  ],
+  "i26_exit_list_note": {
+   "text": "Wikipedia (Summerville article): 'Interstate 26 is a major thoroughfare with four exits in the town: Jedburg Road, Nexton Parkway, US Route 17A, and College Park Road.' AARoads: exit 199 = US 17 Alt (N Main St, split 199A/199B); exit 197 = Nexton Parkway; exit 194 = Jedburg Road; exit 203 = College Park Road (Ladson).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Summerville,_South_Carolina",
+    "https://www.aaroads.com/guides/i-026-east-summerville-sc"
+   ]
+  },
+  "landmarks": [
+   {
+    "name": "Summerville Medical Center",
+    "osm_display_name": "Summerville Medical Center, 295, Midland Parkway, Oakbrook, Summerville, Dorchester County, South Carolina, United States",
+    "lat": 32.9662431,
+    "lon": -80.1574997,
+    "straight_line_km": 5.86,
+    "straight_line_mi": 3.64,
+    "direction_from_office": "SE",
+    "bearing_deg": 149.7,
+    "source": "https://nominatim.openstreetmap.org/search?q=Summerville+Medical+Center,+Midland+Parkway,+Summerville,+SC&format=json"
+   },
+   {
+    "name": "Azalea Park",
+    "osm_display_name": "Azalea Park, Sawmill Terrace, Summerville, Dorchester County, South Carolina, United States",
+    "lat": 33.0150649,
+    "lon": -80.1800123,
+    "straight_line_km": 0.93,
+    "straight_line_mi": 0.58,
+    "direction_from_office": "NE",
+    "bearing_deg": 66.5,
+    "source": "https://nominatim.openstreetmap.org/search?q=Azalea+Park,+Summerville,+SC&format=json"
+   },
+   {
+    "name": "Hutchinson Square",
+    "osm_display_name": "Hutchinson Square, Challendon, Summerville, Dorchester County, South Carolina, 29483, United States",
+    "lat": 33.0196103,
+    "lon": -80.1755604,
+    "straight_line_km": 1.54,
+    "straight_line_mi": 0.96,
+    "direction_from_office": "NE",
+    "bearing_deg": 55.3,
+    "source": "https://nominatim.openstreetmap.org/search?q=Hutchinson+Square,+Summerville,+SC&format=json"
+   },
+   {
+    "name": "Summerville Town Hall (200 S Main St)",
+    "osm_display_name": "200, South Main Street, Challendon, Summerville, Dorchester County, South Carolina, 29483, United States",
+    "lat": 33.0183404,
+    "lon": -80.1764145,
+    "straight_line_km": 1.4,
+    "straight_line_mi": 0.87,
+    "direction_from_office": "NE",
+    "bearing_deg": 58.3,
+    "source": "https://nominatim.openstreetmap.org/search?q=200+S+Main+St,+Summerville,+SC+29483&format=json"
+   },
+   {
+    "name": "Dorchester County Human Services Building (500 N Main St)",
+    "osm_display_name": "Dorchester County Human Services Building, 500, North Main Street, Brick Yard Trace, Summerville, Dorchester County, South Carolina, United States",
+    "lat": 33.0261847,
+    "lon": -80.17162,
+    "straight_line_km": 2.29,
+    "straight_line_mi": 1.42,
+    "direction_from_office": "NE",
+    "bearing_deg": 45.5,
+    "source": "https://nominatim.openstreetmap.org/search?q=500+N+Main+St,+Summerville,+SC+29483&format=json"
+   },
+   {
+    "name": "Troy Knight Judicial Complex / Dorchester County Sheriff's Office (212 Deming Way)",
+    "osm_display_name": "Dorchester County Sheriff's Office, 212, Deming Way, Hunters Creek, Summerville, Dorchester County, South Carolina, United States",
+    "lat": 33.0425958,
+    "lon": -80.2109088,
+    "straight_line_km": 3.99,
+    "straight_line_mi": 2.48,
+    "direction_from_office": "NW",
+    "bearing_deg": 329.4,
+    "source": "https://nominatim.openstreetmap.org/search?q=212+Deming+Way,+Summerville,+SC+29483&format=json"
+   },
+   {
+    "name": "Summerville Police Department (300 W 2nd North St)",
+    "osm_display_name": "Summerville Police and Fire Department, 300, West 2nd North Street, Robynwyn, Summerville, Dorchester County, South Carolina, United States",
+    "lat": 33.0240212,
+    "lon": -80.1758293,
+    "straight_line_km": 1.85,
+    "straight_line_mi": 1.15,
+    "direction_from_office": "NE",
+    "bearing_deg": 42.3,
+    "source": "https://nominatim.openstreetmap.org/search?q=300+W+2nd+North+St,+Summerville,+SC+29483&format=json"
+   }
+  ],
+  "nearby_pois_osm": [
+   {
+    "name": "Central Baptist Church",
+    "osm_type": "place_of_worship",
+    "straight_line_m": 355,
+    "direction_from_office": "E",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Laurel St Playground",
+    "osm_type": "park",
+    "straight_line_m": 555,
+    "direction_from_office": "NE",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Summerville Elementary School",
+    "osm_type": "school",
+    "straight_line_m": 597,
+    "direction_from_office": "SE",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Rollings Middle School of the Arts",
+    "osm_type": "school",
+    "straight_line_m": 662,
+    "direction_from_office": "E",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "St. John The Beloved",
+    "osm_type": "place_of_worship",
+    "straight_line_m": 735,
+    "direction_from_office": "NE",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "John McKissick Field",
+    "osm_type": "pitch",
+    "straight_line_m": 775,
+    "direction_from_office": "E",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Memorial Stadium",
+    "osm_type": "stadium",
+    "straight_line_m": 781,
+    "direction_from_office": "E",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Pineforest Inn",
+    "osm_type": "hamlet",
+    "straight_line_m": 798,
+    "direction_from_office": "SW",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Spann Elementary School",
+    "osm_type": "school",
+    "straight_line_m": 912,
+    "direction_from_office": "E",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "James Allan Playground",
+    "osm_type": "playground",
+    "straight_line_m": 938,
+    "direction_from_office": "W",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Spann Elementary",
+    "osm_type": "school",
+    "straight_line_m": 938,
+    "direction_from_office": "E",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Rosehill",
+    "osm_type": "hamlet",
+    "straight_line_m": 950,
+    "direction_from_office": "S",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Azalea Park",
+    "osm_type": "park",
+    "straight_line_m": 951,
+    "direction_from_office": "NE",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Bethany United Methodist Church",
+    "osm_type": "place_of_worship",
+    "straight_line_m": 1073,
+    "direction_from_office": "NE",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Timrod Library",
+    "osm_type": "library",
+    "straight_line_m": 1108,
+    "direction_from_office": "NE",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "The Hamilton Motel",
+    "osm_type": "hotel",
+    "straight_line_m": 1159,
+    "direction_from_office": "E",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   },
+   {
+    "name": "Shephard Park",
+    "osm_type": "hamlet",
+    "straight_line_m": 1171,
+    "direction_from_office": "W",
+    "source": "https://api.openstreetmap.org/api/0.6/map (bbox around office; Overpass API was unreachable through the sandbox egress proxy, so the equivalent raw OSM map call was used and filtered locally to highway=primary/secondary/tertiary/trunk/motorway ways)"
+   }
+  ],
+  "routes_to_office": [
+   {
+    "id": "1b_I26_exit199A_node_B",
+    "origin": {
+     "desc": "I-26 exit 199A junction node (OSM, opposite carriageway)",
+     "lat": 33.040702,
+     "lon": -80.151464,
+     "src": "OSM motorway_junction node via api.openstreetmap.org"
+    },
+    "driving_distance_mi": 3.4,
+    "driving_time_min": 7,
+    "roads_in_order": "depart [exit 199A] -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "depart [exit 199A]",
+      "maneuver": "depart",
+      "modifier": null,
+      "dist_m": 442
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 3368
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.151464,33.040702;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "1a_I26_exit199A_node_A",
+    "origin": {
+     "desc": "I-26 exit 199A junction node (OSM), US-17A/N Main St",
+     "lat": 33.038078,
+     "lon": -80.148335,
+     "src": "OSM motorway_junction node via api.openstreetmap.org"
+    },
+    "driving_distance_mi": 3.6,
+    "driving_time_min": 8,
+    "roads_in_order": "depart [exit 199A] -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "depart [exit 199A]",
+      "maneuver": "depart",
+      "modifier": null,
+      "dist_m": 442
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 3691
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.148335,33.038078;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "2_goose_creek_city_hall",
+    "origin": {
+     "desc": "Goose Creek City Hall, 519 N Goose Creek Blvd (Marguerite H. Brown Municipal Center)",
+     "lat": 33.031177,
+     "lon": -80.03662,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 10.9,
+    "driving_time_min": 22,
+    "roads_in_order": "North Goose Creek Boulevard (US 52) -> Old Mount Holly Road -> Saint James Avenue (US 176) -> Myers Road -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "depart",
+      "maneuver": "depart",
+      "modifier": "right",
+      "dist_m": 68
+     },
+     {
+      "road": "turn",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 92
+     },
+     {
+      "road": "end of road",
+      "maneuver": "end of road",
+      "modifier": "left",
+      "dist_m": 72
+     },
+     {
+      "road": "turn",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 100
+     },
+     {
+      "road": "North Goose Creek Boulevard (US 52)",
+      "maneuver": "end of road",
+      "modifier": "left",
+      "dist_m": 430
+     },
+     {
+      "road": "Old Mount Holly Road",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 2586
+     },
+     {
+      "road": "Saint James Avenue (US 176)",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 1903
+     },
+     {
+      "road": "Myers Road",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 2920
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "end of road",
+      "modifier": "left",
+      "dist_m": 7788
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.03662,33.031177;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "3_ladson_college_park_us78",
+    "origin": {
+     "desc": "Ladson: College Park Rd at US-78/Ladson Rd (SW terminus of College Park Rd)",
+     "lat": 32.9876185,
+     "lon": -80.1004958,
+     "src": "Nominatim geometry"
+    },
+    "driving_distance_mi": 6.7,
+    "driving_time_min": 12,
+    "roads_in_order": "College Park Road -> US 78 -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "College Park Road",
+      "maneuver": "depart",
+      "modifier": null,
+      "dist_m": 236
+     },
+     {
+      "road": "US 78",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 7817
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 1143
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.1004958,32.9876185;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "4_berkeley_county_courthouse",
+    "origin": {
+     "desc": "Berkeley County Courthouse, 300-B California Ave, Moncks Corner",
+     "lat": 33.2001379,
+     "lon": -80.0170612,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 18.2,
+    "driving_time_min": 30,
+    "roads_in_order": "Broughton Road (SR S-8-21) -> West Main Street (SC 6) -> South Live Oak Drive (US 17 Alternate) -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "California Avenue",
+      "maneuver": "depart",
+      "modifier": "left",
+      "dist_m": 51
+     },
+     {
+      "road": "Broughton Road (SR S-8-21)",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 232
+     },
+     {
+      "road": "West Main Street (SC 6)",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 381
+     },
+     {
+      "road": "South Live Oak Drive (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 17046
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 9856
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.0170612,33.2001379;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "5_tanger_outlets_i26_exit213",
+    "origin": {
+     "desc": "Tanger Outlets Charleston, 4840 Tanger Outlet Blvd, North Charleston (I-26 exit 213)",
+     "lat": 32.8738157,
+     "lon": -80.0194183,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 15.9,
+    "driving_time_min": 28,
+    "roads_in_order": "Fashion Avenue -> Centre Pointe Drive -> International Boulevard -> Michaux Parkway -> Dorchester Road (SC 642) -> Old Trolley Road -> East Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "depart",
+      "maneuver": "depart",
+      "modifier": "left",
+      "dist_m": 95
+     },
+     {
+      "road": "Fashion Avenue",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 184
+     },
+     {
+      "road": "Centre Pointe Drive",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 530
+     },
+     {
+      "road": "International Boulevard",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 1796
+     },
+     {
+      "road": "Michaux Parkway",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 1588
+     },
+     {
+      "road": "Dorchester Road (SC 642)",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 14219
+     },
+     {
+      "road": "Old Trolley Road",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 5775
+     },
+     {
+      "road": "East Carolina Avenue",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 1280
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.0194183,32.8738157;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "6_downtown_charleston_100_broad",
+    "origin": {
+     "desc": "Charleston County Judicial Center, 100 Broad St, Charleston",
+     "lat": 32.7767441,
+     "lon": -79.9320326,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 26.9,
+    "driving_time_min": 39,
+    "roads_in_order": "Meeting Street (S-107) -> on ramp -> I-26 -> I 26 -> off ramp [exit 199A] -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "Broad Street (S-1015)",
+      "maneuver": "depart",
+      "modifier": "left",
+      "dist_m": 89
+     },
+     {
+      "road": "Meeting Street (S-107)",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 3401
+     },
+     {
+      "road": "on ramp",
+      "maneuver": "on ramp",
+      "modifier": "left",
+      "dist_m": 619
+     },
+     {
+      "road": "I-26",
+      "maneuver": "merge",
+      "modifier": "slight left",
+      "dist_m": 1008
+     },
+     {
+      "road": "I 26",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 32420
+     },
+     {
+      "road": "off ramp [exit 199A]",
+      "maneuver": "off ramp",
+      "modifier": "slight right",
+      "dist_m": 442
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 3691
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-79.9320326,32.7767441;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "7_ridgeville_sc27_us78",
+    "origin": {
+     "desc": "Ridgeville: SC-27 & US-78 junction (OSM shared node)",
+     "lat": 33.116636,
+     "lon": -80.305284,
+     "src": "OSM shared node of SC 27 and US 78 ways via api.openstreetmap.org"
+    },
+    "driving_distance_mi": 11.9,
+    "driving_time_min": 20,
+    "roads_in_order": "West 5th North Street (US 78) -> West 5th Street North (US 78) -> North Cedar Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "West 5th North Street (US 78)",
+      "maneuver": "depart",
+      "modifier": null,
+      "dist_m": 14801
+     },
+     {
+      "road": "West 5th Street North (US 78)",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 1769
+     },
+     {
+      "road": "North Cedar Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 1128
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.305284,33.116636;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "8_dorchester_courthouse_stgeorge",
+    "origin": {
+     "desc": "Dorchester County Courthouse, 5200 E Jim Bilton Blvd, St. George",
+     "lat": 33.181672,
+     "lon": -80.562116,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 28.0,
+    "driving_time_min": 44,
+    "roads_in_order": "East Jim Bilton Boulevard (US 78) -> West 5th Street North (US 78) -> North Cedar Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "East Jim Bilton Boulevard (US 78)",
+      "maneuver": "depart",
+      "modifier": "left",
+      "dist_m": 40684
+     },
+     {
+      "road": "West 5th Street North (US 78)",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 1769
+     },
+     {
+      "road": "North Cedar Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 1128
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.562116,33.181672;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "9_knightsville_central_orangeburg",
+    "origin": {
+     "desc": "Knightsville: Central Ave & Orangeburg Rd",
+     "lat": 33.011898,
+     "lon": -80.237799,
+     "src": "OSM shared node of Central Avenue and Orangeburg Road ways"
+    },
+    "driving_distance_mi": 3.9,
+    "driving_time_min": 8,
+    "roads_in_order": "Orangeburg Road -> Tupperway Drive -> South Main Street (US 17 Alt) -> Marion Avenue -> Salisbury Drive -> Linwood Lane",
+    "steps": [
+     {
+      "road": "Orangeburg Road",
+      "maneuver": "depart",
+      "modifier": null,
+      "dist_m": 1941
+     },
+     {
+      "road": "Tupperway Drive",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 1069
+     },
+     {
+      "road": "South Main Street (US 17 Alt)",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 2309
+     },
+     {
+      "road": "Marion Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 462
+     },
+     {
+      "road": "Salisbury Drive",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 181
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 337
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.237799,33.011898;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "10_nexton_pkwy_i26_exit197",
+    "origin": {
+     "desc": "I-26 exit 197A junction node (Nexton Pkwy)",
+     "lat": 33.053917,
+     "lon": -80.164747,
+     "src": "OSM motorway_junction node"
+    },
+    "driving_distance_mi": 5.4,
+    "driving_time_min": 10,
+    "roads_in_order": "depart [exit 197A] -> on ramp -> I 26 -> off ramp [exit 199A] -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "depart [exit 197A]",
+      "maneuver": "depart",
+      "modifier": null,
+      "dist_m": 817
+     },
+     {
+      "road": "on ramp",
+      "maneuver": "on ramp",
+      "modifier": "slight right",
+      "dist_m": 488
+     },
+     {
+      "road": "I 26",
+      "maneuver": "merge",
+      "modifier": "slight left",
+      "dist_m": 1997
+     },
+     {
+      "road": "off ramp [exit 199A]",
+      "maneuver": "off ramp",
+      "modifier": "slight right",
+      "dist_m": 442
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 3368
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.164747,33.053917;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "11_cane_bay_blvd_sc176",
+    "origin": {
+     "desc": "Cane Bay Blvd at SC-176 (State Rd) - south end of Cane Bay Blvd",
+     "lat": 33.1039357,
+     "lon": -80.1266571,
+     "src": "Nominatim geometry"
+    },
+    "driving_distance_mi": 10.5,
+    "driving_time_min": 18,
+    "roads_in_order": "State Road (US 176) -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "North Creek Drive",
+      "maneuver": "depart",
+      "modifier": null,
+      "dist_m": 13
+     },
+     {
+      "road": "State Road (US 176)",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 5456
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 9856
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.1266571,33.1039357;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "12_walterboro_colleton_courthouse",
+    "origin": {
+     "desc": "Walterboro: Colleton County Courthouse, 101 Hampton St",
+     "lat": 32.902161,
+     "lon": -80.667059,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 31.5,
+    "driving_time_min": 48,
+    "roads_in_order": "Hampton Street (SC 63) -> Robertson Boulevard (SC 64) -> US 17 Alt -> South Main Street (US 17 Alt) -> Marion Avenue -> Salisbury Drive -> Linwood Lane",
+    "steps": [
+     {
+      "road": "Hampton Street (SC 63)",
+      "maneuver": "depart",
+      "modifier": "left",
+      "dist_m": 1938
+     },
+     {
+      "road": "Robertson Boulevard (SC 64)",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 1356
+     },
+     {
+      "road": "US 17 Alt",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 42100
+     },
+     {
+      "road": "South Main Street (US 17 Alt)",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 4353
+     },
+     {
+      "road": "Marion Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 462
+     },
+     {
+      "road": "Salisbury Drive",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 181
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 337
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.667059,32.902161;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "13_mt_pleasant_coleman_blvd",
+    "origin": {
+     "desc": "Mount Pleasant: Coleman Blvd (Moultrie Heights area)",
+     "lat": 32.7915419,
+     "lon": -79.872438,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 29.3,
+    "driving_time_min": 41,
+    "roads_in_order": "Coleman Boulevard (SC 703) -> Arthur Ravenel Jr Bridge (US 17) -> off ramp -> I-26 -> I 26 -> off ramp [exit 199A] -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "Coleman Boulevard (SC 703)",
+      "maneuver": "depart",
+      "modifier": null,
+      "dist_m": 3348
+     },
+     {
+      "road": "Arthur Ravenel Jr Bridge (US 17)",
+      "maneuver": "merge",
+      "modifier": "slight right",
+      "dist_m": 3675
+     },
+     {
+      "road": "off ramp",
+      "maneuver": "off ramp",
+      "modifier": "slight right",
+      "dist_m": 664
+     },
+     {
+      "road": "I-26",
+      "maneuver": "merge",
+      "modifier": "slight left",
+      "dist_m": 1324
+     },
+     {
+      "road": "I 26",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 32420
+     },
+     {
+      "road": "off ramp [exit 199A]",
+      "maneuver": "off ramp",
+      "modifier": "slight right",
+      "dist_m": 442
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 3691
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-79.872438,32.7915419;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "14_hanahan_city_hall",
+    "origin": {
+     "desc": "Hanahan City Hall, 1255 Yeamans Hall Rd",
+     "lat": 32.9030694,
+     "lon": -80.0077897,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 16.9,
+    "driving_time_min": 25,
+    "roads_in_order": "Yeamans Hall Road -> Remount Road -> on ramp -> fork -> I 26 -> off ramp [exit 199A] -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "Campbell Street",
+      "maneuver": "depart",
+      "modifier": "right",
+      "dist_m": 50
+     },
+     {
+      "road": "Yeamans Hall Road",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 433
+     },
+     {
+      "road": "Remount Road",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 769
+     },
+     {
+      "road": "on ramp",
+      "maneuver": "on ramp",
+      "modifier": "slight right",
+      "dist_m": 432
+     },
+     {
+      "road": "fork",
+      "maneuver": "fork",
+      "modifier": "slight left",
+      "dist_m": 983
+     },
+     {
+      "road": "I 26",
+      "maneuver": "merge",
+      "modifier": "slight left",
+      "dist_m": 18781
+     },
+     {
+      "road": "off ramp [exit 199A]",
+      "maneuver": "off ramp",
+      "modifier": "slight right",
+      "dist_m": 442
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 3691
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.0077897,32.9030694;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "15_harleyville",
+    "origin": {
+     "desc": "Harleyville town center",
+     "lat": 33.2146069,
+     "lon": -80.4478745,
+     "src": "Nominatim admin centroid"
+    },
+    "driving_distance_mi": 26.7,
+    "driving_time_min": 33,
+    "roads_in_order": "East Main Street (US 178) -> Judge Street (SC 453) -> on ramp -> I 26 -> off ramp [exit 199A] -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "East Main Street (US 178)",
+      "maneuver": "depart",
+      "modifier": "right",
+      "dist_m": 444
+     },
+     {
+      "road": "Judge Street (SC 453)",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 1923
+     },
+     {
+      "road": "on ramp",
+      "maneuver": "on ramp",
+      "modifier": "right",
+      "dist_m": 312
+     },
+     {
+      "road": "I 26",
+      "maneuver": "merge",
+      "modifier": "slight left",
+      "dist_m": 34761
+     },
+     {
+      "road": "off ramp [exit 199A]",
+      "maneuver": "off ramp",
+      "modifier": "slight right",
+      "dist_m": 442
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 3368
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.4478745,33.2146069;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "16_lincolnville",
+    "origin": {
+     "desc": "Lincolnville town center",
+     "lat": 33.0105829,
+     "lon": -80.1565076,
+     "src": "Nominatim admin centroid"
+    },
+    "driving_distance_mi": 2.5,
+    "driving_time_min": 8,
+    "roads_in_order": "Railroad Avenue -> Owens Drive -> East Richardson Avenue -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "Railroad Avenue",
+      "maneuver": "depart",
+      "modifier": "left",
+      "dist_m": 770
+     },
+     {
+      "road": "Owens Drive",
+      "maneuver": "end of road",
+      "modifier": "left",
+      "dist_m": 203
+     },
+     {
+      "road": "East Richardson Avenue",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 1452
+     },
+     {
+      "road": "South Cedar Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 148
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "new name",
+      "modifier": "straight",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.1565076,33.0105829;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   },
+   {
+    "id": "17_sangaree",
+    "origin": {
+     "desc": "Sangaree (OSM hamlet node)",
+     "lat": 33.0354485,
+     "lon": -80.1278678,
+     "src": "Nominatim"
+    },
+    "driving_distance_mi": 5.0,
+    "driving_time_min": 11,
+    "roads_in_order": "Kershaw Road -> Longstreet Street -> North Main Street (US 17 Alternate) -> West 2nd South Street -> Central Avenue -> South Laurel Street -> West Carolina Avenue -> Linwood Lane",
+    "steps": [
+     {
+      "road": "Joseph Court",
+      "maneuver": "depart",
+      "modifier": "straight",
+      "dist_m": 81
+     },
+     {
+      "road": "Kershaw Road",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 213
+     },
+     {
+      "road": "Longstreet Street",
+      "maneuver": "end of road",
+      "modifier": "right",
+      "dist_m": 524
+     },
+     {
+      "road": "North Main Street (US 17 Alternate)",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 5536
+     },
+     {
+      "road": "West 2nd South Street",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 185
+     },
+     {
+      "road": "Central Avenue",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 411
+     },
+     {
+      "road": "South Laurel Street",
+      "maneuver": "turn",
+      "modifier": "left",
+      "dist_m": 697
+     },
+     {
+      "road": "West Carolina Avenue",
+      "maneuver": "turn",
+      "modifier": "straight",
+      "dist_m": 220
+     },
+     {
+      "road": "Linwood Lane",
+      "maneuver": "turn",
+      "modifier": "right",
+      "dist_m": 131
+     }
+    ],
+    "source": "https://router.project-osrm.org/route/v1/driving/-80.1278678,33.0354485;-80.1891496,33.0117332?steps=true&overview=false",
+    "note": "OSRM demo server (router.project-osrm.org), OpenStreetMap data, free-flow travel time without traffic; road names are OSM names. Verify before publishing exact minutes."
+   }
+  ]
+ },
+ "courts": {
+  "dorchester_county_courthouse_clerk_of_court": {
+   "name": "Dorchester County Courthouse / Clerk of Court (Cheryl L. Graham)",
+   "street": "5200 E. Jim Bilton Blvd.",
+   "city": "St. George",
+   "zip": "29477",
+   "phone": "(843) 563-0160 (Clerk of Court); Criminal Clerk (843) 563-0231; Civil Clerk (843) 563-0108; Family Court (843) 832-0360; fax (843) 563-0178 (SC Judicial Branch roster)",
+   "hours": "8:30 AM - 5:00 PM Mon-Fri",
+   "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/clerk-of-court",
+   "sources": [
+    "https://www.dorchestercountysc.gov/government/courts-judicial-services/clerk-of-court",
+    "https://www.dorchestercountysc.gov/government/courts-judicial-services/clerk-of-court/courthouse",
+    "https://www.sccourts.org/courts/court-officials/clerks-of-court/clerk-roster/",
+    "https://www.sccourts.org/courts/courthouse-search/dorchester/"
+   ],
+   "notes": "Family Court sits at the Troy Knight Judicial Complex, 212 Deming Way, Summerville, SC 29483.",
+   "status": "verified"
+  },
+  "dorchester_county_probate_court": {
+   "name": "Dorchester County Probate Court (Hon. Mary L. Blunt, Probate Judge)",
+   "street": "5200 E. Jim Bilton Blvd",
+   "city": "St. George",
+   "zip": "29477",
+   "phone": "(843) 563-0105 or (843) 832-0105; SC Judicial Branch lists judge's office (843) 832-0136",
+   "hours": "8:30 AM - 5:00 PM Mon-Fri",
+   "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/probate-court",
+   "sources": [
+    "https://www.dorchestercountysc.gov/government/courts-judicial-services/probate-court",
+    "https://www.sccourts.org/courts/courthouse-search/dorchester/"
+   ],
+   "summerville_office": {
+    "status": "unverified / not found",
+    "note": "As of 2026-09-16 the official Probate Court page lists only the St. George office. The county's facility directory lists a 'Human Services Building' at 500 N. Main Street, Summerville, SC 29483 (with a 'Redevelopment of 500 N. Main St.' project) but does not list probate services there. Do not publish a Summerville probate office address without confirming by phone.",
+    "sources": [
+     "https://www.dorchestercountysc.gov/how-do-i/locate-county-facilities",
+     "https://www.dorchestercountysc.gov/government/courts-judicial-services/probate-court"
+    ]
+   },
+   "status": "verified (St. George)"
+  },
+  "dorchester_county_magistrate_courts": [
+   {
+    "name": "Dorchester County Magistrate Court - St. George",
+    "street": "5200 E. Jim Bilton Blvd.",
+    "city": "St. George",
+    "zip": "29477",
+    "phone": "(843) 563-0370",
+    "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/magistrate-court",
+    "sources": [
+     "https://www.dorchestercountysc.gov/government/courts-judicial-services/magistrate-court"
+    ],
+    "status": "verified"
+   },
+   {
+    "name": "Dorchester County Magistrate Court - Summerville (Troy Knight Judicial Complex)",
+    "street": "212 Deming Way, Box 10",
+    "city": "Summerville",
+    "zip": "29483 (29483-4707)",
+    "phone": "(843) 832-0370",
+    "url": "https://www.dorchestercountysc.gov/government/courts-judicial-services/magistrate-court",
+    "sources": [
+     "https://www.dorchestercountysc.gov/government/courts-judicial-services/magistrate-court",
+     "https://www.sccourts.org/courts/courthouse-search/dorchester/"
+    ],
+    "status": "verified"
+   }
+  ],
+  "summerville_municipal_court": {
+   "name": "Summerville Municipal Court",
+   "street": "200 S Main Street, 2nd Floor (Town Hall)",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "843-875-2010 (court page); 843-871-6000 (Town Hall main, per 'Appearing in Court' page)",
+   "hours": "Mon-Fri 8:30 a.m.-5 p.m.; payments not accepted after 4:30 p.m. (town FAQ)",
+   "url": "https://www.summervillesc.gov/227/Municipal-Court",
+   "sources": [
+    "https://www.summervillesc.gov/227/Municipal-Court",
+    "https://www.summervillesc.gov/231/Appearing-in-Court",
+    "https://www.summervillesc.gov/FAQ.aspx?QID=116"
+   ],
+   "notes": "Older third-party directories list the court at 300 W 2nd North St (the police building); the town's current official page lists 200 S Main Street, 2nd Floor.",
+   "status": "verified"
+  },
+  "berkeley_county_courthouse_clerk_of_court": {
+   "name": "Berkeley County Courthouse / Clerk of Court (Hon. Leah Guerry Dupree)",
+   "street": "300-B California Avenue (mailing: PO Box 219)",
+   "city": "Moncks Corner",
+   "zip": "29461",
+   "phone": "(843) 719-4400; fax (843) 719-4509",
+   "url": "https://berkeleycountysc.gov/dept/clerk/",
+   "sources": [
+    "https://www.sccourts.org/courts/courthouse-search/berkeley/",
+    "https://www.sccourts.org/courts/court-officials/clerks-of-court/clerk-roster/",
+    "https://berkeleycountysc.gov/office-locations/"
+   ],
+   "notes": "berkeleycountysc.gov/dept/clerk/ renders its contact block with JavaScript; the physical address comes from the county Office Locations page and the SC Judicial Branch courthouse page. The county Administration Building (1003 Highway 52, (843) 719-4234) is a different building.",
+   "status": "verified"
+  },
+  "berkeley_county_probate_court": {
+   "name": "Berkeley County Probate Court (Hon. Keith W. Kornahrens, Probate Judge)",
+   "street": "300-B California Avenue",
+   "city": "Moncks Corner",
+   "zip": "29461",
+   "phone": "(843) 719-4519; (843) 723-3800 ext 4519; (843) 567-3136 ext 4519; fax (843) 719-4527",
+   "hours": "9am-5pm M-F",
+   "url": "https://berkeleycountysc.gov/dept/probate/",
+   "sources": [
+    "https://berkeleycountysc.gov/dept/probate/",
+    "https://www.sccourts.org/courts/courthouse-search/berkeley/"
+   ],
+   "status": "verified"
+  },
+  "goose_creek_municipal_court": {
+   "name": "Goose Creek Municipal Court (Marguerite H. Brown Municipal Center)",
+   "street": "519 North Goose Creek Blvd (search snippets add 'Building D')",
+   "city": "Goose Creek",
+   "zip": "29445",
+   "phone": "(843) 569-4230; Clerk of Court Amy Weatherford 843-569-4230 ext 1218; City Hall 843-797-6220",
+   "url": "https://www.goosecreeksc.gov/government/departments/municipal-court",
+   "sources": [
+    "https://www.goosecreeksc.gov/government/departments/municipal-court (fetched via r.jina.ai; site blocks direct bots)",
+    "https://www.goosecreeksc.gov/contact-us"
+   ],
+   "status": "verified (address, phones, clerk); 'Building D' unverified"
+  },
+  "hanahan_municipal_court": {
+   "name": "Hanahan Municipal Court",
+   "street": "1255 Yeamans Hall Road (City Hall)",
+   "city": "Hanahan",
+   "zip": "29410",
+   "phone": "(843) 576-5262 or (843) 885-5050 (no fax service)",
+   "hours": "8:30AM-5:00PM",
+   "url": "https://www.cityofhanahan.com/court",
+   "sources": [
+    "https://www.cityofhanahan.com/court",
+    "https://www.cityofhanahan.com/contact-us"
+   ],
+   "status": "verified"
+  },
+  "charleston_county_judicial_center": {
+   "name": "Charleston County Judicial Center / Clerk of Court (Julie J. Armstrong)",
+   "street": "100 Broad Street, Suite 106 (Common Pleas/General Sessions); Suite 143 (Family Court)",
+   "city": "Charleston",
+   "zip": "29401",
+   "phone": "(843) 958-5000, fax (843) 958-5020 (CP/GS); Family Court (843) 958-4400",
+   "hours": "Mon-Fri 8:30 a.m.-5 p.m.",
+   "url": "https://charlestoncounty.org/departments/clerk-of-court/",
+   "sources": [
+    "https://charlestoncounty.org/departments/clerk-of-court/",
+    "https://www.sccourts.org/courts/court-officials/clerks-of-court/clerk-roster/"
+   ],
+   "status": "verified"
+  },
+  "charleston_county_probate_court": {
+   "name": "Charleston County Probate Court (Hon. Irvin G. Condon, Probate Judge)",
+   "locations": [
+    {
+     "division": "Estate Division & judges' law clerks",
+     "street": "84 Broad St., 3rd Floor (Historic Courthouse)",
+     "city": "Charleston",
+     "zip": "29401"
+    },
+    {
+     "division": "Main Probate Court; Commitment & Guardianship; Marriage License; drug/mental health/veterans courts",
+     "street": "100 Broad St., Suite 469 (Judicial Center)",
+     "city": "Charleston",
+     "zip": "29401"
+    }
+   ],
+   "phone": "Main (843) 958-5180; Estate Division (843) 958-5030; Marriage License (843) 958-5183; fax (843) 958-5191 / (843) 958-5044",
+   "hours": "M-F 8:30AM-5PM (marriage license closes 4:30PM)",
+   "url": "https://www.charlestoncounty.gov/departments/probate/",
+   "sources": [
+    "https://www.charlestoncounty.gov/departments/probate/"
+   ],
+   "notes": "No North Charleston probate office is listed on the official page (an earlier search snippet mentioned a temporary Estate Division relocation to 10 Court House Square, 3rd floor - not shown on the current page).",
+   "status": "verified"
+  },
+  "north_charleston_municipal_court": {
+   "name": "North Charleston Municipal Court",
+   "street": "2500 City Hall Lane",
+   "city": "North Charleston",
+   "zip": "29406",
+   "phone": "(843) 740-2602",
+   "hours": "Mon-Fri 8:00 AM - 4:00 PM",
+   "url": "https://www.northcharleston.org/government/city_departments/court/",
+   "sources": [
+    "https://www.northcharleston.org/government/city_departments/court/"
+   ],
+   "status": "verified"
+  },
+  "charleston_municipal_court": {
+   "name": "City of Charleston Municipal Court",
+   "street": "180 B Lockwood Boulevard",
+   "city": "Charleston",
+   "zip": "29403",
+   "phone": "843-724-7460; fax 843-724-7171",
+   "hours": "8 a.m. to 5 p.m.",
+   "url": "https://www.charleston-sc.gov/821/Municipal-Court",
+   "sources": [
+    "https://www.charleston-sc.gov/821/Municipal-Court"
+   ],
+   "status": "verified"
+  },
+  "colleton_county_courthouse_clerk_of_court": {
+   "name": "Colleton County Courthouse / Clerk of Court (Gary Hale)",
+   "street": "101 Hampton Street (mailing: P.O. Box 620)",
+   "city": "Walterboro",
+   "zip": "29488",
+   "phone": "843-549-5791; fax 843-549-2875 (county page) / 843-549-6857 (SC Judicial Branch roster)",
+   "hours": "Mon-Fri 8:00AM-5:00PM",
+   "url": "https://www.colletoncounty.org/department/clerk-court",
+   "sources": [
+    "https://www.colletoncounty.org/department/clerk-court",
+    "https://www.sccourts.org/courts/courthouse-search/colleton/"
+   ],
+   "status": "verified"
+  },
+  "colleton_county_probate_court": {
+   "name": "Colleton County Probate Court (Hon. Arthur C. 'Ceth' Utsey IV)",
+   "street": "239 N. Jefferies Blvd. (mailing: P.O. Box 1036)",
+   "city": "Walterboro",
+   "zip": "29488",
+   "phone": "843-549-7216; fax 843-549-5571",
+   "hours": "Mon-Fri 8:00AM-5:00PM",
+   "url": "https://www.colletoncounty.org/probate",
+   "sources": [
+    "https://www.colletoncounty.org/probate",
+    "https://www.sccourts.org/courts/courthouse-search/colleton/"
+   ],
+   "status": "verified"
+  },
+  "dorchester_county_sheriffs_office": {
+   "name": "Dorchester County Sheriff's Office",
+   "street": "212 Deming Way, Box 9 (Summerville office & mailing); St. George office: 101 Ridge St. Suite 1, St. George, SC 29477, (843) 563-0259",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "843-832-0300 (office)",
+   "url": "https://www.dorchestercountysc.gov/government/public-safety/sheriff-s-office",
+   "sources": [
+    "https://www.dorchestercountysc.gov/government/public-safety/sheriff-s-office"
+   ],
+   "status": "verified"
+  },
+  "summerville_police_department": {
+   "name": "Summerville Police Department",
+   "street": "300 West 2nd North Street",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "Records 843-871-2463; non-emergency dispatch (843) 875-1650",
+   "url": "https://www.summervillepolice.com/541/Contact-Us",
+   "sources": [
+    "https://www.summervillepolice.com/541/Contact-Us",
+    "https://summervillesc.gov/FAQ.aspx?QID=220"
+   ],
+   "status": "verified"
+  },
+  "dorchester_county_detention_center": {
+   "name": "Dorchester County Detention Center",
+   "street": "220 Hodge Road (off US-78/Highway 78); administrative/mailing: 212 Deming Way, Summerville",
+   "city": "Summerville",
+   "zip": "29483",
+   "phone": "(843) 832-0215 (Detention Center); Sheriff's Office 843-832-0300",
+   "url": "https://www.dorchestercountysc.gov/government/public-safety/sheriff-s-office/detention-center",
+   "sources": [
+    "https://www.dorchestercountysc.gov/government/public-safety/sheriff-s-office/detention-center",
+    "https://www.dorchestercountysc.gov/Home/Components/News/News/831/1255?arch=1&npage=3 (county news release: 'conveniently located off of Highway 78 at 220 Hodge Road in Summerville')"
+   ],
+   "notes": "IMPORTANT: the county jail is in Summerville, not St. George. The task brief's 'Dorchester County Detention Center in St. George' is incorrect.",
+   "status": "verified"
+  },
+  "hill_finklea_detention_center": {
+   "name": "Hill-Finklea Detention Center (Berkeley County)",
+   "street": "300 California Avenue (adjacent to the county courthouse)",
+   "city": "Moncks Corner",
+   "zip": "29461",
+   "phone": "(843) 719-4546 (from search-engine snippet of sheriff.berkeleycountysc.gov; page blocked to automated fetch - confirm)",
+   "url": "https://sheriff.berkeleycountysc.gov/about/divisions/hill-finklea-detention-center/",
+   "sources": [
+    "https://berkeleycountysc.gov/office-locations/ (address)",
+    "https://sheriff.berkeleycountysc.gov/about/divisions/hill-finklea-detention-center/ (phone, via search snippet)"
+   ],
+   "status": "address verified; phone partially verified"
+  },
+  "al_cannon_detention_center": {
+   "name": "Sheriff Al Cannon Detention Center (Charleston County)",
+   "street": "3841 Leeds Ave.",
+   "city": "North Charleston",
+   "zip": "29405",
+   "phone": "(843) 202-7200; (843) 202-7222",
+   "url": "https://www.charlestoncounty.gov/departments/sheriff/detention.php",
+   "sources": [
+    "https://www.charlestoncounty.gov/departments/sheriff/detention.php"
+   ],
+   "notes": "Visitation is by video (SECURUSTech.net) except in-person attorney visits (M-F 9-11, 1:30-4, 7-10).",
+   "status": "verified"
+  },
+  "goose_creek_city_hall": {
+   "name": "Goose Creek City Hall (Marguerite H. Brown Municipal Center)",
+   "street": "519 N Goose Creek Blvd",
+   "city": "Goose Creek",
+   "zip": "29445",
+   "phone": "843-797-6220",
+   "sources": [
+    "https://www.goosecreeksc.gov/contact-us",
+    "https://www.goosecreeksc.gov/government/departments/municipal-court"
+   ],
+   "status": "verified"
+  },
+  "hanahan_city_hall": {
+   "name": "Hanahan City Hall",
+   "street": "1255 Yeamans Hall Road",
+   "city": "Hanahan",
+   "zip": "29410",
+   "phone": "(843) 554-4221",
+   "sources": [
+    "https://www.cityofhanahan.com/contact-us"
+   ],
+   "status": "verified"
+  }
+ },
+ "places": {
+  "Summerville": {
+   "counties": [
+    "Dorchester (most)",
+    "Berkeley",
+    "Charleston"
+   ],
+   "zips": [
+    "29483",
+    "29485",
+    "29486 (Wikipedia: 29483-29486)"
+   ],
+   "status": "Incorporated town (county seat is St. George)",
+   "population_2020": 50915,
+   "landmarks": [
+    "Azalea Park (site of the Flowertown Festival, held since 1972/73)",
+    "Hutchinson Square (downtown square on S Main St, restaurants/shops, Third Thursday events)",
+    "Summerville Historic District (NRHP) / Colonial Dorchester State Historic Site / Summerville Medical Center"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Summerville,_South_Carolina",
+    "https://www.visitsummerville.com/flowertown-festival",
+    "https://www.postandcourier.com/mycharleston/charleston-area_communities/summerville-sc-shops-food-parks/article_8cc41922-42d2-458a-9fcc-ca97f4760bf5.html",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.175&y=32.98972222&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Dorchester County",
+    "incorporated_place": null,
+    "cdp": null,
+    "zcta_at_sample_point": "29485",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.175&y=32.98972222&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Goose Creek": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29445"
+   ],
+   "status": "Incorporated city",
+   "population_2020": 45946,
+   "landmarks": [
+    "Joint Base Charleston - Naval Weapons Station / Naval Support Activity Charleston (most of it is in Goose Creek)",
+    "Otranto Plantation Indigo Vats & St. James Church (NRHP)",
+    "Marguerite H. Brown Municipal Center (City Hall, police, court) at 519 N Goose Creek Blvd"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goose_Creek,_South_Carolina",
+    "https://www.goosecreeksc.gov/contact-us",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.00722222&y=33.01&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": "Goose Creek city",
+    "cdp": null,
+    "zcta_at_sample_point": "29445",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.00722222&y=33.01&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Ladson": {
+   "counties": [
+    "Berkeley",
+    "Charleston",
+    "Dorchester"
+   ],
+   "zips": [
+    "29456"
+   ],
+   "status": "Census-designated place (unincorporated)",
+   "population_2020": 15550,
+   "landmarks": [
+    "Exchange Park Fairgrounds, 9850 Hwy 78 - home of the Coastal Carolina Fair (since 1924)",
+    "College Park Road / I-26 exit 203",
+    "US-78 & Ladson Rd/College Park Rd crossroads (OSM)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ladson,_South_Carolina",
+    "https://www.coastalcarolinafair.org/directions.aspx",
+    "https://en.wikipedia.org/wiki/Coastal_Carolina_Fair",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.11388889&y=33.00638889&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": null,
+    "cdp": "Ladson CDP",
+    "zcta_at_sample_point": "29456",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.11388889&y=33.00638889&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "North Charleston": {
+   "counties": [
+    "Charleston",
+    "Berkeley",
+    "Dorchester"
+   ],
+   "zips": [
+    "29405",
+    "29406",
+    "29410",
+    "29415",
+    "29418",
+    "29419",
+    "29420",
+    "29423"
+   ],
+   "status": "Incorporated city (3rd most populous in SC)",
+   "population_2020": 114852,
+   "landmarks": [
+    "North Charleston Coliseum / Riverfront Park (former Navy base)",
+    "Charleston International Airport / Joint Base Charleston / Boeing 787 plant",
+    "Park Circle; Charleston Southern University; Trident Technical College; Tanger Outlets (4840 Tanger Outlet Blvd, I-26 exit 213)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/North_Charleston,_South_Carolina",
+    "https://nominatim.openstreetmap.org/search?q=4840+Tanger+Outlet+Blvd,+North+Charleston,+SC&format=json",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.04722222&y=32.89083333&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": "North Charleston city",
+    "cdp": null,
+    "zcta_at_sample_point": "29404",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.04722222&y=32.89083333&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Moncks Corner": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29461",
+    "29430 (per Wikipedia)"
+   ],
+   "status": "Incorporated town; Berkeley County seat",
+   "population_2020": 13297,
+   "landmarks": [
+    "Berkeley County Courthouse, 300-B California Ave",
+    "Santee Cooper headquarters ('Capital of Santee Cooper Country'); Lake Moultrie to the north",
+    "Biggin Church Ruins, Mulberry Plantation, Santee Canal (NRHP)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Moncks_Corner,_South_Carolina",
+    "https://berkeleycountysc.gov/office-locations/",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.00472222&y=33.19277778&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": "Moncks Corner town",
+    "cdp": null,
+    "zcta_at_sample_point": "29461",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.00472222&y=33.19277778&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Hanahan": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29410"
+   ],
+   "status": "Incorporated city",
+   "population_2020": 20325,
+   "landmarks": [
+    "Naval Weapons Station Charleston portions incl. Naval Consolidated Brig and Nuclear Power School",
+    "Tanner Plantation (residential/commercial district); Yeamans Hall Club",
+    "Goose Creek Reservoir; Otranto Plantation (NRHP)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hanahan,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.0077897&y=32.9030694&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": "Hanahan city",
+    "cdp": null,
+    "zcta_at_sample_point": "29410",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.0077897&y=32.9030694&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Charleston": {
+   "counties": [
+    "Charleston",
+    "Berkeley"
+   ],
+   "zips": [
+    "29401-29407, 29409-29410, 29412-29420, 29422-29425, 29492 (Wikipedia)"
+   ],
+   "status": "Incorporated city; most populous in SC",
+   "population_2020": 150227,
+   "landmarks": [
+    "Historic City Market; Fort Sumter National Monument",
+    "The Battery and Rainbow Row",
+    "Medical University of South Carolina (MUSC); College of Charleston; Charleston County Judicial Center at 100 Broad St"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Charleston,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.9320326&y=32.7767441&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": "Charleston city",
+    "cdp": null,
+    "zcta_at_sample_point": "29401",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.9320326&y=32.7767441&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Mount Pleasant": {
+   "counties": [
+    "Charleston"
+   ],
+   "zips": [
+    "29464",
+    "29465",
+    "29466",
+    "29429 (Wikipedia)"
+   ],
+   "status": "Incorporated town (4th most populous SC municipality)",
+   "population_2020": 90801,
+   "landmarks": [
+    "Patriots Point Naval & Maritime Museum (USS Yorktown) at the foot of the Arthur Ravenel Jr. Bridge",
+    "Shem Creek; Old Village / Pitt Street Bridge",
+    "Boone Hall Plantation; Coleman Blvd (SC-703) corridor"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mount_Pleasant,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.872438&y=32.7915419&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": "Mount Pleasant town",
+    "cdp": null,
+    "zcta_at_sample_point": "29464",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.872438&y=32.7915419&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Ridgeville": {
+   "counties": [
+    "Dorchester"
+   ],
+   "zips": [
+    "29472"
+   ],
+   "status": "Incorporated town",
+   "population_2020": 1672,
+   "landmarks": [
+    "Givhans Ferry State Park (988 acres on the Edisto River near Ridgeville)",
+    "Volvo Cars USA plant / Camp Hall Commerce Park (Ridgeville mailing address; site is in Berkeley County)",
+    "SC-27 & US-78 junction; I-26 exit 187 (SC-27)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ridgeville,_South_Carolina",
+    "https://en.wikipedia.org/wiki/Givhans_Ferry_State_Park",
+    "https://www.sccommerce.com/industries/success-stories/volvo",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.30722222&y=33.09&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Dorchester County",
+    "incorporated_place": "Ridgeville town",
+    "cdp": null,
+    "zcta_at_sample_point": "29472",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.30722222&y=33.09&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "St. George": {
+   "counties": [
+    "Dorchester"
+   ],
+   "zips": [
+    "29477"
+   ],
+   "status": "Incorporated town; Dorchester County seat since 1897",
+   "population_2020": 1843,
+   "landmarks": [
+    "Dorchester County Courthouse, 5200 E Jim Bilton Blvd (clerk, probate, magistrate)",
+    "World Grits Festival (annual since 1986)",
+    "Indian Fields Methodist Campground, Appleby's Methodist Church, Carroll Place (NRHP)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/St._George,_South_Carolina",
+    "https://www.dorchestercountysc.gov/government/courts-judicial-services/clerk-of-court/courthouse",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.57944444&y=33.18611111&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Dorchester County",
+    "incorporated_place": "St. George town",
+    "cdp": null,
+    "zcta_at_sample_point": "29477",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.57944444&y=33.18611111&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Harleyville": {
+   "counties": [
+    "Dorchester"
+   ],
+   "zips": [
+    "29448"
+   ],
+   "status": "Incorporated town",
+   "population_2020": 666,
+   "landmarks": [
+    "St. Paul Camp Ground (NRHP, 1998)",
+    "Audubon's Francis Beidler Forest / Four Holes Swamp boardwalks just outside town",
+    "US-178 through town; SC-453 north to I-26 exit 177"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Harleyville,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.44777778&y=33.21305556&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Dorchester County",
+    "incorporated_place": "Harleyville town",
+    "cdp": null,
+    "zcta_at_sample_point": "29448",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.44777778&y=33.21305556&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Walterboro": {
+   "counties": [
+    "Colleton"
+   ],
+   "zips": [
+    "29488"
+   ],
+   "status": "Incorporated city; Colleton County seat",
+   "population_2020": 5544,
+   "landmarks": [
+    "Colleton County Courthouse, 101 Hampton Street",
+    "University of South Carolina Salkehatchie campus",
+    "Lowcountry Regional Airport (former WWII airfield used by Tuskegee Airmen trainees)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Walterboro,_South_Carolina",
+    "https://www.sccourts.org/courts/courthouse-search/colleton/",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.68&y=32.88833333&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Colleton County",
+    "incorporated_place": "Walterboro city",
+    "cdp": null,
+    "zcta_at_sample_point": "29488",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.68&y=32.88833333&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Knightsville": {
+   "counties": [
+    "Dorchester"
+   ],
+   "zips": [
+    "29483 (Census ZCTA at the Central Ave/Orangeburg Rd crossroads)"
+   ],
+   "status": "Unincorporated community / neighborhood name; the crossroads straddles the Summerville town limit (Census geocoder returns 'Summerville town' 90 m away). Not a Census-designated place - no official 2020 population. No Wikipedia article exists.",
+   "population_2020": null,
+   "landmarks": [
+    "Central Avenue & Orangeburg Road crossroads (OSM node 33.011898,-80.237799)",
+    "Knightsville Elementary School (Dorchester School District Two), 847 Orangeburg Rd, Summerville 29483",
+    "SCDOT 1939 county map shows the community (roadsidethoughts.com)"
+   ],
+   "sources": [
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.237799&y=33.011898&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.2378734&y=33.0115592&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json",
+    "https://kes.ddtwo.org/",
+    "https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?Search=1&ID=450201000395",
+    "https://roadsidethoughts.com/sc/knightsville-xx-dorchester-profile.htm"
+   ],
+   "census_geocoder": {
+    "county": "Dorchester County",
+    "incorporated_place": null,
+    "cdp": null,
+    "zcta_at_sample_point": "29483",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.237799&y=33.011898&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified/none"
+  },
+  "Sangaree": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29486 (Census ZCTA); Wikipedia infobox blank"
+   ],
+   "status": "Census-designated place (unincorporated)",
+   "population_2020": 7781,
+   "landmarks": [
+    "Berkeley County satellite office, 102 Sangaree Park Court, Court 1, Summerville 29483",
+    "Off N Main St / US-17A just east of I-26 exit 199 (per OSRM route)",
+    "Sangaree subdivision (OSM hamlet node 33.0354,-80.1279)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sangaree,_South_Carolina",
+    "https://berkeleycountysc.gov/office-locations/",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.12222222&y=33.03277778&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": null,
+    "cdp": "Sangaree CDP",
+    "zcta_at_sample_point": "29486",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.12222222&y=33.03277778&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Nexton": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29486 (ZCTA at Nexton Square); 29483 at the Nexton Pkwy/Weatherstone sample point"
+   ],
+   "status": "Master-planned community (developer: nexton.com) inside the Town of Summerville limits per Census geocoder; not a Census place - no official population. Wikipedia 'Nexton' is an unrelated Japanese company.",
+   "population_2020": null,
+   "landmarks": [
+    "Nexton Square (retail/dining center; OSM feature at 33.0412,-80.1411)",
+    "Nexton Parkway / I-26 exit 197 (OSM junction nodes 197, 197A, 197B)",
+    "Brighton Park Boulevard & One Nexton (per SCBiz/developer)"
+   ],
+   "sources": [
+    "https://www.nexton.com/",
+    "https://scbiz.com/nexton-master-planned-community-berkeley-county/",
+    "https://www.aaroads.com/guides/i-026-east-summerville-sc",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1642312&y=33.0531631&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1484467&y=33.0439011&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": "Summerville town",
+    "cdp": null,
+    "zcta_at_sample_point": "29486",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1484467&y=33.0439011&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified/none"
+  },
+  "Cane Bay": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29486"
+   ],
+   "status": "Master-planned community (Cane Bay Plantation, developer site cane-bay.com), unincorporated Berkeley County per Census geocoder; not a Census place - no official population; no Wikipedia article found.",
+   "population_2020": null,
+   "landmarks": [
+    "Cane Bay Family YMCA (opened 2019; first YMCA in the US with a county library inside)",
+    "Cane Bay High School (2008), Cane Bay Middle (2012), Cane Bay Elementary (2009) - Berkeley County School District",
+    "Cane Bay Blvd at US-176 (State Rd) entrance (OSM 33.1039,-80.1267)"
+   ],
+   "sources": [
+    "https://cane-bay.com/",
+    "https://cane-bay.com/about/location/",
+    "https://www.buynsellcharlestonhomes.com/blog/a-guide-to-cane-bay-plantation-in-summerville-sc/",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1266571&y=33.1039357&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1131841&y=33.1273764&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": null,
+    "cdp": null,
+    "zcta_at_sample_point": "29486",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1131841&y=33.1273764&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified/none; landmark details from developer/real-estate sources"
+  },
+  "Lincolnville": {
+   "counties": [
+    "Charleston (small portion in Dorchester)"
+   ],
+   "zips": [
+    "29485"
+   ],
+   "status": "Incorporated town",
+   "population_2020": 1147,
+   "landmarks": [
+    "Founded 1867 by seven African-American men incl. Rev. Richard Harvey Cain, on the South Carolina Railroad stop known as 'Pump Pond'",
+    "Railroad Avenue / rail corridor (OSRM route)",
+    "Adjacent to Summerville's E Richardson Ave corridor (2.5 mi from office)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lincolnville,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.15777778&y=33.005&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": "Lincolnville town",
+    "cdp": null,
+    "zcta_at_sample_point": "29485",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.15777778&y=33.005&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Daniel Island": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29492"
+   ],
+   "status": "Neighborhood/island within the City of Charleston (Berkeley County); not a separate Census place - no official population",
+   "population_2020": null,
+   "landmarks": [
+    "Credit One Stadium (tennis; Volvo Car Open) and the Daniel Island Club (Fazio/Rees Jones golf)",
+    "Bishop England High School; Daniel Island School",
+    "Between the Cooper and Wando rivers; eight neighborhood parks incl. Smythe Park"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Daniel_Island",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.912&y=32.8591&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": "Charleston city",
+    "cdp": null,
+    "zcta_at_sample_point": "29492",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.912&y=32.8591&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified/none"
+  },
+  "West Ashley": {
+   "counties": [
+    "Charleston"
+   ],
+   "zips": [
+    "29414 (ZCTA at sample point); 29407 also commonly cited - unverified here"
+   ],
+   "status": "One of six areas of the City of Charleston (west of the Ashley River); not a Census place. Wikipedia gives an unofficial estimate of 83,996 (July 2022).",
+   "population_2020": null,
+   "landmarks": [
+    "Citadel Mall (region's largest indoor mall) and Bon Secours St. Francis Hospital",
+    "Charles Towne Landing State Historic Site (1670 first settlement)",
+    "Ashley River Road (SC-61) plantations: Magnolia Plantation & Gardens, Drayton Hall, Middleton Place; West Ashley Greenway"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Ashley",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.0646682&y=32.8071282&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": "Charleston city",
+    "cdp": null,
+    "zcta_at_sample_point": "29414",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.0646682&y=32.8071282&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified (estimate only)"
+  },
+  "James Island": {
+   "counties": [
+    "Charleston"
+   ],
+   "zips": [
+    "29412"
+   ],
+   "status": "Incorporated Town of James Island (parts of the island are in the City of Charleston or unincorporated)",
+   "population_2020": 11621,
+   "landmarks": [
+    "McLeod Plantation Historic Site (Charleston County Parks)",
+    "Fort Johnson (site of the first shot of the Civil War)",
+    "Riverland Terrace (oak-lined entrance); neighborhoods incl. Stiles Point, Harbor Woods"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/James_Island,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.96611111&y=32.73027778&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": "James Island town",
+    "cdp": null,
+    "zcta_at_sample_point": "29412",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.96611111&y=32.73027778&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Johns Island": {
+   "counties": [
+    "Charleston"
+   ],
+   "zips": [
+    "29455"
+   ],
+   "status": "Largest island in SC; mostly unincorporated Charleston County with portions in the City of Charleston; not a Census place - no official population",
+   "population_2020": null,
+   "landmarks": [
+    "Angel Oak (400-500-year-old live oak)",
+    "Charleston Executive Airport (general aviation)",
+    "Stono River / Legareville; gateway to Kiawah and Seabrook islands"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Johns_Island,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.04805556&y=32.7025&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": null,
+    "cdp": null,
+    "zcta_at_sample_point": "29455",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.04805556&y=32.7025&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified/none"
+  },
+  "Ravenel": {
+   "counties": [
+    "Charleston"
+   ],
+   "zips": [
+    "29470"
+   ],
+   "status": "Incorporated town",
+   "population_2020": 2542,
+   "landmarks": [
+    "Caw Caw Interpretive Center (Charleston County Parks), 5200 Savannah Hwy - 660-acre former rice plantation preserve",
+    "US-17 (Savannah Highway) corridor in western Charleston County",
+    "Borders the Town of Hollywood to the south"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ravenel,_South_Carolina",
+    "https://ccprc.com/53/Caw-Caw-Interpretive-Center",
+    "https://en.wikipedia.org/wiki/Hollywood,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.24388889&y=32.77638889&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": "Ravenel town",
+    "cdp": null,
+    "zcta_at_sample_point": "29470",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.24388889&y=32.77638889&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Hollywood": {
+   "counties": [
+    "Charleston"
+   ],
+   "zips": [
+    "29449"
+   ],
+   "status": "Incorporated town",
+   "population_2020": 5339,
+   "landmarks": [
+    "Between the Stono and Edisto rivers; bordered by Ravenel (N) and Meggett (S)",
+    "Baptist Hill High School, 5117 Baptist Hill Rd (est. 1948)",
+    "Old Wide Awake Park (Serenity Park) waterfront park; The Links at Stono Ferry golf course (per homes.com guide - secondary source)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hollywood,_South_Carolina",
+    "https://www.usnews.com/education/k12/south-carolina/baptist-hill-high-17567",
+    "https://www.homes.com/local-guide/hollywood-sc/",
+    "https://www.townofhollywood.org/",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.24166667&y=32.73416667&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Charleston County",
+    "incorporated_place": "Hollywood town",
+    "cdp": null,
+    "zcta_at_sample_point": "29449",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.24166667&y=32.73416667&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Reevesville": {
+   "counties": [
+    "Dorchester"
+   ],
+   "zips": [
+    "29471"
+   ],
+   "status": "Incorporated town",
+   "population_2020": 201,
+   "landmarks": [
+    "Agrarian community between Cattle Creek and Polk Swamp near the Edisto River (Upper Dorchester County)",
+    "Part of the Charleston-North Charleston-Summerville MSA",
+    "(no further landmarks verified)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Reevesville,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.64555556&y=33.20222222&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Dorchester County",
+    "incorporated_place": "Reevesville town",
+    "cdp": null,
+    "zcta_at_sample_point": "29471",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.64555556&y=33.20222222&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Dorchester (community)": {
+   "counties": [
+    "Dorchester"
+   ],
+   "zips": [
+    "29437"
+   ],
+   "status": "Unincorporated community on US-78 west of Summerville (Wikidata Q114442686); the Wikipedia article 'Dorchester, South Carolina' covers the abandoned colonial town on the Ashley River (now Colonial Dorchester State Historic Site), not this community. Not a Census place - no official population.",
+   "population_2020": null,
+   "landmarks": [
+    "Dorchester County Public Works, 2120 East Main Street, Dorchester, SC 29437 (county facility)",
+    "Historic railroad station site (Ross's Turnout / Elmville) on US-78 - per search summary, unverified",
+    "OSM hamlet node at 33.1399,-80.3943"
+   ],
+   "sources": [
+    "https://www.dorchestercountysc.gov/how-do-i/locate-county-facilities",
+    "https://www.wikidata.org/wiki/Q114442686",
+    "https://en.wikipedia.org/wiki/Dorchester,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.3942635&y=33.1398875&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Dorchester County",
+    "incorporated_place": null,
+    "cdp": null,
+    "zcta_at_sample_point": "29437",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.3942635&y=33.1398875&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified/none; history partially verified"
+  },
+  "Cottageville": {
+   "counties": [
+    "Colleton"
+   ],
+   "zips": [
+    "29435"
+   ],
+   "status": "Incorporated town",
+   "population_2020": 701,
+   "landmarks": [
+    "Town Hall, 72 Salley Ackerman Dr, Cottageville 29435 (843-835-8655)",
+    "On Alternate US-17 about 11 miles east of Walterboro (MASC)",
+    "(no further landmarks verified)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cottageville,_South_Carolina",
+    "https://www.masc.sc/municipality/cottageville",
+    "https://townofcottageville.org/",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.48027778&y=32.93611111&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Colleton County",
+    "incorporated_place": "Cottageville town",
+    "cdp": null,
+    "zcta_at_sample_point": "29435",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.48027778&y=32.93611111&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Jedburg": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29486 (ZCTA at sample point on Jedburg Rd); OSM tags nearby segments 29483"
+   ],
+   "status": "Unincorporated community in Berkeley County; not a Census place - no official population; no Wikipedia article",
+   "population_2020": null,
+   "landmarks": [
+    "I-26 exit 194 (Jedburg Road) diamond interchange with Flying J travel center (opened 2018)",
+    "Jedburg Road/I-26 interchange widening project (Berkeley County)",
+    "Sheep Island community/cemetery (Find a Grave - secondary source)"
+   ],
+   "sources": [
+    "https://www.aaroads.com/guides/i-026-east-summerville-sc",
+    "https://www.berkeleycountysc.gov/drupal/engineering/onecent/jedburg-road-i-26-interchange-right-way-acquisition-only",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1868236&y=33.1083675&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": null,
+    "cdp": null,
+    "zcta_at_sample_point": "29486",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1868236&y=33.1083675&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified/none"
+  },
+  "Pinopolis": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29469"
+   ],
+   "status": "Census-designated place (unincorporated)",
+   "population_2020": 982,
+   "landmarks": [
+    "Pinopolis Dam / Lake Moultrie (Santee Cooper project, dam completed 1946)",
+    "Pinopolis Historic District North & South; William Robertson House (NRHP)",
+    "(near Moncks Corner)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pinopolis,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.03861111&y=33.22861111&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": null,
+    "cdp": "Pinopolis CDP",
+    "zcta_at_sample_point": "29469",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.03861111&y=33.22861111&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Bonneau": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29431"
+   ],
+   "status": "Incorporated town",
+   "population_2020": 431,
+   "landmarks": [
+    "East shore of Lake Moultrie",
+    "Western edge of the Francis Marion National Forest",
+    "(no further landmarks verified)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bonneau,_South_Carolina",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.95722222&y=33.30805556&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": "Bonneau town",
+    "cdp": null,
+    "zcta_at_sample_point": "29431",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-79.95722222&y=33.30805556&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   }
+  },
+  "Carnes Crossroads": {
+   "counties": [
+    "Berkeley"
+   ],
+   "zips": [
+    "29486 (Summerville mailing address; located within Goose Creek city limits per Census geocoder)"
+   ],
+   "status": "Master-planned community (2,300 acres) at US-17A & US-176 inside the City of Goose Creek; not a Census place - no official population; no Wikipedia article",
+   "population_2020": null,
+   "landmarks": [
+    "Roper St. Francis Berkeley Hospital (opened 2019, 50 beds, 24-hour ER) on the community's medical campus",
+    "'Agrihood' with a working farm; NAHB Community of the Year (2026)",
+    "Intersection of US-17A and US-176 (State Rd)"
+   ],
+   "sources": [
+    "https://carnescrossroads.com/",
+    "https://tourism.berkeleycountysc.gov/event-organizer/carnes-crossroads/",
+    "https://www.counton2.com/news/local-news/berkeley-county-news/carnes-crossroads-launches-agrihood-community/",
+    "https://www.privatecommunities.com/southcarolina/carnescrossroads/index.htm",
+    "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1038458&y=33.0553897&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   ],
+   "census_geocoder": {
+    "county": "Berkeley County",
+    "incorporated_place": "Goose Creek city",
+    "cdp": null,
+    "zcta_at_sample_point": "29486",
+    "source": "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-80.1038458&y=33.0553897&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json"
+   },
+   "status_flag": "population unverified/none; details from developer/news sources"
+  }
+ },
+ "places_meta": {
+  "population_source_note": "2020 populations are the 'population_total' figures in each Wikipedia infobox (which cite the 2020 U.S. Census). The Census API (api.census.gov) requires an API key in this environment and returned 'Missing Key', so figures were not re-pulled from data.census.gov directly. Incorporation status, county and ZCTA were independently confirmed with the U.S. Census Bureau geocoder (geographies/coordinates, benchmark Public_AR_Current) at a sample point in each community."
+ },
+ "community_links": {
+  "nextdoor": [
+   {
+    "label": "Nextdoor - Summerville, SC",
+    "url": "https://nextdoor.com/city/summerville--sc/",
+    "http_status": "200",
+    "page_title": "Summerville, SC | News, Crime, Lost Pets, Free Stuff",
+    "final_url": "https://nextdoor.com/city/summerville--sc/",
+    "verified_loads": true
+   },
+   {
+    "label": "Nextdoor - Goose Creek, SC",
+    "url": "https://nextdoor.com/city/goose-creek--sc/",
+    "http_status": "200",
+    "page_title": "Goose Creek, SC | News, Crime, Lost Pets, Free Stuff",
+    "final_url": "https://nextdoor.com/city/goose-creek--sc/",
+    "verified_loads": true
+   },
+   {
+    "label": "Nextdoor - Ladson, SC",
+    "url": "https://nextdoor.com/city/ladson--sc/",
+    "http_status": "200",
+    "page_title": "Ladson, SC | News, Crime, Lost Pets, Free Stuff",
+    "final_url": "https://nextdoor.com/city/ladson--sc/",
+    "verified_loads": true
+   },
+   {
+    "label": "Nextdoor - Moncks Corner, SC",
+    "url": "https://nextdoor.com/city/moncks-corner--sc/",
+    "http_status": "200",
+    "page_title": "Moncks Corner, SC | News, Crime, Lost Pets, Free Stuff",
+    "final_url": "https://nextdoor.com/city/moncks-corner--sc/",
+    "verified_loads": true
+   },
+   {
+    "label": "Nextdoor - North Charleston, SC",
+    "url": "https://nextdoor.com/city/north-charleston--sc/",
+    "http_status": "200",
+    "page_title": "North Charleston, SC | News, Crime, Lost Pets, Free Stuff",
+    "final_url": "https://nextdoor.com/city/north-charleston--sc/",
+    "verified_loads": true
+   }
+  ],
+  "reddit": [
+   {
+    "subreddit": "r/Charleston",
+    "url": "https://www.reddit.com/r/Charleston/",
+    "exists": true,
+    "members": "83,883 (reddapi.dev third-party stats; date unknown)",
+    "source": "https://reddapi.dev/subreddits/charleston/insights",
+    "note": "reddit.com returns HTTP 403 to automated fetches from this environment; member count is from a third-party mirror - re-check on reddit.com before publishing",
+    "verified": "exists (third-party); count unverified"
+   },
+   {
+    "subreddit": "r/SummervilleSC",
+    "url": "https://www.reddit.com/r/SummervilleSC/",
+    "exists": true,
+    "members": "12,558 (reddapi.dev third-party stats)",
+    "source": "https://reddapi.dev/subreddits/SummervilleSC/insights",
+    "verified": "exists (third-party); count unverified"
+   },
+   {
+    "subreddit": "r/southcarolina",
+    "url": "https://www.reddit.com/r/southcarolina/",
+    "exists": true,
+    "members": "212,252 (reddapi.dev third-party stats)",
+    "source": "https://reddapi.dev/subreddits/southcarolina/insights",
+    "verified": "exists (third-party); count unverified"
+   },
+   {
+    "subreddit": "r/summerville",
+    "url": "https://www.reddit.com/r/summerville/",
+    "exists": "unverified",
+    "members": null,
+    "note": "Not resolvable from this environment (reddit 403; reddapi.dev has no page); do not publish",
+    "verified": false
+   },
+   {
+    "subreddit": "r/GooseCreek",
+    "url": "https://www.reddit.com/r/GooseCreek/",
+    "exists": "unverified",
+    "members": null,
+    "note": "Not resolvable from this environment; do not publish",
+    "verified": false
+   }
+  ],
+  "news": [
+   {
+    "label": "The Post and Courier - homepage",
+    "url": "https://www.postandcourier.com/",
+    "http_status": "200",
+    "page_title": "South Carolina Breaking News & Charleston Updates | Post and Courier | Post and Courier | Charleston, SC. Local News, Sports and Weather",
+    "final_url": "https://www.postandcourier.com/",
+    "verified_loads": true
+   },
+   {
+    "label": "The Post and Courier - Summerville section",
+    "url": "https://www.postandcourier.com/summerville/",
+    "http_status": "200",
+    "page_title": "Summerville SC News and Events",
+    "final_url": "https://www.postandcourier.com/summerville/",
+    "verified_loads": true
+   },
+   {
+    "label": "The Post and Courier - Summerville Journal Scene section",
+    "url": "https://www.postandcourier.com/journal-scene/",
+    "http_status": "200",
+    "page_title": "Summerville Journal Scene – Local News, Events & Community Reporting",
+    "final_url": "https://www.postandcourier.com/journal-scene/",
+    "verified_loads": true
+   },
+   {
+    "label": "The Post and Courier - Berkeley Independent (Berkeley County) section",
+    "url": "https://www.postandcourier.com/berkeley-independent/",
+    "http_status": "200",
+    "page_title": "Local News & Community Updates for Berkeley County, SC",
+    "final_url": "https://www.postandcourier.com/berkeley-independent/",
+    "verified_loads": true
+   },
+   {
+    "label": "The Post and Courier - Moultrie News (Mount Pleasant/East Cooper)",
+    "url": "https://www.postandcourier.com/moultrie-news/",
+    "http_status": "200",
+    "page_title": "Moultrie News | Local Source for Mount Pleasant & East Cooper",
+    "final_url": "https://www.postandcourier.com/moultrie-news/",
+    "verified_loads": true
+   },
+   {
+    "label": "Live 5 News (WCSC) - homepage",
+    "url": "https://www.live5news.com/",
+    "http_status": "200",
+    "page_title": "WCSC | Live 5 News",
+    "final_url": "https://www.live5news.com/",
+    "verified_loads": true
+   },
+   {
+    "label": "Live 5 News (WCSC) - News section",
+    "url": "https://www.live5news.com/news/",
+    "http_status": "200",
+    "page_title": "News",
+    "final_url": "https://www.live5news.com/news/",
+    "verified_loads": true
+   },
+   {
+    "label": "ABC News 4 (WCIV) - homepage",
+    "url": "https://abcnews4.com/",
+    "http_status": "200",
+    "page_title": "Charleston News, Weather, Sports, Breaking News",
+    "final_url": "https://abcnews4.com/",
+    "verified_loads": true
+   },
+   {
+    "label": "ABC News 4 (WCIV) - Local news",
+    "url": "https://abcnews4.com/news/local",
+    "http_status": "200",
+    "page_title": "Local",
+    "final_url": "https://abcnews4.com/news/local",
+    "verified_loads": true
+   },
+   {
+    "label": "WCBD News 2 (Count on 2) - homepage",
+    "url": "https://www.counton2.com/",
+    "http_status": "403 to automated fetch (bot protection)",
+    "page_title": "Charleston News & Weather | Charleston, SC | WCBD - WCBD News 2 (per search index)",
+    "verified_loads": "exists per search index; direct fetch blocked",
+    "sources": [
+     "https://www.counton2.com/",
+     "https://en.wikipedia.org/wiki/WCBD-TV"
+    ]
+   },
+   {
+    "label": "WCBD News 2 - Local news",
+    "url": "https://www.counton2.com/news/local-news/",
+    "http_status": "403 to automated fetch",
+    "page_title": "Charleston, SC News (per search index)",
+    "verified_loads": "exists per search index; direct fetch blocked"
+   },
+   {
+    "label": "Charleston City Paper - homepage",
+    "url": "https://charlestoncitypaper.com/",
+    "http_status": "403 to curl; loaded via WebFetch",
+    "page_title": "Charleston City Paper",
+    "verified_loads": true
+   },
+   {
+    "label": "Charleston City Paper - News",
+    "url": "https://charlestoncitypaper.com/category/news/",
+    "verified_loads": "path confirmed from site navigation (WebFetch)",
+    "http_status": "403 to curl"
+   },
+   {
+    "label": "Summerville Journal Scene (lives inside Post and Courier)",
+    "url": "https://www.postandcourier.com/journal-scene/",
+    "http_status": "200",
+    "verified_loads": true
+   }
+  ],
+  "government_news": [
+   {
+    "label": "Dorchester County - News & Notices",
+    "url": "https://www.dorchestercountysc.gov/services/advanced-components/news-list",
+    "page_title": "News & Notices | Dorchester County, SC website",
+    "http_status": "403 to curl (Akamai); loaded via r.jina.ai",
+    "verified_loads": true
+   },
+   {
+    "label": "Berkeley County - Newsroom",
+    "url": "https://berkeleycountysc.gov/newsroom/",
+    "page_title": "Newsroom - Berkeley County Government (per search index)",
+    "http_status": "403 (Cloudflare) to all automated fetches",
+    "verified_loads": "exists per search index; direct fetch blocked",
+    "alternates": [
+     "https://berkeleycountysc.gov/category/latest-news/",
+     "https://berkeleycountysc.gov/dept/pio/"
+    ]
+   },
+   {
+    "label": "Town of Summerville - News Flash (CivicAlerts)",
+    "url": "https://www.summervillesc.gov/CivicAlerts.aspx",
+    "http_status": "200",
+    "page_title": "News Flash • Summerville, SC",
+    "final_url": "https://www.summervillesc.gov/m/newsflash",
+    "verified_loads": true,
+    "note": "Canonical https://www.summervillesc.gov/CivicAlerts.aspx redirects to the mobile News Flash view"
+   }
+  ],
+  "courts_and_law": [
+   {
+    "label": "SC Judicial Branch - Court Roster Search",
+    "url": "https://www.sccourts.org/court-roster-search/",
+    "http_status": "200",
+    "page_title": "Court Roster Search - South Carolina Judicial Branch",
+    "verified_loads": true
+   },
+   {
+    "label": "SC Judicial Branch - Clerk of Court roster",
+    "url": "https://www.sccourts.org/courts/court-officials/clerks-of-court/clerk-roster/",
+    "http_status": "200",
+    "page_title": "Clerk Roster - South Carolina Judicial Branch",
+    "verified_loads": true
+   },
+   {
+    "label": "SC Judicial Branch - Dorchester courthouse page",
+    "url": "https://www.sccourts.org/courts/courthouse-search/dorchester/",
+    "verified_loads": true
+   },
+   {
+    "label": "Dorchester County public index court rosters",
+    "url": "https://publicindex.sccourts.org/dorchester/courtrosters/RosterSelection.aspx",
+    "http_status": "406 to curl (bot protection)",
+    "verified_loads": "URL cited by Dorchester County site; not loadable from this environment"
+   },
+   {
+    "label": "SC Code of Laws - Title 62 (SC Probate Code)",
+    "url": "https://www.scstatehouse.gov/code/title62.php",
+    "http_status": "200",
+    "page_title": "Code of Laws Title 62 SOUTH CAROLINA PROBATE CODE",
+    "verified_loads": true
+   },
+   {
+    "label": "SC Code of Laws - Title 56 (Motor Vehicles)",
+    "url": "https://www.scstatehouse.gov/code/title56.php",
+    "http_status": "200",
+    "page_title": "Code of Laws Title 56 MOTOR VEHICLES",
+    "verified_loads": true
+   },
+   {
+    "label": "SC Code of Laws - master index",
+    "url": "https://www.scstatehouse.gov/code/statmast.php",
+    "http_status": "200",
+    "verified_loads": true
+   }
+  ]
+ },
+ "law": {
+  "small_estate_affidavit_62-3-1201": {
+   "citation": "S.C. Code Ann. § 62-3-1201 (collection of personal property by affidavit)",
+   "url": "https://www.scstatehouse.gov/code/t62c003.php",
+   "summary": "Thirty days after death, a successor may collect the decedent's personal property by affidavit if the entire probate estate (will + intestacy), wherever located, less liens and encumbrances, does not exceed $45,000; no PR application pending or granted; the affidavit must be approved and countersigned by the probate judge of the decedent's domicile county and filed in that probate court (a person who paid reasonable funeral expenses counts as a claiming successor).",
+   "current_threshold_usd": 45000,
+   "quote": "(1) state that the value of the entire probate estate (the decedent's property passing under the decedent's will plus the decedent's property passing by intestacy), wherever located, less liens and encumbrances, does not exceed forty-five thousand dollars; (2) state that thirty days have elapsed since the death of the decedent;",
+   "history": "1986 Act No. 539; ... 2013 Act No. 100, eff Jan 1, 2014; 2025 Act No. 26 (H.3472), SECTION 1, eff May 8, 2025 - substituted 'forty-five thousand dollars' for 'twenty-five thousand dollars'.",
+   "related": {
+    "62-3-1203 summary administration": "Same $45,000 ceiling (also raised from $25,000 by 2025 Act No. 26 §2, eff May 8, 2025) for immediate distribution and closing statement after publishing notice to creditors.",
+    "8-21-770(C)(12) fee": "Filing the § 62-3-1201 affidavit costs the § 8-21-770(B) estate fee based on the property valuation (half that amount if valuation < $100)."
+   },
+   "status": "verified 2026-09-16"
+  },
+  "will_execution_62-2-502": {
+   "citation": "S.C. Code Ann. § 62-2-502",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php",
+   "summary": "Every will (other than § 62-2-512 writings and § 62-2-505 wills) must be (1) in writing; (2) signed by the testator or by another in the testator's presence and at the testator's direction; and (3) signed by at least two individuals each of whom witnessed either the signing or the testator's acknowledgment of the signature or of the will. No notary is required for validity itself.",
+   "quote": "every will shall be: (1) in writing; (2) signed by the testator or signed in the testator's name by some other individual in the testator's presence and by the testator's direction; and (3) signed by at least two individuals each of whom witnessed either the signing or the testator's acknowledgment of the signature or of the will.",
+   "history": "1986 Act No. 539; 1990 Act No. 521; 2013 Act No. 100, eff Jan 1, 2014.",
+   "status": "verified"
+  },
+  "self_proved_will_62-2-503": {
+   "citation": "S.C. Code Ann. § 62-2-503",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php",
+   "summary": "A will may be made self-proved at execution or later by the testator's acknowledgment and the affidavit of at least one witness, each made before an officer authorized to administer oaths (e.g., a notary) and evidenced by the officer's certificate under official seal, using the statutory forms (or a similar form showing the same intent).",
+   "quote": "The self-proof shall be effective upon the acknowledgment by the testator and the affidavit of at least one witness, each made before an officer authorized to administer oaths under the laws of the state where execution occurs and evidenced by the officer's certificate, under official seal",
+   "history": "1986 Act No. 539; 1987 Act No. 171; 1988 Act No. 659; 2013 Act No. 100, eff Jan 1, 2014.",
+   "status": "verified"
+  },
+  "intestacy_62-2-102_103": {
+   "citation": "S.C. Code Ann. §§ 62-2-102, 62-2-103",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php",
+   "summary": "Spouse: the entire intestate estate if the decedent left no surviving issue; one-half if there are surviving issue (§ 62-2-102). The balance (or all, if no spouse) passes: to issue (equally if same degree, otherwise by representation); if none, to parent(s) equally; then to issue of parents by representation; then half to paternal and half to maternal grandparents/their issue; then great-grandparents/their issue (§ 62-2-103).",
+   "quote_102": "The intestate share of the surviving spouse is: (1) if there is no surviving issue of the decedent, the entire intestate estate; (2) if there are surviving issue, one-half of the intestate estate.",
+   "history": "§102: 1986 Act No. 539; 2013 Act No. 100. §103: 1986 Act No. 539; 1990 Act No. 521; 2013 Act No. 100, eff Jan 1, 2014.",
+   "status": "verified"
+  },
+  "uniform_power_of_attorney_act_62-8": {
+   "citation": "S.C. Code Ann. Title 62, Article 8 (§ 62-8-101 et seq.), 'South Carolina Uniform Power of Attorney Act'",
+   "url": "https://www.scstatehouse.gov/code/t62c008.php",
+   "summary": "Enacted by 2016 Act No. 279 (S.778), effective January 1, 2017. Execution (§ 62-8-105): signed by the principal (or by another in the principal's presence at the principal's direction), attested with the same formality and witness requirements as a South Carolina will (i.e., two witnesses), and acknowledged or proved under § 30-5-30 (notary/probate for recording). Effectiveness (§ 62-8-109): effective when executed unless made springing; if springing on incapacity and no person is designated to determine it, incapacity is determined in writing by a physician or licensed psychologist (or by an attorney, court or governmental official for the § 62-8-102(5)(B) grounds).",
+   "recording_requirement_quote": "(c) After the principal's incapacity, an agent may exercise the authority granted unto the agent under the power of attorney only if the power of attorney has been recorded in the same manner as a deed in the county where the principal resides at the time the instrument is recorded. If the principal resides out of State, the power of attorney may be recorded in any county where property of the principal is located at the time the instrument is recorded. The power of attorney may be recorded before or after the principal's incapacity. After the principal's incapacity and before recordation, the agent's authority cannot be exercised.",
+   "execution_quote": "A power of attorney must be: (1) signed by the principal or in the principal's presence by another individual directed by the principal to sign the principal's name on the power of attorney; (2) attested with the same formality and with the same requirements as to witnesses as a will in South Carolina; and (3) acknowledged or proved pursuant to Section 30-5-30.",
+   "history": "2016 Act No. 279 (S.778), SECTION 1, eff January 1, 2017.",
+   "status": "verified"
+  },
+  "health_care_power_of_attorney_62-5-503_504": {
+   "citation": "S.C. Code Ann. § 62-5-503 (requirements) and § 62-5-504 (statutory form)",
+   "url": "https://www.scstatehouse.gov/code/t62c005.php",
+   "summary": "A health care power of attorney must be substantially in the § 62-5-504 form; dated and signed by the principal (or by another in the principal's presence at the principal's direction); and signed by at least two witnesses who each declare they are not related to the principal by blood, marriage or adoption, not financially responsible for the principal's medical care, not an heir/beneficiary/life-insurance beneficiary or claimant against the estate, not the named agent or successor agent, not the attending physician or the physician's employee, and no more than one witness may be an employee of the health facility where the principal is a patient. The agent must be 18+ and generally may not be the principal's health care provider or a provider's employee. Notarization is optional: the form states 'This portion of the document is optional and is not required to create a valid health care power of attorney.' The form applies to HCPOAs executed on or after January 1, 2007.",
+   "note": "The task brief cites § 62-5-504 for the HCPOA; after 2016 Act No. 279 the execution requirements are in § 62-5-503 (formerly § 62-5-504) and § 62-5-504 now contains the form.",
+   "history": "1992 Act No. 306; 2005 Act No. 172; 2006 Act No. 365; 2008 Act No. 303; 2010 Act No. 244; 2016 Act No. 279 (S.778), SECTION 2, eff January 1, 2017.",
+   "status": "verified"
+  },
+  "death_with_dignity_act_living_will_44-77": {
+   "citation": "S.C. Code Ann. § 44-77-10 et seq. ('Death With Dignity Act'); form at § 44-77-50; validity at § 44-77-40",
+   "url": "https://www.scstatehouse.gov/code/t44c077.php",
+   "summary": "A declaration (living will) is valid if it substantially follows the § 44-77-50 form, expresses the declarant's desire that no life-sustaining procedures be used if the condition is terminal or the declarant is permanently unconscious, and is dated and signed by the declarant in the presence of an officer authorized to administer oaths (notary) AND two witnesses (one of whom may be the officer) who affirm they are not related by blood/marriage/adoption, not financially responsible for the declarant's care, not heirs/beneficiaries, and that no more than one is an employee of the health facility and none is the attending physician or the physician's employee.",
+   "quote": "(2) which has been dated and signed by the declarant in the presence of an officer authorized to administer oaths under the laws of the state where the signing occurs and in the presence of two witnesses, one of whom may be the officer authorized to administer oaths",
+   "history": "§ 44-77-10: 1986 Act No. 341; 1988 Act No. 586.",
+   "status": "verified"
+  },
+  "pretrial_intervention_17-22-10_et_seq": {
+   "citation": "S.C. Code Ann. § 17-22-10 et seq. ('Pretrial Intervention Act', Title 17, Chapter 22, Article 1)",
+   "url": "https://www.scstatehouse.gov/code/t17c022.php",
+   "summary": "Each circuit solicitor establishes and controls a PTI program (§ 17-22-30). Excluded (§ 17-22-50): anyone previously accepted into an intervention program, and charges of blackmail; DUI/DUAC; fine/points-only traffic offenses; 18-point fish/game offenses; crimes of violence under § 16-1-60; and Chapter 25, Title 16 (domestic violence) offenses for repeat offenders. Eligibility standards (§ 17-22-60): substantial likelihood justice is served, needs better met outside the traditional process, no threat to the community, unlikely to reoffend, no significant prior record, not previously in PTI. A written agreement is required (§ 17-22-120). On successful completion the solicitor effects a noncriminal disposition and the offender may apply to the court for an order destroying the arrest records (§ 17-22-150), administered through the solicitor's expungement process (§ 17-22-910(A)(7)).",
+   "history": "1980 Act No. 360 and later amendments (see section HISTORY lines on the chapter page).",
+   "status": "verified"
+  },
+  "expungement_17-22-910_et_seq": {
+   "citation": "S.C. Code Ann. § 17-22-910 through § 17-22-960 (Title 17, Chapter 22, Article 9)",
+   "url": "https://www.scstatehouse.gov/code/t17c022.php",
+   "summary": "Expungement applications are administered by the solicitor's office in each circuit (§ 17-22-910(A)), covering: first-offense fraudulent check (§ 34-11-90(e)); conditional discharge (§ 44-53-450(b)); first-offense/minor convictions in summary and general sessions court (§ 22-5-910); Youthful Offender Act convictions (§ 22-5-920); first-offense simple possession / PWID drug convictions (§ 22-5-930); first-offense failure to stop for blue lights (§ 56-5-750(F)); pretrial intervention (§ 17-22-150(a)); non-conviction records under § 17-1-40; juvenile records (§ 63-19-2050); alcohol education (§ 17-22-530(A)); traffic education (§ 17-22-330(A)); Youth Challenge Academy (§ 17-22-1010); and any other statutory authorization. Eligibility is judged by the offense pled to or convicted of, not the charge (§ 17-22-910(B)), and applies retroactively (§ 17-22-910(C)). Fee: $250 non-refundable administrative fee per order to the solicitor (exempt for § 17-1-40 dismissals unless part of a plea deal); solicitors may use private donations to defray up to 50% (§ 17-22-940). Summary-court dismissals/not-guilty verdicts are expunged by the summary court at no cost (§ 17-22-950). Employers are protected from liability regarding expunged offenses and may not use expunged information adversely (§ 17-22-960).",
+   "history": "§ 17-22-910: 2009 Act No. 36; 2014 Act No. 276; 2015 Act No. 22; 2018 Act No. 254 (H.3209), SECTION 1, eff December 27, 2018; 2018 Act No. 262.",
+   "status": "verified"
+  },
+  "expungement_22-5-910": {
+   "citation": "S.C. Code Ann. § 22-5-910",
+   "url": "https://www.scstatehouse.gov/code/t22c005.php",
+   "summary": "After a conviction for an offense carrying no more than 30 days' imprisonment or a $1,000 fine (or both), or a first-offense unlawful possession of a firearm/weapon carrying up to one year or $1,000, the defendant may apply to circuit court three years after the conviction (five years for third-degree domestic violence under § 16-25-20(D)) for expungement of the arrest, conviction and any bench warrant, if there were no other convictions (including out-of-state) in that period. Excludes offenses involving operation of a motor vehicle. Closely connected offenses sentenced together may be treated as one conviction. Not available while charges are pending (unless pending >5 years) and only once per person.",
+   "quote": "(A) Following a conviction for a crime carrying a penalty of not more than thirty days imprisonment or a fine of one thousand dollars, or both, ... the defendant after three years from the date of the conviction, including a conviction in magistrates or general sessions court, may apply ... to the circuit court for an order expunging the records of the arrest and conviction and any associated bench warrant. However, this section does not apply to an offense involving the operation of a motor vehicle.",
+   "history": "1992 Act No. 395 ... 2018 Act No. 254 (H.3209), SECTION 2, eff December 27, 2018; 2024 Act No. 111 (H.3594), SECTION 17, eff March 7, 2024.",
+   "status": "verified"
+  },
+  "youthful_offender_expungement_22-5-920": {
+   "citation": "S.C. Code Ann. § 22-5-920 (Youthful Offender Act convictions; YOA itself is Chapter 19, Title 24)",
+   "url": "https://www.scstatehouse.gov/code/t22c005.php",
+   "summary": "After a first-offense conviction sentenced under the Youthful Offender Act, a defendant with no other convictions (excluding DUS and pre-May 17, 2018 disturbing-schools convictions) during the sentence (including probation/parole) and for five years after completing it may apply to circuit court for expungement. Not available for offenses involving operation of a motor vehicle, violent crimes under § 16-1-60, Chapter 25 Title 16 (domestic violence) offenses except as provided in § 16-25-30, or offenses requiring sex-offender registration. One expungement per person; applies to convictions before the section's effective date. Closely connected offenses sentenced together count as one conviction.",
+   "history": "2003 Act No. 1; 2009 Act No. 36; 2010 Act No. 273; 2016 Act No. 132; 2018 Act No. 254 (H.3209), SECTION 3, eff December 27, 2018 ('rewrote the section, redefining conviction to expand eligibility...'); 2023 Act No. 73 (H.3890), eff June 14, 2023.",
+   "status": "verified"
+  },
+  "act_254_of_2018_expungement_reform": {
+   "citation": "2018 Act No. 254 (H.3209), ratified May 14, 2018; vetoed May 19, 2018; veto overridden June 27, 2018; effective December 27, 2018 (six months after approval)",
+   "url": "https://www.scstatehouse.gov/sess122_2017-2018/bills/3209.htm",
+   "summary": "Section 1 amended § 17-22-910 to add first-offense simple possession / PWID drug convictions to the solicitor-administered list. Section 2 amended § 22-5-910 to delete the 'first offense' limitation, add the pre-2015 DV subsection, count out-of-state convictions, and treat closely connected offenses sentenced together as one conviction. Section 3 rewrote § 22-5-920 (YOA expungement), expanding eligibility, excluding sex-offender-registry offenses and applying retroactively. Section 4 added § 22-5-930 (first-offense simple possession/prescription-drug possession: apply 3 years after completing the sentence; first-offense PWID: 20 years after completing any sentence, with no other drug or felony conviction). Section 5 amended § 63-19-2050(C)(2) (juvenile expungement). Section 6 rewrote § 17-22-940 (fee process; $250 fee; private-donation fund). Section 7 added § 17-22-960 (employer liability protection for hiring people with expunged records).",
+   "status": "verified against enrolled act text and code HISTORY notes"
+  },
+  "probate_filing_fees_8-21-770": {
+   "citation": "S.C. Code Ann. § 8-21-770(B)",
+   "url": "https://www.scstatehouse.gov/code/t08c021.php",
+   "summary": "Estate (and conservatorship) filing fee based on the gross probate estate on the inventory and appraisement: under $5,000 = $25; $5,000 to under $20,000 = $45; $20,000 to under $60,000 = $67.50; $60,000 to under $100,000 = $95; $100,000 to under $600,000 = $95 plus 0.15% of the valuation between $100,000 and $600,000; $600,000 or more = the preceding amount plus 0.25% of the valuation above $600,000. Fees are payable on filing but may be deferred at the judge's discretion until the inventory/appraisement deadline. Other fees include certified copy $5, reopening a closed estate $22.50, filing/indexing a will under § 62-2-901 $10; small-estate affidavit fee per (B) (half if < $100). Notice-to-creditors advertising cost is extra.",
+   "tiers": [
+    {
+     "valuation": "< $5,000",
+     "fee": "$25.00"
+    },
+    {
+     "valuation": "$5,000 to < $20,000",
+     "fee": "$45.00"
+    },
+    {
+     "valuation": "$20,000 to < $60,000",
+     "fee": "$67.50"
+    },
+    {
+     "valuation": "$60,000 to < $100,000",
+     "fee": "$95.00"
+    },
+    {
+     "valuation": "$100,000 to < $600,000",
+     "fee": "$95.00 + 0.15% of valuation between $100,000 and $600,000"
+    },
+    {
+     "valuation": ">= $600,000",
+     "fee": "tier-5 amount + 0.25% of valuation above $600,000"
+    }
+   ],
+   "history": "1979 Act No. 164; 1993 Act No. 181; 1994 Act No. 470; 1995 Act No. 15, eff April 4, 1995 (retroactive to Aug 15, 1994).",
+   "status": "verified"
+  },
+  "creditor_claims_62-3-801_803": {
+   "citation": "S.C. Code Ann. § 62-3-801 (notice to creditors) and § 62-3-803 (limitations on presentation of claims)",
+   "url": "https://www.scstatehouse.gov/code/t62c003.php",
+   "summary": "A personal representative must publish notice to creditors once a week for three successive weeks in a county newspaper; creditors must present claims within eight months after the first publication or be forever barred. The PR may also give written notice, requiring presentation within the earlier of one year after death or 60 days after mailing. Notice is not required if no PR is appointed within one year of death. Independently, § 62-3-803 bars pre-death claims not presented within the earlier of one year after death or the § 62-3-801 periods.",
+   "quote": "notifying creditors of the estate to present their claims within eight months after the date of the first publication of the notice or be forever barred.",
+   "history": "§ 62-3-801: 1986 Act No. 539; 1987 Act No. 171; 1990 Act No. 521; 2013 Act No. 100, eff Jan 1, 2014.",
+   "status": "verified"
+  },
+  "will_delivery_62-2-901": {
+   "citation": "S.C. Code Ann. § 62-2-901 (delivery of will to judge of probate; filing)",
+   "url": "https://www.scstatehouse.gov/code/t62c002.php",
+   "summary": "The custodian of a will must deliver it within THIRTY days of actual notice or knowledge of the testator's death to the probate judge with jurisdiction (or to the named personal representative, who must deliver it to the judge). If probate proceedings are not begun within thirty days after filing, the judge publishes notice of the delivery once a week for three consecutive weeks. Intentionally or fraudulently destroying, suppressing, concealing or failing to deliver a will creates civil liability (and further consequences in subsection (c)).",
+   "correction": "The task brief describes a '10-day probate window for delivering a will' - the statute says thirty (30) days. Do not publish '10 days'.",
+   "quote": "a person having custody of a will of the testator shall deliver such will, within thirty days of actual notice or knowledge of the testator's death to the judge of the probate court having jurisdiction to admit the same or to a person named as personal representative in the will who shall deliver the will to the judge of the probate court.",
+   "history": "1986 Act No. 539; 1987 Act No. 171; 2013 Act No. 100, eff Jan 1, 2014.",
+   "status": "verified"
+  },
+  "time_limit_to_open_estate_62-3-108": {
+   "citation": "S.C. Code Ann. § 62-3-108",
+   "url": "https://www.scstatehouse.gov/code/t62c003.php",
+   "summary": "No informal probate/appointment or formal testacy/appointment proceeding (other than probate of a will previously probated at the domicile, or appointments where there was a prior appointment) may be commenced more than ten years after the decedent's death, subject to listed exceptions (e.g., doubt about the fact of death, absent/missing persons, contests of informally probated wills). South Carolina has no short deadline to 'file' or 'open' an estate; the practical triggers are the 30-day will-delivery duty (§ 62-2-901) and the one-year point after which notice to creditors is not required (§ 62-3-801(d)).",
+   "quote": "may be commenced more than ten years after the decedent's death",
+   "history": "1986 Act No. 539; 1987 Act No. 171; 1990 Act No. 521; 2013 Act No. 100, eff Jan 1, 2014; 2024 Act No. 122 (S.845), SECTION 1, eff May 13, 2024.",
+   "status": "verified"
+  }
+ }
+}
