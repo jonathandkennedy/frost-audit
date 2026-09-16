@@ -89,12 +89,13 @@ home_body = "".join((
     section(band("Call Frost first.", "Tell us what happened. We will tell you the next step, what it costs, and whether you need us at all."), wrap=True),
 ))
 
-page("home", kind="home", layout="raw",
+page("home", kind="home", layout="raw", hero_style="photo",
      title="Summerville, SC Estate Planning, Probate & Criminal Defense Attorneys | Frost Law Group",
      description="Frost Law Group is a husband-and-wife law firm in Summerville, SC handling estate planning, probate and criminal defense for Dorchester, Berkeley and Charleston County families. Call (843) 419-6653.",
-     h1="Estate Planning, Probate &amp; Criminal Defense Attorneys in Summerville, SC",
-     kicker='<b>Frost First.</b> Before you sign, settle, or answer questions.',
-     lead="A husband-and-wife firm at 128 Linwood Lane. Jack and Tara Frost help Lowcountry families protect what they have built, settle a loved one's estate, and face a charge with someone in their corner who knows the system from the inside.",
+     h1='Estate Planning, Probate &amp; Criminal Defense Attorneys<span class="sub">in Summerville, South Carolina</span>',
+     eyebrow="Frost First · Your Summerville, SC law firm",
+     cta=[("contact-us", "Schedule a consultation", "btn light"), ("tel:" + firm.PHONE_E164, firm.PHONE, "btn ghost")],
+     lead="Wills and trusts, probate and estate administration, and criminal defense for Dorchester, Berkeley and Charleston County families. Injury claims, too, through our dedicated accident practice.",
      quote="“Do justice, love kindness, and walk humbly with your God.” — Micah 6:8",
      hero_image="couple.jpg", hero_caption="Jack and Tara Frost with the Frost pups",
      body=home_body, priority=1.0, changefreq="weekly", nav_label="Home")
