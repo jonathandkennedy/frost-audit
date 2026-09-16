@@ -97,7 +97,7 @@ page("home", kind="home", layout="raw", hero_style="photo",
      cta=[("contact-us", "Schedule a consultation", "btn light"), ("tel:" + firm.PHONE_E164, firm.PHONE, "btn ghost")],
      lead="Wills and trusts, probate and estate administration, and criminal defense for Dorchester, Berkeley and Charleston County families. Injury claims, too, through our dedicated accident practice.",
      quote="“Do justice, love kindness, and walk humbly with your God.” — Micah 6:8",
-     hero_image="couple.jpg", hero_caption="Jack and Tara Frost with the Frost pups",
+     hero_image="couple.jpg", hero_image_wide="couple-wide.jpg", hero_caption="Jack and Tara Frost with the Frost pups",
      body=home_body, priority=1.0, changefreq="weekly", nav_label="Home")
 
 # ----------------------------------------------------------------------------- ABOUT / TEAM

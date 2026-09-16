@@ -386,7 +386,11 @@ def hero_html(p):
             eyebrow = f'<div class="eyebrow">{first}<span class="eb2"> · {rest}</span></div>'
         text = f'<div>{kicker}{eyebrow}<h1>{p["h1"]}</h1>{lead}{actions}</div>'
         band_ = f'<div class="quote-band"><div class="wrap">{p["quote"]}</div></div>' if p["quote"] else ""
-        return (f'<section class="hero photo"><div class="media"><img class="bg" src="{src}" alt="{esc(p["hero_caption"] or "")}" width="{w}" height="{h}" fetchpriority="high"><div class="shade"></div></div>'
+        img_html = f'<img class="bg" src="{src}" alt="{esc(p["hero_caption"] or "")}" width="{w}" height="{h}" fetchpriority="high">'
+        if p.get("hero_image_wide"):  # wide crop with room for the text beside the subjects on large screens
+            wsrc, _, _ = image_info(p["hero_image_wide"])
+            img_html = f'<picture><source media="(min-width:1101px)" srcset="{wsrc}">{img_html}</picture>'
+        return (f'<section class="hero photo"><div class="media">{img_html}<div class="shade"></div></div>'
                 f'<div class="wrap">{text}</div></section>{band_}')
     text = f'<div>{crumbs_html(p)}{kicker}{eyebrow}<h1>{p["h1"]}</h1>{meta}{lead}{actions}{quote}</div>'
     if p["hero_image"]:

@@ -23,7 +23,7 @@ def page(slug, *, title, description, h1, body, kind="page", eyebrow="", lead=""
          summary="", related=(), faqs=(), author=None, reviewer=None, date=None, modified=None,
          category=None, hero_image=None, hero_caption="", quote="", kicker="", noindex=False,
          layout="two", cta=None, nav_label=None, card_new=False, sources=(), county=None,
-         section_label=None, priority=0.6, changefreq="monthly", tags=(), hero_style=None):
+         section_label=None, priority=0.6, changefreq="monthly", tags=(), hero_style=None, hero_image_wide=None):
     """Register a page. ``layout``: two (main + aside), one (single column), raw (body has its own sections)."""
     assert kind in KINDS, kind
     if slug in BY_SLUG:
@@ -39,7 +39,7 @@ def page(slug, *, title, description, h1, body, kind="page", eyebrow="", lead=""
              author=author, reviewer=reviewer, date=date, modified=modified or date, category=category,
              hero_image=hero_image, hero_caption=hero_caption, quote=quote, kicker=kicker, noindex=noindex,
              layout=layout, cta=cta, nav_label=nav_label or h1, card_new=card_new, sources=list(sources),
-             county=county, section_label=section_label, priority=priority, changefreq=changefreq, tags=list(tags), hero_style=hero_style)
+             county=county, section_label=section_label, priority=priority, changefreq=changefreq, tags=list(tags), hero_style=hero_style, hero_image_wide=hero_image_wide)
     PAGES.append(p)
     BY_SLUG[slug] = p
     return p
