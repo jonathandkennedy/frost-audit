@@ -49,7 +49,7 @@ hub_body = (
 page(HUB, kind="hub", section_label="Criminal defense services",
      title="Criminal Defense Attorney in Summerville, SC | Former Detective Jack Frost",
      description="Summerville, SC criminal defense attorney Jack Frost spent 14 years in law enforcement before law school. Drug charges, domestic violence, bond hearings, warrants, traffic offenses and expungements in Dorchester, Berkeley and Charleston counties.",
-     h1="Criminal Defense Attorney in Summerville, SC", eyebrow="Protecting your future", nav_label="Criminal defense",
+     h1="Criminal Defense Attorney in Summerville, SC", eyebrow="Protecting your future", nav_label="Criminal defense", hero_image="client-meeting.jpg", hero_caption="Jack and Tara Frost with a client",
      lead="Experienced, discreet defense from an attorney who understands both sides of the justice system. The sooner you call, the more options you have.",
      summary="Drug charges, domestic violence, bond, warrants, traffic and expungements.",
      body=hub_body, priority=0.9,

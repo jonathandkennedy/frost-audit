@@ -43,7 +43,7 @@ hub_body = (
 page(HUB, kind="hub", section_label="Estate planning services",
      title="Estate Planning Attorney in Summerville, SC | Wills, Trusts & POAs | Frost Law Group",
      description="Summerville, SC estate planning attorneys Jack and Tara Frost prepare wills, revocable living trusts, powers of attorney and living wills for Dorchester, Berkeley and Charleston County families. Flat fees.",
-     h1="Estate Planning Attorney in Summerville, SC", eyebrow="Secure your legacy for generations", nav_label="Estate planning",
+     h1="Estate Planning Attorney in Summerville, SC", eyebrow="Secure your legacy for generations", nav_label="Estate planning", hero_image="estate-plan.jpg", hero_caption="A complete plan: health care directive, will, trust, power of attorney",
      lead="Protect your family's future with a complete estate plan tailored to your life, your values and South Carolina law. Our Summerville attorneys guide you every step of the way.",
      quote="“A good man leaves an inheritance to his children's children.” — Proverbs 13:22",
      summary="Wills, trusts, powers of attorney and living wills for South Carolina families.",

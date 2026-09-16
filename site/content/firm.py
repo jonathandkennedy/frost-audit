@@ -53,7 +53,7 @@ ASIDE_BLURB = "Jack and Tara answer their own phones. Tell us what happened and 
 LLMS_SUMMARY = ("Frost Law Group, LLC is a husband-and-wife law firm in Summerville, South Carolina handling estate planning, "
                 "probate and criminal defense for families in Dorchester, Berkeley and Charleston counties. Personal injury cases are handled at summervilleaccidentattorney.com.")
 
-LOGO = "logo.svg"  # SVG redrawing of the firm's round scales-of-justice logo; drop the original PNG in as site/assets/img/logo.png and set LOGO = "logo.png"
+LOGO = "logo.png"  # the firm's logo, pulled from the live site
 OG_SOURCE = "couple.jpg"
 FORM_ENDPOINT = "https://formspree.io/f/REPLACE_WITH_FORM_ID"  # TODO: swap for the firm's form handler before launch
 
@@ -86,7 +86,7 @@ TEAM = {
     "jack": dict(name="Jack C. Frost", role="Attorney at Law", photo="headshot-jack.jpg", alt="Jack C. Frost, attorney", slug="attorneys/jack-frost"),
     "tara": dict(name="Tara L. Frost", role="Attorney at Law", photo="headshot-tara.jpg", alt="Tara L. Frost, attorney", slug="attorneys/tara-frost"),
     "cassie": dict(name="Cassandra “Cassie” Snyder", role="Paralegal", photo="headshot-cassie.jpg", alt="Cassie Snyder, paralegal", slug=None),
-    "dogs": dict(name="The Frost Pups", role="Comfort specialists · Mistoc and Palmer", photo="dogs.jpg", alt="The firm's Golden Retrievers, Mistoc and Palmer", slug=None),
+    "dogs": dict(name="The Frost Pups", role="Comfort specialists", photo="dogs.jpg", alt="The firm's Golden Retrievers", slug=None),
 }
 
 # Google reviews of the firm (public listing, 4.8 from 30), quoted as written; reviewers shown as first name and last initial.

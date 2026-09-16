@@ -34,7 +34,7 @@ def post(slug, **kw):
 
 
 # ----------------------------------------------------------------------------- 1. New residents
-post("new-summerville-residents-estate-plan", author="tara", reviewer="jack", category="Estate planning",
+post("new-summerville-residents-estate-plan", hero_image="cover-new-residents.jpg", hero_caption="New construction in Summerville", author="tara", reviewer="jack", category="Estate planning",
      title="Moved to Summerville? Five Documents South Carolina Wants Redone",
      description="Dorchester and Berkeley counties keep adding new residents. If your will and powers of attorney were signed in another state, here is what still works in South Carolina and what does not.",
      h1="Moved to Summerville? Five documents South Carolina wants you to redo",
@@ -63,7 +63,7 @@ post("new-summerville-residents-estate-plan", author="tara", reviewer="jack", ca
            ("Do I have to record my power of attorney in South Carolina?", "A durable power of attorney must be recorded with the register of deeds in your county before your agent can act once you are incapacitated. We prepare it in recordable form and record it when needed.")])
 
 # ----------------------------------------------------------------------------- 2. Hurricane season
-post("hurricane-season-documents-dorchester-county", author="tara", reviewer="jack", category="Estate planning",
+post("hurricane-season-documents-dorchester-county", hero_image="cover-hurricane.jpg", hero_caption="The go-bag, documents included", author="tara", reviewer="jack", category="Estate planning",
      title="Hurricane Season: Four Documents for the Go-Bag | Dorchester County",
      description="Every evacuation order raises the same question in Dorchester and Berkeley County homes: where is the will? Four documents to secure now, and what South Carolina law does if an original will is lost.",
      h1="Before the next evacuation order: four documents Dorchester County families should have in the go-bag",
@@ -91,7 +91,7 @@ post("hurricane-season-documents-dorchester-county", author="tara", reviewer="ja
            ("Should I keep my will in a bank safe-deposit box?", "It is safe from water, but the box may be sealed at death until the personal representative is appointed—and the appointment needs the will. If you use a box, make sure a co-owner can open it.")])
 
 # ----------------------------------------------------------------------------- 3. Guardianship for an aging parent
-post("guardianship-aging-parent-summerville", author="tara", reviewer="jack", category="Probate",
+post("guardianship-aging-parent-summerville", hero_image="cover-guardianship.jpg", hero_caption="Planning for an aging parent", author="tara", reviewer="jack", category="Probate",
      title="Guardianship for an Aging Parent in Summerville | Nextdoor Question Answered",
      description="“Who handles guardianship for my mom in Summerville?” A former Dorchester County Associate Probate Judge explains the process, the alternatives, and when a power of attorney can still avoid it.",
      h1="“Who handles guardianship for my aging parent in Summerville?” The Nextdoor question, answered",
@@ -125,7 +125,7 @@ post("guardianship-aging-parent-summerville", author="tara", reviewer="jack", ca
            ("Which court handles guardianship for a Summerville address?", "Dorchester County Probate Court for most of Summerville; Berkeley County Probate Court for Nexton, Cane Bay, Carnes Crossroads and other Summerville addresses north of the county line.")])
 
 # ----------------------------------------------------------------------------- 4. Expungement clinics
-post("expungement-clinics-who-qualifies-dorchester-berkeley", author="jack", reviewer="tara", category="Criminal defense",
+post("expungement-clinics-who-qualifies-dorchester-berkeley", hero_image="cover-expungement.jpg", hero_caption="Waiting at the county office", author="jack", reviewer="tara", category="Criminal defense",
      title="Expungement Clinics in the News: Who Qualifies in Dorchester & Berkeley",
      description="Solicitors and legal aid groups hold expungement clinics around the Lowcountry. Before you stand in line, a former officer explains who qualifies under South Carolina's 2018 reforms and what the clinic can and cannot do.",
      h1="Saw the expungement clinic in the news? Here is who qualifies in Dorchester and Berkeley County",
@@ -158,7 +158,7 @@ post("expungement-clinics-who-qualifies-dorchester-berkeley", author="jack", rev
            ("Can I expunge a charge from another county at a Dorchester County clinic?", "The application goes to the solicitor for the circuit where the charge was heard, so a Charleston County charge goes to the Ninth Circuit regardless of where you live now.")])
 
 # ----------------------------------------------------------------------------- 5. School zones
-post("school-zone-traffic-enforcement-summerville", author="jack", reviewer="tara", category="Criminal defense",
+post("school-zone-traffic-enforcement-summerville", hero_image="cover-school-zone.jpg", hero_caption="School morning in Summerville", author="jack", reviewer="tara", category="Criminal defense",
      title="School-Zone Enforcement in Summerville: What a Ticket Really Costs",
      description="Each August, Summerville police and the Dorchester County Sheriff's Office announce school-zone enforcement. A former officer explains points, insurance, the school-bus charge that is not a ticket, and when to fight.",
      h1="Back-to-school traffic enforcement in Summerville: what a ticket really costs",
@@ -185,7 +185,7 @@ post("school-zone-traffic-enforcement-summerville", author="jack", reviewer="tar
            ("Can a traffic ticket be expunged?", "No. Traffic convictions are not eligible for expungement in South Carolina, which is why the decision to pay or fight matters.")])
 
 # ----------------------------------------------------------------------------- 6. Reddit: do I need a probate lawyer
-post("do-i-need-a-probate-lawyer-south-carolina-reddit", author="tara", reviewer="jack", category="Probate",
+post("do-i-need-a-probate-lawyer-south-carolina-reddit", hero_image="cover-probate-lawyer.jpg", hero_caption="Probate court forms", author="tara", reviewer="jack", category="Probate",
      title="Reddit Asks: Do I Need a Probate Lawyer in SC? A Former Judge Answers",
      description="The question comes up constantly in r/Charleston and r/southcarolina. An honest answer from a former Dorchester County Associate Probate Judge: when you can do it yourself, when you should not, and how to tell.",
      h1="Reddit asks: “Do I really need a probate lawyer in South Carolina?” An honest answer from a former probate judge",
@@ -217,7 +217,7 @@ post("do-i-need-a-probate-lawyer-south-carolina-reddit", author="tara", reviewer
            ("Can the personal representative hire a lawyer for the estate without the heirs' permission?", "Yes. Reasonable attorney's fees are an administration expense, though beneficiaries can object to unreasonable ones at the accounting.")])
 
 # ----------------------------------------------------------------------------- 7. DV arrests in the news
-post("domestic-violence-arrest-first-72-hours-dorchester-county", author="jack", reviewer="tara", category="Criminal defense",
+post("domestic-violence-arrest-first-72-hours-dorchester-county", hero_image="cover-domestic-violence.jpg", hero_caption="The courthouse at dawn", author="jack", reviewer="tara", category="Criminal defense",
      title="After a Domestic Violence Arrest in Dorchester County: The First 72 Hours",
      description="Local police blotters report domestic violence arrests every week. What happens in the first three days—bond, no-contact orders, going home—and the mistakes that turn one charge into two. By a former officer.",
      h1="After a domestic violence arrest in Dorchester County: the first 72 hours",
@@ -242,7 +242,7 @@ post("domestic-violence-arrest-first-72-hours-dorchester-county", author="jack",
            ("Can I get the no-contact order lifted?", "The court that set bond can modify it on motion, often after a cooling-off period and with the other person's input. Do not test it in the meantime.")])
 
 # ----------------------------------------------------------------------------- 8. Berkeley County side of Summerville
-post("summerville-address-berkeley-county-what-it-means", author="tara", reviewer="jack", category="Probate",
+post("summerville-address-berkeley-county-what-it-means", hero_image="cover-berkeley-line.jpg", hero_caption="The county line", author="tara", reviewer="jack", category="Probate",
      title="Summerville Address, Berkeley County: What It Means for Your Estate",
      description="Nexton, Cane Bay and Carnes Crossroads have Summerville addresses but sit in Berkeley County. That decides where your estate is probated, where a guardianship is filed and which court hears a ticket.",
      h1="Nexton, Cane Bay and Carnes Crossroads are in Berkeley County. Here is why that matters for your estate—and your speeding ticket",

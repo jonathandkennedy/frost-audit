@@ -206,7 +206,8 @@ for c in CITIES:
     desc = f"Estate planning, probate and criminal defense for {c['name']} families from Frost Law Group in Summerville: which {c['county']} courts hear your case and how to reach us."
     if len(desc) > 160:
         desc = f"Estate planning, probate and criminal defense for {c['name']} families from Frost Law Group: which courts hear your case and how to reach us."
-    page("service-areas/" + c["slug"], kind="city", county=c["county"], section_label=c["label"],
+    county_img = {"Dorchester County": "county-dorchester.jpg", "Berkeley County": "county-berkeley.jpg", "Charleston County": "county-charleston.jpg", "Colleton County": "county-colleton.jpg"}[c["county"]]
+    page("service-areas/" + c["slug"], kind="city", county=c["county"], section_label=c["label"], hero_image=county_img, hero_caption=c["county"],
          title=title, description=desc,
          h1=f"Attorneys Serving {c['name']}, SC", eyebrow=f"Service area · {c['county']}", nav_label=c["name"],
          lead=f"Estate planning, probate, guardianship and criminal defense for {c['name']} families, from a husband-and-wife firm in Summerville.",

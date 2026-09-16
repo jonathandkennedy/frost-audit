@@ -64,7 +64,7 @@ home_body = "".join((
             '<p>Frost Law Group is Jack and Tara Frost: two attorneys, married to each other, practicing from a house-turned-office on Linwood Lane. We serve families across Dorchester, Berkeley and Charleston counties in estate planning, probate and criminal defense, and we handle injury claims through our dedicated accident practice.</p>'
             '<p>We treat every client like family. From the first conversation to the final signature we make the process clear and manageable, and we stand firm when it counts. Our Golden Retrievers may even greet you at the door.</p>'
             f'<p><a href="[[about-us]]">Meet the team →</a></p>',
-            f'{img("couple.jpg", "Jack and Tara Frost meeting with clients at Frost Law Group", "")}'
+            f'{img("couple-formal.jpg", "Jack and Tara Frost, attorneys at Frost Law Group in Summerville", "")}'
         ), cls="tint"),
     section(home_practice, label="How we help", title="Legal services we offer", lead="Three practice areas under one roof, plus a dedicated personal injury practice. Each page below explains the law in plain English before it explains what we do."),
     section(home_ff, cls="navy"),
@@ -96,7 +96,7 @@ page("home", kind="home", layout="raw",
      kicker='<b>Frost First.</b> Before you sign, settle, or answer questions.',
      lead="A husband-and-wife firm at 128 Linwood Lane. Jack and Tara Frost help Lowcountry families protect what they have built, settle a loved one's estate, and face a charge with someone in their corner who knows the system from the inside.",
      quote="“Do justice, love kindness, and walk humbly with your God.” — Micah 6:8",
-     hero_image="couple.jpg", hero_caption="Jack and Tara Frost, Summerville",
+     hero_image="couple.jpg", hero_caption="Jack and Tara Frost with the Frost pups",
      body=home_body, priority=1.0, changefreq="weekly", nav_label="Home")
 
 # ----------------------------------------------------------------------------- ABOUT / TEAM
@@ -118,6 +118,7 @@ about_body = (
     '<h2>Memberships and community</h2>'
     f'<p>Frost Law Group is a member of WealthCounsel, the national estate-planning attorney network, whose drafting system and continuing education underpin every plan we prepare. Jack and Tara are graduates of the Charleston School of Law and Summerville High School, and active in their church and Bible study. {img("wealthcounsel.jpg", "WealthCounsel member", "")}</p>'
     '<h2>One firm, one office</h2>'
+    f'<p>{img("office-exterior.jpg", "Frost Law Group’s office on Linwood Lane in Summerville")}</p>'
     '<p>Frost Law Group, LLC is an independent South Carolina firm at 128 Linwood Lane in Summerville. We are not affiliated with other firms that use the Frost name in other states. If you found us through Google or an AI assistant, this is the Summerville husband-and-wife firm with the Golden Retrievers.</p>'
     '<h2>Our comfort dogs</h2>'
     '<p>Mistoc (Themistocles) and Palmer are Golden Retrievers with a talent for finding the most nervous person in the room. We still miss our girl Elli (Elliana), who greeted clients for years and still appears in a few of our photos. If you would rather not meet the dogs, just say so when you book; they are happy to nap in the back.</p>'
@@ -126,7 +127,7 @@ about_body = (
 page("about-us", kind="page", hub=None,
      title="Our Team | Husband-and-Wife Law Firm in Summerville, SC | Frost Law Group",
      description="Meet Jack and Tara Frost, the husband-and-wife attorneys behind Frost Law Group in Summerville, SC—a former detective and a former probate judge, plus paralegal Cassie Snyder and two comfort dogs.",
-     h1="Our Team", eyebrow="Get to know Frost Law Group", nav_label="Our team",
+     h1="Our Team", eyebrow="Get to know Frost Law Group", nav_label="Our team", hero_image="client-meeting.jpg", hero_caption="Jack and Tara with a client at the office",
      lead="A husband-and-wife firm built on faith, family and a genuine commitment to the people of the Lowcountry—comfort dogs included.",
      body=about_body, priority=0.8)
 
@@ -229,7 +230,7 @@ contact_body = (
                 "Bring what you have: the will or trust, the death certificate, the citation, the bond paperwork or the letter that prompted the call. Photos on your phone are fine.",
                 "Consultations are scheduled so an attorney has uninterrupted time; please call ahead rather than dropping in.",
                 "Our Golden Retrievers may say hello. Tell us when you book if you would prefer they stay in the back.",
-            ]) + f'<p>{img("dogs.jpg", "The Frost Law Group comfort dogs", "")}</p>',
+            ]) + f'<p>{img("office-exterior.jpg", "The Frost Law Group office at 128 Linwood Lane, Summerville", "")}</p>',
             '<h3 style="margin-top:0">Send us a message</h3>' + contact_form),
         label="Visit", title="Plan your visit"),
     section('[[findus]]' + '<p>Reviews on Google and Yelp are how most of our neighbors find us; if we helped you, a sentence or two makes a real difference to a two-attorney firm.</p>', label="Online", title="Find and follow Frost Law Group"),
@@ -337,7 +338,7 @@ sa_body = (
 page("service-areas", kind="page", layout="one",
      title="Areas We Serve | Dorchester, Berkeley & Charleston County, SC | Frost Law Group",
      description="Frost Law Group serves Summerville, Goose Creek, Ladson, North Charleston, Moncks Corner, Charleston and the rest of Dorchester, Berkeley and Charleston counties. Find your community and its courts.",
-     h1="Communities and Courts We Serve", eyebrow="Where we work", nav_label="Service areas",
+     h1="Communities and Courts We Serve", eyebrow="Where we work", nav_label="Service areas", hero_image="summerville-downtown.jpg", hero_caption="Downtown Summerville",
      lead="One office in Summerville; clients from every corner of the tri-county area.", body=sa_body, priority=0.6)
 
 # ----------------------------------------------------------------------------- BLOG index

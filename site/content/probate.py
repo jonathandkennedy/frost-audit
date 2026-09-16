@@ -50,7 +50,7 @@ hub_body = (
 page(HUB, kind="hub", section_label="Probate services",
      title="Probate Attorney in Summerville, SC | Dorchester, Berkeley & Charleston County Estates",
      description="Summerville, SC probate attorney Tara Frost, a former Dorchester County Associate Probate Judge, guides families through estate administration, executor duties, small estates, will contests and guardianship.",
-     h1="Probate Attorney in Summerville, SC", eyebrow="Guiding families through the probate process", nav_label="Probate",
+     h1="Probate Attorney in Summerville, SC", eyebrow="Guiding families through the probate process", nav_label="Probate", hero_image="hero-probate.jpg", hero_caption="Probate court",
      lead="Losing a loved one is hard enough. Let Frost Law Group handle the legal process so your family can focus on what matters most.",
      summary="Estate administration, executor guidance, small estates, disputes and guardianship.",
      body=hub_body, priority=0.9,
