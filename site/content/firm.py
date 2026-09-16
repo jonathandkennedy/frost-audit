@@ -31,7 +31,7 @@ GBP_URL = "https://maps.google.com/maps?cid=6320073536186250254"  # resolved fro
 GBP_SHARE_URL = "https://share.google/CBpXoFvmaAoVP0HuZ"
 REVIEW_URL = "https://maps.google.com/maps?cid=6320073536186250254"  # TODO: replace with the "Ask for reviews" link from the Business Profile dashboard
 YELP_URL = "https://www.yelp.com/biz/frost-law-group-summerville"  # canonical form of https://yelp.to/t18_URraS3
-PREFERRED_SOURCE_URL = "https://www.google.com/preferences/source?q=https://www.frostlawgroupsc.com"
+PREFERRED_SOURCE_URL = "https://www.google.com/preferences/source?q=https://frostlawgroupsc.com"  # non-www, matching the canonical host; no account-specific parameters
 FACEBOOK = "https://www.facebook.com/frostlawgroupsc/"
 INSTAGRAM = "https://www.instagram.com/frostlawgroupllc/"
 TWITTER = "https://twitter.com/FrostLawGroup"
