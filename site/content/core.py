@@ -205,7 +205,7 @@ page("attorneys/tara-frost", kind="attorney", author="tara", hub="about-us",
 
 # ----------------------------------------------------------------------------- CONTACT
 contact_form = (
-    f'<form class="form" method="POST" action="{esc(firm.FORM_ENDPOINT)}" accept-charset="UTF-8" data-contact>'
+    f'<form class="form" method="POST" action="{esc(firm.FORM_ENDPOINT)}" accept-charset="UTF-8" data-contact data-thanks="[[thank-you]]">'
     f'<input type="hidden" name="_subject" id="f-subject" value="Website inquiry">'
     f'<input type="hidden" name="_next" value="{firm.ORIGIN}/thank-you/">'
     '<div class="row"><label>Your name<input type="text" name="name" id="f-name" autocomplete="name" required></label>'
@@ -215,6 +215,7 @@ contact_form = (
     '<label>Tell us briefly what happened<textarea name="message" id="f-message" required></textarea></label>'
     '<label class="hp" aria-hidden="true">Leave this field empty<input type="text" name="_gotcha" id="f-gotcha" tabindex="-1" autocomplete="off"></label>'
     '<p class="fine">Please do not include confidential details about a criminal case in this form; call instead. Sending a message does not create an attorney-client relationship until we agree in writing to represent you.</p>'
+    f'<p class="fine" data-formmsg hidden style="color:#8a1c1c">We could not send that message. Please call <a href="tel:{firm.PHONE_E164}">{firm.PHONE}</a> or email <a href="mailto:{firm.ATTORNEYS["tara"]["email"]}">{firm.ATTORNEYS["tara"]["email"]}</a>.</p>'
     '<div><button class="btn" type="submit">Send message</button></div></form>')
 
 contact_body = (
