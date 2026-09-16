@@ -523,7 +523,7 @@ INLINE_JS = r"""
     if(window.__PREVIEW__){b.replaceWith(Object.assign(document.createElement('p'),{textContent:'The interactive Google Map loads here on the live site.'}));return;}
     var f=document.createElement('iframe');f.src=m.getAttribute('data-embed');f.title='Map to Frost Law Group, 128 Linwood Lane, Summerville';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';f.allowFullscreen=true;m.appendChild(f);});
   var f=document.querySelector('form[data-contact]');
-  if(f){f.addEventListener('submit',function(e){if(f.querySelector('[name=company]').value){e.preventDefault();return;}if(window.__PREVIEW__){e.preventDefault();alert('On the live site this sends your message to the firm.');}});}
+  if(f){f.addEventListener('submit',function(e){var hp=f.querySelector('[name=_gotcha]');if(hp&&hp.value){e.preventDefault();return;}var t=f.querySelector('[name=topic]'),s=f.querySelector('[name=_subject]');if(t&&s){s.value='Website inquiry: '+t.value;}if(window.__PREVIEW__){e.preventDefault();alert('On the live site this sends your message to the firm and lands on the thank-you page.');}});}
 })();
 """
 

@@ -205,13 +205,15 @@ page("attorneys/tara-frost", kind="attorney", author="tara", hub="about-us",
 
 # ----------------------------------------------------------------------------- CONTACT
 contact_form = (
-    f'<form class="form" method="POST" action="{esc(firm.FORM_ENDPOINT)}" data-contact>'
+    f'<form class="form" method="POST" action="{esc(firm.FORM_ENDPOINT)}" accept-charset="UTF-8" data-contact>'
+    f'<input type="hidden" name="_subject" id="f-subject" value="Website inquiry">'
+    f'<input type="hidden" name="_next" value="{firm.ORIGIN}/thank-you/">'
     '<div class="row"><label>Your name<input type="text" name="name" id="f-name" autocomplete="name" required></label>'
     '<label>Phone<input type="tel" name="phone" id="f-phone" autocomplete="tel" required></label></div>'
     '<label>Email<input type="email" name="email" id="f-email" autocomplete="email"></label>'
     '<label>What do you need help with?<select name="topic" id="f-topic"><option>Estate planning</option><option>Probate or estate administration</option><option>Guardianship or conservatorship</option><option>Criminal charge or warrant</option><option>Traffic ticket</option><option>Injury claim</option><option>Something else</option></select></label>'
     '<label>Tell us briefly what happened<textarea name="message" id="f-message" required></textarea></label>'
-    '<label class="hp" aria-hidden="true">Company<input type="text" name="company" id="f-company" tabindex="-1" autocomplete="off"></label>'
+    '<label class="hp" aria-hidden="true">Leave this field empty<input type="text" name="_gotcha" id="f-gotcha" tabindex="-1" autocomplete="off"></label>'
     '<p class="fine">Please do not include confidential details about a criminal case in this form; call instead. Sending a message does not create an attorney-client relationship until we agree in writing to represent you.</p>'
     '<div><button class="btn" type="submit">Send message</button></div></form>')
 
@@ -359,7 +361,7 @@ privacy_body = (
     '<p>Frost Law Group, LLC (“we”) respects your privacy. This policy explains what information this website collects and how it is used. It applies to frostlawgroupsc.com; our injury site has its own policy.</p>'
     '<h2>What we collect</h2>'
     + ul([
-        "<b>Information you send us.</b> When you use the contact form or call, you give us your name, contact details and a description of your matter. We use it only to respond to you and, if you hire us, to represent you.",
+        "<b>Information you send us.</b> When you use the contact form or call, you give us your name, contact details and a description of your matter. We use it only to respond to you and, if you hire us, to represent you. Contact-form submissions are delivered to us through Formspree, a form-processing service that stores them on our behalf under its own privacy policy.",
         "<b>Website analytics.</b> We may use privacy-respecting analytics to understand which pages are read. Analytics data is aggregated and is not used to identify you.",
         "<b>Embedded maps.</b> The map on our contact page loads from Google only after you click to load it. Google's privacy policy applies to that map.",
     ]) +
@@ -435,3 +437,23 @@ page("accessibility", kind="page", layout="one", cta=False, priority=0.1,
      title="Accessibility Statement | Frost Law Group, Summerville SC",
      description="Frost Law Group's commitment to an accessible website and office: WCAG 2.1 AA measures, known limitations, accommodations at our Summerville office, and how to report a problem.",
      h1="Accessibility Statement", eyebrow="For every visitor", nav_label="Accessibility", lead="How this site is built to be usable by everyone, and how to reach us if it is not.", body=access_body)
+
+
+# ----------------------------------------------------------------------------- THANK YOU (form landing page, not indexed)
+thanks_body = (
+    '<p class="lead">Your message is on its way to Jack, Tara and Cassie. We read every one and reply by phone or email as soon as we can, usually the next business day.</p>'
+    '<h2>If it cannot wait</h2>'
+    f'<p>Call {TEL}. If someone has been arrested, a bond hearing is usually held within 24 hours, so please call rather than wait for a reply.</p>'
+    '<h2>While you wait</h2>'
+    + checks([
+        f'{A("probate-process", "How probate works in South Carolina")}, step by step.',
+        f'{A("estate-planning-attorney", "What a complete estate plan includes")} and what it costs.',
+        f'{A("criminal-defense", "What to do right now")} if you or a family member has been charged.',
+        f'{A("contact-us", "Directions to the office")} on local roads, and what to bring.',
+    ])
+    + '<p class="small">Sending a message does not create an attorney-client relationship, and please do not email details of a pending criminal case until we have spoken.</p>'
+)
+page("thank-you", kind="page", layout="one", cta=False, noindex=True, priority=0.1,
+     title="Thank You | Frost Law Group, Summerville SC",
+     description="We received your message and will reply as soon as we can, usually the next business day. For urgent matters, call (843) 419-6653.",
+     h1="Thank you. We have your message.", eyebrow="Message received", nav_label="Thank you", lead="", body=thanks_body)

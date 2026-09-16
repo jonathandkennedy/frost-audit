@@ -55,7 +55,7 @@ LLMS_SUMMARY = ("Frost Law Group, LLC is a husband-and-wife law firm in Summervi
 
 LOGO = "logo.png"  # the firm's logo, pulled from the live site
 OG_SOURCE = "couple.jpg"
-FORM_ENDPOINT = "https://formspree.io/f/REPLACE_WITH_FORM_ID"  # TODO: swap for the firm's form handler before launch
+FORM_ENDPOINT = "https://formspree.io/f/xdekonez"  # Formspree form "Website contact"; submissions are emailed to the firm
 
 ATTORNEYS = {
     "jack": dict(
