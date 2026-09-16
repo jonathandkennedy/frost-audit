@@ -1,6 +1,6 @@
 # frostlawgroupsc.com rebuild — build notes and recommendations
 
-This folder is a complete, deployable rebuild of frostlawgroupsc.com: 78 static pages, one stylesheet, self-hosted fonts, a sitemap, robots.txt, an `.htaccess` with the redirect map from the search audit, and `llms.txt`. It is generated from `site/` in the repository (`python3 site/build_site.py`), so copy changes go in the content files, not in this folder.
+This folder is a complete, deployable rebuild of frostlawgroupsc.com: 77 static pages, one stylesheet, self-hosted fonts, a sitemap, robots.txt, an `.htaccess` with the redirect map from the search audit, and `llms.txt`. It is generated from `site/` in the repository (`python3 site/build_site.py`), so copy changes go in the content files, not in this folder.
 
 ## What changed versus the current site
 
@@ -50,8 +50,9 @@ What moves the needle is not "two authors" but *credible* authors writing consis
 3. **Google review link** (see above) and the attorneys' **LinkedIn / SC Bar profile URLs**.
 4. **Confirm three statements written from the audit's assumptions:** flat fees for estate plans and uncontested estates; free injury consultations (stated on the injury site) but not free consultations generally; "we meet clients at home or at a facility" for capacity-limited signings (guardianship article). Edit `site/content/*.py` if any is wrong.
 5. **Jack's retirement year** is 2013 on the current main site and 2015 on the injury site; the rebuild uses 2013.
-6. **Analytics.** No tracking is included. Add GA4 or a privacy-respecting alternative in `head_html()` in `build_site.py`.
-7. **The Dorchester County Probate Court's Summerville office**: the county's official page lists only St. George, so the site does not claim a Summerville office. If one exists, add it to `courts` in `site/build_local_data.py`.
+6. **Analytics.** No tracking is included, which is also why there is no cookie banner: the site sets no cookies and loads no third-party scripts on page load. If GA4, a chat widget, call tracking or a pixel is added in `head_html()` in `build_site.py`, add a consent tool at the same time and update the privacy policy.
+7. **Legal pages.** The privacy policy, the terms of use and legal disclaimer, and the accessibility statement were drafted to match what the site does and the South Carolina advertising rules as we understand them. The attorneys should review all three before launch.
+8. **The Dorchester County Probate Court's Summerville office**: the county's official page lists only St. George, so the site does not claim a Summerville office. If one exists, add it to `courts` in `site/build_local_data.py`.
 
 ## Deploying on SiteGround (or any Apache host)
 

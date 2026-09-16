@@ -366,3 +366,64 @@ page("privacy-policy", kind="page", layout="one", cta=False, priority=0.1,
      title="Privacy Policy | Frost Law Group, Summerville, SC",
      description="How Frost Law Group's website handles the information you share through its contact form, analytics and embedded maps, and what we do not do with it.",
      h1="Privacy Policy", eyebrow="Your information", nav_label="Privacy policy", lead="", body=privacy_body)
+
+# ----------------------------------------------------------------------------- TERMS OF USE & LEGAL DISCLAIMER
+terms_body = (
+    '<p>These terms govern your use of frostlawgroupsc.com (the “site”), which is operated by Frost Law Group, LLC, a South Carolina law firm at 128 Linwood Lane, Summerville, SC 29483. By using the site you agree to them. If you do not, please do not use the site.</p>'
+    '<h2>Information, not legal advice</h2>'
+    '<p>Everything on this site—practice-area pages, service-area pages, articles, answers to common questions—is general information about South Carolina law as we understand it on the date it was written. It is not legal advice, it may not reflect the most recent changes in the law, and it does not address the facts of your situation. Do not act or refrain from acting because of something you read here without talking to a licensed South Carolina attorney about your own circumstances.</p>'
+    '<h2>No attorney-client relationship</h2>'
+    '<p>Reading this site, calling our office, sending a message through the contact form, or emailing an attorney does not make you a client of Frost Law Group. An attorney-client relationship is created only when we have checked for conflicts of interest and both you and the firm have signed a written engagement agreement. Until then, we may be unable to represent you, and we may represent someone whose interests differ from yours.</p>'
+    '<h2>Please do not send confidential information yet</h2>'
+    '<p>Because no attorney-client relationship exists until an engagement agreement is signed, information you send through the site or by email before then may not be treated as confidential or privileged. Please keep initial messages to your name, contact details and a general description of the matter, and do not include details of a pending criminal case. We will tell you when it is safe to share more.</p>'
+    '<h2>No guarantee of results</h2>'
+    '<p>Descriptions of our practice areas and experience, and any client reviews quoted on the site, describe past matters. Any result we achieved for another client does not indicate that a similar result can be obtained for you. Every case depends on its own facts and on the law in force at the time.</p>'
+    '<h2>Client reviews and testimonials</h2>'
+    '<p>Reviews quoted on the site are the words of clients as they wrote them on Google, Yelp or directly to the firm, edited only for length. They reflect those clients\' experiences and are not a promise of a particular outcome or level of service in your matter. We do not pay for reviews.</p>'
+    '<h2>Attorney advertising</h2>'
+    '<p>This site is attorney advertising under the South Carolina Rules of Professional Conduct. The attorneys responsible for its content are Jack C. Frost and Tara L. Frost, Frost Law Group, LLC, 128 Linwood Lane, Summerville, South Carolina 29483, (843) 419-6653. Both are licensed to practice law in South Carolina only. Jack and Tara Frost do not claim certification as specialists in any field; South Carolina does not recognize specialties in the practice areas described on this site.</p>'
+    '<h2>Links to other sites</h2>'
+    '<p>We link to court, county and state websites, news outlets, community forums and our own injury-practice site, summervilleaccidentattorney.com, because we think they are useful. We do not control those sites, we are not responsible for their content or their privacy practices, and a link is not an endorsement. Community forums such as Nextdoor and Reddit contain opinions of their users, not of the firm.</p>'
+    '<h2>Accuracy and changes</h2>'
+    '<p>We work to keep the site accurate, and we cite the statute or official source for the legal statements we make. Laws, court addresses, fees and procedures change, and we may not update every page immediately. We may change or remove any content, and these terms, at any time without notice.</p>'
+    '<h2>Intellectual property</h2>'
+    '<p>The text, design and images on this site belong to Frost Law Group, LLC or are used with permission. You may print or share pages for personal, non-commercial use with attribution. You may not copy the site\'s content for another website or commercial purpose without written permission.</p>'
+    '<h2>Limitation of liability</h2>'
+    '<p>The site is provided “as is.” To the fullest extent the law allows, Frost Law Group, LLC and its attorneys and staff are not liable for any loss arising from your use of, or reliance on, the site or any site linked from it, including interruptions, errors or omissions.</p>'
+    '<h2>Governing law</h2>'
+    '<p>These terms are governed by the laws of the State of South Carolina, without regard to conflict-of-law rules. Any dispute about the site will be heard in the state courts of Dorchester County, South Carolina.</p>'
+    '<h2>Questions</h2>'
+    f'<p>Write to Frost Law Group, LLC, {firm.STREET}, {firm.CITY}, {firm.STATE} {firm.ZIP}, or call {TEL}. Our {A("privacy-policy", "privacy policy")} explains how we handle information you share through the site. Terms last updated September {firm.BUILD_DATE[:4]}.</p>'
+)
+page("terms-of-use", kind="page", layout="one", cta=False, priority=0.1,
+     title="Terms of Use & Legal Disclaimer | Frost Law Group, Summerville SC",
+     description="The terms that govern use of frostlawgroupsc.com: no legal advice, no attorney-client relationship until an engagement agreement, attorney advertising notice, results and review disclaimers, governing law.",
+     h1="Terms of Use &amp; Legal Disclaimer", eyebrow="Please read", nav_label="Terms of use", lead="What this site is, what it is not, and the rules for using it.", body=terms_body)
+
+# ----------------------------------------------------------------------------- ACCESSIBILITY STATEMENT
+access_body = (
+    '<p>Frost Law Group wants every visitor—including people who use screen readers, keyboard navigation, magnification or voice control—to be able to read this site and reach us. We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA.</p>'
+    '<h2>What we have done</h2>'
+    + checks([
+        "Every page is built with semantic HTML: one heading per page, ordered headings, real lists, tables with header cells, and landmarks for the header, navigation, main content and footer.",
+        "The whole site works with a keyboard. A “Skip to content” link appears on the first Tab press, focus is always visible, and the menus open on focus as well as hover.",
+        "Text and background colors meet WCAG contrast ratios, text resizes with your browser or device settings, and nothing depends on color alone.",
+        "Images carry descriptive alternative text; decorative graphics are hidden from assistive technology.",
+        "Forms have visible labels tied to their fields, and errors are described in text.",
+        "There is no autoplaying media or flashing content, and animations are disabled for visitors who have asked their device to reduce motion.",
+        "Pages are light and work on slow connections and small screens; the site does not require JavaScript to read.",
+    ]) +
+    '<h2>Known limitations</h2>'
+    + checks([
+        "The interactive map on the contact page is provided by Google and loads only when you choose it; its accessibility is Google's. The written directions and address on the same page carry the same information as text.",
+        "Some links lead to court, county and state websites and to documents (often PDFs) we do not control.",
+    ]) +
+    '<h2>Our office</h2>'
+    '<p>Our office at 128 Linwood Lane has free parking directly in front and a ground-level entrance. If you have a mobility, hearing, vision or other need, tell us when you book and we will make arrangements—including meeting by phone or video, providing documents in large print, or allowing extra time. Our comfort dogs stay in the back on request.</p>'
+    '<h2>Tell us if something does not work</h2>'
+    f'<p>If any part of this site is hard to use, or you need information in another format, call {TEL} or use the {A("contact-us", "contact form")}. Tell us the page and what happened; we will fix what we can and send you the information another way in the meantime. This statement was last reviewed in September {firm.BUILD_DATE[:4]}.</p>'
+)
+page("accessibility", kind="page", layout="one", cta=False, priority=0.1,
+     title="Accessibility Statement | Frost Law Group, Summerville SC",
+     description="Frost Law Group's commitment to an accessible website and office: WCAG 2.1 AA measures, known limitations, accommodations at our Summerville office, and how to report a problem.",
+     h1="Accessibility Statement", eyebrow="For every visitor", nav_label="Accessibility", lead="How this site is built to be usable by everyone, and how to reach us if it is not.", body=access_body)

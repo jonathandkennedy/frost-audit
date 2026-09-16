@@ -326,7 +326,7 @@ def footer_html():
         f'<div><h3>Explore</h3><ul>{explore}</ul></div>'
         f'<div><h3>Communities we serve</h3><ul>{areas}<li><a href="{url("service-areas")}">All service areas →</a></li></ul></div>'
         f'</div><div class="legal"><p>© 2019–{BUILD_DATE[:4]} {esc(firm.NAME)}. {firm.DISCLAIMER}</p>'
-        f'<p><a href="{url("privacy-policy")}">Privacy policy</a> · <a href="{url("faq")}">Frequently asked questions</a> · <a href="{url("service-areas")}">Service areas</a></p></div></div></footer>')
+        f'<p><a href="{url("privacy-policy")}">Privacy policy</a> · <a href="{url("terms-of-use")}">Terms of use &amp; legal disclaimer</a> · <a href="{url("accessibility")}">Accessibility</a> · <a href="{url("faq")}">Frequently asked questions</a> · <a href="{url("service-areas")}">Service areas</a></p></div></div></footer>')
 
 
 def breadcrumb_trail(p):
