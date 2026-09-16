@@ -107,7 +107,7 @@ META = {
         "Nexton, Cane Bay and Carnes Crossroads are in Berkeley County. That decides where an estate is probated, where a guardianship is filed and which court you face."),
     # legal pages
     "terms-of-use": ("Terms of Use & Legal Disclaimer | Frost Law Group, Summerville SC",
-        "The rules for using frostlawgroupsc.com: no legal advice, no attorney-client relationship until an engagement agreement, attorney advertising notice, governing law."),
+        "The rules for using frostlawgroupsc.com: no legal advice, no attorney-client relationship until an engagement agreement, attorney advertising notice, SC law."),
     "accessibility": ("Accessibility Statement | Frost Law Group, Summerville SC",
-        "How Frost Law Group's website and Summerville office are built to be usable by everyone, the known limitations, and how to report a problem or ask for accommodations."),
+        "How Frost Law Group's website and Summerville office are built to be usable by everyone, known limitations, and how to report a problem or ask for help."),
 }
