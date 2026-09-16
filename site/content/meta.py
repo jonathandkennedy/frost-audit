@@ -105,4 +105,9 @@ META = {
         "Bond, the no-contact order, going home, and the three mistakes that turn one charge into two after a domestic violence arrest in Dorchester County."),
     "blog/summerville-address-berkeley-county-what-it-means": ("Summerville Address, Berkeley County: What It Means | Frost Law Group",
         "Nexton, Cane Bay and Carnes Crossroads are in Berkeley County. That decides where an estate is probated, where a guardianship is filed and which court you face."),
+    # legal pages
+    "terms-of-use": ("Terms of Use & Legal Disclaimer | Frost Law Group, Summerville SC",
+        "The rules for using frostlawgroupsc.com: no legal advice, no attorney-client relationship until an engagement agreement, attorney advertising notice, governing law."),
+    "accessibility": ("Accessibility Statement | Frost Law Group, Summerville SC",
+        "How Frost Law Group's website and Summerville office are built to be usable by everyone, the known limitations, and how to report a problem or ask for accommodations."),
 }
