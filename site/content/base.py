@@ -99,9 +99,9 @@ def section(inner, cls="", label=None, title=None, lead=None, wrap=True):
 
 def band(title, text, primary=("contact-us", "Schedule a consultation"), phone=True):
     from . import firm
-    btns = f'<a class="btn light" href="[[{primary[0]}]]">{primary[1]}</a>'
+    btns = f'<a class="btn" href="[[{primary[0]}]]">{primary[1]}</a>'
     if phone:
-        btns += f'<a class="btn ghost light-ghost" style="color:#fff;border-color:rgba(255,255,255,.6)" href="tel:{firm.PHONE_E164}">{firm.PHONE}</a>'
+        btns += f'<a class="btn ghost" href="tel:{firm.PHONE_E164}">{firm.PHONE}</a>'
     return f'<div class="band"><div><h3>{title}</h3><p>{text}</p></div><div class="actions">{btns}</div></div>'
 
 

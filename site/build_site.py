@@ -302,10 +302,10 @@ def header_html():
     logo_src, lw, lh = image_info(firm.LOGO)
     return (
         f'<a class="skip" href="#main">Skip to content</a>'
-        f'<div class="topbar"><div class="wrap"><span class="tag">{esc(firm.TAGLINE)}<span class="line"> <span style="color:#7f95b0">·</span> {esc(firm.TAGLINE_LINE)}</span></span>'
+        f'<div class="topbar"><div class="wrap"><span class="tag"><b class="ff-tag">{esc(firm.TAGLINE)}</b><span class="line"> <span style="color:#7f95b0">·</span> {esc(firm.TAGLINE_LINE)}</span></span>'
         f'<a href="tel:{firm.PHONE_E164}">{firm.PHONE}</a></div></div>'
         f'<header class="hdr"><div class="wrap">'
-        f'<a class="brand" href="{url("home")}" aria-label="{esc(firm.NAME)} home"><img src="{logo_src}" alt="" width="{lw}" height="{lh}"><span class="word">Frost Law Group<small>Summerville, South Carolina</small></span></a>'
+        f'<a class="brand" href="{url("home")}" aria-label="{esc(firm.NAME)} home"><img src="{logo_src}" alt="" width="{lw}" height="{lh}"><span class="word">Frost Law Group<small>Summerville, SC</small></span></a>'
         f'<a class="phone-hdr" href="tel:{firm.PHONE_E164}">{firm.PHONE}</a>'
         f'<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" data-navtoggle>Menu</button>'
         f'{nav_html()}</div></header>')
@@ -418,7 +418,7 @@ def aside_html(p):
     cards_ = []
     cards_.append(f'<div class="acard navy"><h3>Talk to an attorney</h3><a class="big" href="tel:{firm.PHONE_E164}">{firm.PHONE}</a>'
                   f'<p style="margin:0 0 .8rem;font-size:.95rem">{firm.ASIDE_BLURB}</p><a class="btn light sm" href="{url("contact-us")}">Send a message</a>'
-                  f'<p class="hours" style="color:#b9c9db">{firm.HOURS_SHORT}</p></div>')
+                  f'<p class="hours">{firm.HOURS_SHORT}</p></div>')
     if p["kind"] in ("hub", "spoke"):
         hub = p["slug"] if p["kind"] == "hub" else p["hub"]
         spokes = [s for s in firm.HUB_SPOKES.get(hub, []) if s in BY_SLUG]
@@ -575,8 +575,8 @@ def head_html(p):
         '<meta name="twitter:card" content="summary_large_image">'
         f'<meta name="geo.region" content="US-SC"><meta name="geo.placename" content="{firm.CITY}">'
         '<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">'
-        '<link rel="preload" href="/assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>'
-        '<link rel="preload" href="/assets/fonts/public-sans-var.woff2" as="font" type="font/woff2" crossorigin>'
+        '<link rel="preload" href="/assets/fonts/cormorant-garamond-300-700.woff2" as="font" type="font/woff2" crossorigin>'
+        '<link rel="preload" href="/assets/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>'
         f'<link rel="stylesheet" href="{CSS_HREF}">'
         f'<script type="application/ld+json">{ld}</script>'
         '</head><body>')
@@ -631,7 +631,7 @@ def write_prod():
             continue
         urls.append(f"<url><loc>{abs_url(p['slug'])}</loc><lastmod>{p['modified'] or BUILD_DATE}</lastmod><changefreq>{p['changefreq']}</changefreq><priority>{p['priority']:.1f}</priority></url>")
     open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(urls) + "</urlset>")
-    open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\nDisallow: /assets/fonts/\n\nSitemap: {ORIGIN}/sitemap.xml\n")
+    open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\n\nSitemap: {ORIGIN}/sitemap.xml\n")
     open(os.path.join(OUT, ".htaccess"), "w", encoding="utf-8").write(htaccess())
     open(os.path.join(OUT, "llms.txt"), "w", encoding="utf-8").write(llms_txt())
     write_vercel_json()
@@ -772,7 +772,7 @@ window.__PREVIEW__=true;
 })();
 """
     doc = (f'<title>Frost Law Group Site Preview</title><style>{css}</style>'
-           '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap">'
+           '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,wght@0,300..700;1,400&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">'
            f'<div class="pv-note">Preview of the rebuilt frostlawgroupsc.com — {len(PAGES)} pages. Use the menu, footer links or the “All pages” button to move around. Maps and the contact form activate on the live site.</div>'
            f'{header}<div id="app"></div>{footer}'
            f'<div class="pv-bar"><button type="button" id="pv-open">All {len(PAGES)} pages</button></div>'
