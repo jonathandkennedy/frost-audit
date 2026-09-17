@@ -23,13 +23,13 @@ home_practice = (
 
 home_ff = (
     '<div class="ff"><div><div class="word">Frost <span>First.</span></div></div><div>'
-    '<p class="lead" style="color:#e6eef7">Two words that tell you exactly what to do. Before you sign the document, accept the offer, or answer the question—call Frost first.</p>'
+    '<p class="lead">Two words that tell you exactly what to do. Before you sign the document, accept the offer, or answer the question—call Frost first.</p>'
     '<ul>'
     '<li><b>Before you sign.</b> A will printed off the internet, a deed change a relative suggested, a trust a seminar sold you. Let us read it first.</li>'
     '<li><b>Before you settle.</b> An estate that “seems simple,” a sibling who wants to divide things informally, an insurance adjuster with a number. Ask us first.</li>'
     '<li><b>Before you answer questions.</b> An investigator who “just wants your side,” a bench warrant you heard about, a citation with a court date. Talk to Jack first.</li>'
     '</ul>'
-    f'<p style="margin:1.2rem 0 0;color:#cfdcea">One call. We tell you plainly whether you need a lawyer, what it would cost, and what to do in the meantime. {TEL}</p>'
+    f'<p style="margin:1.2rem 0 0;color:var(--navy);font-weight:600">One call. We tell you plainly whether you need a lawyer, what it would cost, and what to do in the meantime. {TEL}</p>'
     '</div></div>')
 
 home_why = (
