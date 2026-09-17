@@ -157,7 +157,7 @@ code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background
   .hero.photo .wrap{padding-top:1.4rem;padding-bottom:2rem}
   .hero.photo .eyebrow .eb2{display:none}
 }
-.quote-band{background:var(--navy-3);color:#dbe7f3;text-align:center;padding:1rem 0;font-family:var(--display);font-style:italic;font-size:1.28rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.quote-band{background:var(--navy-3);color:#fff;text-align:center;padding:1rem 0;font-family:var(--display);font-style:italic;font-weight:600;font-size:1.38rem;letter-spacing:.01em;border-bottom:1px solid rgba(255,255,255,.08)}
 .crumbs{font-size:.85rem;color:var(--muted);margin:0 0 1rem}
 .crumbs ol{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.35rem}
 .crumbs li+li::before{content:"›";margin-right:.35rem;color:#9aa6b8}
