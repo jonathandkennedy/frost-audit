@@ -396,7 +396,8 @@ def hero_html(p):
     if p["hero_image"]:
         src, w, h = image_info(p["hero_image"])
         cap = f'<figcaption>{esc(p["hero_caption"])}</figcaption>' if p["hero_caption"] else ""
-        fig = f'<figure><img src="{src}" alt="{esc(p["hero_caption"] or p["h1"])}" width="{w}" height="{h}" fetchpriority="high">{cap}</figure>'
+        fcls = ' class="portrait"' if h > w * 1.3 else ""  # tall headshots get a 4:5 frame instead of the 4:3 crop
+        fig = f'<figure{fcls}><img src="{src}" alt="{esc(p["hero_caption"] or p["h1"])}" width="{w}" height="{h}" fetchpriority="high">{cap}</figure>'
         return f'<section class="hero"><div class="wrap">{text}{fig}</div></section>'
     return f'<section class="hero plain"><div class="wrap">{text}</div></section>'
 
@@ -444,7 +445,9 @@ def aside_html(p):
     elif p["kind"] == "attorney":
         other = "tara" if p["author"] == "jack" else "jack"
         o = firm.ATTORNEYS[other]
-        cards_.append(f'<div class="acard"><h3>Also on the team</h3><div class="person">{img_tag(o["headshot"], o["name"])}<div><b><a href="{url(o["slug"])}" style="text-decoration:none">{esc(o["name"])}</a></b><small>{esc(o["byline"])}</small></div></div></div>')
+        c = firm.TEAM["cassie"]
+        cards_.append(f'<div class="acard"><h3>Also on the team</h3><div class="person">{img_tag(o["headshot"], o["name"])}<div><b><a href="{url(o["slug"])}" style="text-decoration:none">{esc(o["name"])}</a></b><small>{esc(o["byline"])}</small></div></div>'
+                      f'<div class="person" style="margin-top:.9rem">{img_tag(c["photo"], c["alt"])}<div><b><a href="{url(c["slug"])}" style="text-decoration:none">{esc(c["name"])}</a></b><small>{esc(c["role"])}</small></div></div></div>')
     else:
         lis = "".join(f'<li><a href="{url(s)}">{esc(BY_SLUG[s]["nav_label"])}</a></li>' for s in ("estate-planning-attorney", "probate", "criminal-defense", "about-us", "reviews", "service-areas"))
         cards_.append(f'<div class="acard"><h3>Explore</h3><ul>{lis}</ul></div>')
@@ -482,6 +485,7 @@ def firm_ld():
         "founder": [{"@id": abs_url(firm.ATTORNEYS[k]["slug"]) + "#person"} for k in ("jack", "tara")],
         "knowsAbout": ["Estate planning", "Wills and trusts", "Probate and estate administration", "Guardianship and conservatorship", "Criminal defense", "Personal injury"],
         "hasMap": firm.GBP_URL,
+        "employee": [{"@id": abs_url(firm.TEAM["cassie"]["slug"]) + "#person"}],
     }
     if firm.GEO:
         d["geo"] = {"@type": "GeoCoordinates", "latitude": firm.GEO[0], "longitude": firm.GEO[1]}
@@ -522,6 +526,12 @@ def page_ld(p):
     faqs = p["faqs"] or p.get("_faq_schema") or []
     if faqs:
         graph.append({"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", "", a)}} for q, a in faqs]})
+    if p.get("_person"):  # staff bio pages
+        sp = p["_person"]
+        graph.append({"@type": "Person", "@id": abs_url(p["slug"]) + "#person", "name": sp["name"], "alternateName": sp["alternateName"],
+                      "givenName": sp["givenName"], "familyName": sp["familyName"], "jobTitle": sp["jobTitle"], "url": abs_url(p["slug"]),
+                      "image": ORIGIN + "/assets/img/" + sp["photo"], "worksFor": {"@id": ORIGIN + "/#firm"}, "description": sp["description"],
+                      "telephone": firm.PHONE_E164})
     if p["kind"] == "post":
         a = firm.ATTORNEYS[p["author"]]
         graph.append({"@type": "BlogPosting", "headline": p["h1"], "description": p["description"], "url": abs_url(p["slug"]), "mainEntityOfPage": abs_url(p["slug"]),

@@ -9,6 +9,8 @@ META = {
                  "Meet Jack and Tara Frost, a former detective and a former probate judge, plus paralegal Cassie Snyder and two comfort dogs, at Frost Law Group in Summerville."),
     "attorneys/jack-frost": ("Jack C. Frost | Criminal Defense Attorney, Summerville SC",
                              "Jack Frost spent 14 years as a Summerville police officer and Charleston County Sheriff's Office detective before law school. He now defends criminal charges."),
+    "team/cassie-snyder": ("Cassie Snyder | Legal Assistant & Paralegal, Summerville SC",
+                 "Meet Cassie Snyder, legal assistant and paralegal at Frost Law Group in Summerville, SC. She keeps clients informed and supported at every stage of their case."),
     "attorneys/tara-frost": ("Tara L. Frost | Probate & Estate Planning Attorney, Summerville SC",
                              "Tara Frost served as a Dorchester County Magistrate Judge and Associate Probate Judge before returning to practice. She leads probate and estate planning."),
     "contact-us": ("Contact Frost Law Group | 128 Linwood Lane, Summerville SC",

@@ -107,7 +107,7 @@ about_body = (
     '<p>Between them, they have seen the Lowcountry\'s legal system from almost every seat. Jack spent fourteen years as a Summerville police officer and then a Charleston County Sheriff\'s Office deputy, detective and SWAT team member before earning his law degree. Tara served as a Dorchester County Magistrate Judge from 2022 to 2025 and as a Dorchester County Associate Probate Judge from 2025 to 2026. That is why our advice tends to be specific: we know what the officer wrote down, what the judge will ask, and what the probate clerk will send back.</p>'
     '[[team]]'
     '<h2>How we divide the work</h2>'
-    f'<p><b>Tara</b> leads {A("probate", "probate and estate administration")}, {A("guardianship-and-conservatorship", "guardianship and conservatorship")} and our {A("estate-planning-attorney", "estate planning")} practice, and handles personal injury cases through {ext(firm.PI_SITE, "summervilleaccidentattorney.com")}. <b>Jack</b> leads {A("criminal-defense", "criminal defense")} and works alongside Tara on estate plans, especially for families with law-enforcement, military and first-responder benefits to protect. Every matter gets both sets of eyes.</p>'
+    f'<p><b>Tara</b> leads {A("probate", "probate and estate administration")}, {A("guardianship-and-conservatorship", "guardianship and conservatorship")} and our {A("estate-planning-attorney", "estate planning")} practice, and handles personal injury cases through {ext(firm.PI_SITE, "summervilleaccidentattorney.com")}. <b>Jack</b> leads {A("criminal-defense", "criminal defense")} and works alongside Tara on estate plans, especially for families with law-enforcement, military and first-responder benefits to protect. Every matter gets both sets of eyes. <b>Cassie</b> Snyder, our {A("team/cassie-snyder", "legal assistant and paralegal")}, manages the documents and case files behind every matter and is one of the people who answers when you call.</p>'
     '<h2>What it is like to work with us</h2>'
     + checks([
         "You meet with an attorney at the first appointment, not an intake specialist.",
@@ -203,6 +203,36 @@ page("attorneys/tara-frost", kind="attorney", author="tara", hub="about-us",
      h1="Tara L. Frost", eyebrow="Attorney at Law", nav_label="Tara L. Frost",
      lead="Former Dorchester County Magistrate and Associate Probate Judge, now guiding families through probate, guardianship and estate planning with a judge's eye for what the court needs.",
      hero_image="tara-bio.jpg", hero_caption="Tara L. Frost, Attorney at Law", body=tara_body, priority=0.8)
+
+
+# ----------------------------------------------------------------------------- STAFF
+cassie_body = (
+    '<h2>The person who keeps your case moving</h2>'
+    '<p>Cassandra “Cassie” Snyder is Frost Law Group’s legal assistant and paralegal. After relocating from Pennsylvania to South Carolina, she brought with her years of experience and a genuine commitment to serving others, and she is passionate about helping clients navigate the legal process with compassion, attention to detail and dependable support.</p>'
+    '<p>Known for her organization, strong work ethic and approachable nature, Cassie takes pride in helping clients feel informed and supported through every stage of their case. Whether she is managing complex legal documents, coordinating case files or assisting Jack and Tara behind the scenes, she understands that even the smallest details can make a meaningful difference.</p>'
+    '<h2>What that means for you</h2>'
+    + checks([
+        "The documents in your matter are organized, tracked and ready when the attorneys need them.",
+        "Your case file moves between Jack, Tara and the court without anything falling through the cracks.",
+        "You have someone to call who knows where your matter stands and will get you an answer.",
+    ]) +
+    '<h2>Outside the office</h2>'
+    '<p>Cassie enjoys reading, painting and spending time with her son and grandmother. Her strong commitment to family is reflected in the care, patience and understanding she brings to every client interaction.</p>'
+    '<p>Cassie is proud to be part of the team and is dedicated to making each client’s experience as smooth and stress-free as possible.</p>'
+    '<h2>Reach Cassie</h2>'
+    f'<p>Call {TEL} or {A("contact-us", "send a message")}, and Cassie will make sure it reaches the right person.</p>'
+    + band("Questions about your case?", "Call the office and ask for Cassie, or schedule a consultation with Jack or Tara.")
+)
+_cassie = page("team/cassie-snyder", kind="page", hub="about-us",
+     title="Cassie Snyder | Legal Assistant & Paralegal, Summerville SC",
+     description="Meet Cassie Snyder, legal assistant and paralegal at Frost Law Group in Summerville, SC. She keeps clients informed and supported at every stage of their case.",
+     h1="Cassandra “Cassie” Snyder", eyebrow="Legal Assistant / Paralegal", nav_label="Cassie Snyder",
+     lead="A dedicated paralegal who helps clients through the legal process with compassion, attention to detail and dependable support.",
+     hero_image="headshot-cassie.jpg", hero_caption="Cassie Snyder, Legal Assistant / Paralegal", body=cassie_body,
+     related=("attorneys/jack-frost", "attorneys/tara-frost", "about-us"), priority=0.6)
+_cassie["_person"] = dict(name="Cassandra Snyder", alternateName="Cassie Snyder", givenName="Cassandra", familyName="Snyder",
+                          jobTitle="Legal Assistant / Paralegal", photo="headshot-cassie.jpg",
+                          description="Legal assistant and paralegal at Frost Law Group in Summerville, South Carolina.")
 
 # ----------------------------------------------------------------------------- CONTACT
 contact_form = (

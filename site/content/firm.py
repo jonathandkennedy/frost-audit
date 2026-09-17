@@ -85,7 +85,7 @@ ATTORNEYS = {
 TEAM = {
     "jack": dict(name="Jack C. Frost", role="Attorney at Law", photo="headshot-jack.jpg", alt="Jack C. Frost, attorney", slug="attorneys/jack-frost"),
     "tara": dict(name="Tara L. Frost", role="Attorney at Law", photo="headshot-tara.jpg", alt="Tara L. Frost, attorney", slug="attorneys/tara-frost"),
-    "cassie": dict(name="Cassandra “Cassie” Snyder", role="Paralegal", photo="headshot-cassie.jpg", alt="Cassie Snyder, paralegal", slug=None),
+    "cassie": dict(name="Cassandra “Cassie” Snyder", role="Legal Assistant / Paralegal", photo="headshot-cassie.jpg", alt="Cassie Snyder, legal assistant and paralegal", slug="team/cassie-snyder"),
     "dogs": dict(name="The Frost Pups", role="Comfort specialists", photo="dogs.jpg", alt="The firm's Golden Retrievers", slug=None),
 }
 
