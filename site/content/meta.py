@@ -17,8 +17,6 @@ META = {
                    "Call (843) 419-6653 or visit 128 Linwood Lane, Summerville, SC 29483. Hours, a map, directions on local roads from every community we serve, and a contact form."),
     "reviews": ("Client Reviews | Frost Law Group, Summerville SC",
                 "What clients say about Frost Law Group's estate planning, probate, criminal defense and injury work in Summerville, and how to leave a review on Google or Yelp."),
-    "personal-injury": ("Personal Injury | Frost Law Group's Injury Practice, Summerville SC",
-                        "Frost Law Group handles crash, dog bite and wrongful death claims on its dedicated injury site, summervilleaccidentattorney.com, with the same office and team."),
     "service-areas": ("Areas We Serve | Dorchester, Berkeley & Charleston County SC",
                       "Frost Law Group serves Summerville, Goose Creek, Ladson, North Charleston, Moncks Corner, Charleston and the rest of the tri-county area. Find your community."),
     "blog": ("In the Know | Local News Explained by Summerville Attorneys",

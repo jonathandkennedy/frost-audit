@@ -1,4 +1,4 @@
-"""Core pages: home, team, attorney bios, contact, reviews, personal-injury hand-off, FAQ, privacy, indexes."""
+"""Core pages: home, team, attorney bios, contact, reviews, FAQ, privacy, indexes. Injury pages live on the injury site."""
 from .base import page, A, ext, img, p, ul, checks, steps, callout, section, band, esc, twocol
 from . import firm
 from . import local
@@ -18,7 +18,7 @@ home_practice = (
     '<li class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3><a href="[[criminal-defense]]">Criminal defense</a></h3>'
     '<p>Drug charges, domestic violence, bond hearings, arrest warrants, traffic offenses and expungements in magistrate, municipal and General Sessions court—defended by a former detective who knows how cases are built.</p><a class="more" href="[[criminal-defense]]">Criminal defense services</a></li>'
     f'<li class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 13l2-5h14l2 5v6H3z"/><circle cx="7.5" cy="16.5" r="1.5"/><circle cx="16.5" cy="16.5" r="1.5"/></svg></div><h3><a href="{firm.PI_SITE}" rel="noopener">Personal injury</a></h3>'
-    f'<p>Car, truck and motorcycle crashes, dog bites and wrongful death claims are handled on our dedicated injury site, where Tara explains what to do before you talk to an insurance company.</p><a class="more" href="[[personal-injury]]">How injury cases work with us</a></li>'
+    f'<p>Car, truck and motorcycle crashes, dog bites and wrongful death claims are handled on our dedicated injury site, where Tara explains what to do before you talk to an insurance company.</p><a class="more" href="{firm.PI_SITE}practice-areas/car-accidents/" rel="noopener">Injured in an accident? Start here</a></li>'
     '</ul>')
 
 home_ff = (
@@ -298,28 +298,6 @@ page("reviews", kind="page", hub="about-us", layout="one",
      description="Read what clients say about Frost Law Group's estate planning, probate, criminal defense and injury work in Summerville, SC, and find out how to leave a review on Google or Yelp.",
      h1="Client Reviews", eyebrow="Kind words", nav_label="Client reviews", lead="What Summerville families say about working with Jack and Tara Frost.",
      body=reviews_body, priority=0.6)
-
-# ----------------------------------------------------------------------------- PERSONAL INJURY hand-off
-pi_body = (
-    f'<p>Frost Law Group handles personal injury claims—car, truck and motorcycle collisions, dog bites, slip-and-fall injuries and wrongful death—through {ext(firm.PI_SITE, "summervilleaccidentattorney.com")}, our dedicated injury site. Tara L. Frost leads that work, and the two sites share one office, one phone number and one team.</p>'
-    '<h2>Why a separate site?</h2>'
-    '<p>Injury clients need different information than an executor or a family planning an estate: what to say to an insurance adjuster, how medical bills get paid while a claim is open, what a case is worth and how long it takes. Keeping that material on its own site keeps both sites clear.</p>'
-    '<h2>Start here</h2>'
-    + checks([
-        f'{ext(firm.PI_SITE, "Summerville accident and injury attorneys")} — the main injury site, with pages on each type of case.',
-        f'Call {TEL}. If you have just been in a crash, do it before you give a recorded statement to any insurance company.',
-        'Bring the police report number, photos, the other driver\'s insurance information and your medical paperwork to the first meeting.',
-    ]) +
-    '<h2>What Tara brings to an injury claim</h2>'
-    '<p>Tara served as a Dorchester County Magistrate Judge, where civil claims are tried and evidence is weighed every week. Insurance companies know which firms prepare cases for trial; that reputation is what moves a settlement number.</p>'
-    + band("Hurt in a crash?", "Call before you talk to the insurance company. The first conversation shapes everything after it.", primary=("contact-us", "Contact us"))
-)
-page("personal-injury", kind="page", layout="one", cta=[(firm.PI_SITE, "Go to our injury site", "btn"), ("tel:" + firm.PHONE_E164, firm.PHONE, "btn ghost")],
-     title="Personal Injury | Frost Law Group's Dedicated Injury Practice | Summerville, SC",
-     description="Frost Law Group handles car, truck and motorcycle crash, dog bite and wrongful death claims through its dedicated injury site, summervilleaccidentattorney.com. Here is how the two sites work together.",
-     h1="Personal Injury Cases", eyebrow="Handled on our dedicated injury site", nav_label="Personal injury",
-     lead="Tara Frost's injury practice lives at summervilleaccidentattorney.com. Same office, same phone number, same team.",
-     body=pi_body, priority=0.5)
 
 # ----------------------------------------------------------------------------- FAQ
 faq_groups = [

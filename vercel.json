@@ -18,12 +18,22 @@
     },
     {
       "source": "/motor-vehicle-personal-injury",
-      "destination": "/personal-injury/",
+      "destination": "https://www.summervilleaccidentattorney.com/practice-areas/car-accidents/",
       "permanent": true
     },
     {
       "source": "/motor-vehicle-personal-injury/",
-      "destination": "/personal-injury/",
+      "destination": "https://www.summervilleaccidentattorney.com/practice-areas/car-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/personal-injury",
+      "destination": "https://www.summervilleaccidentattorney.com/",
+      "permanent": true
+    },
+    {
+      "source": "/personal-injury/",
+      "destination": "https://www.summervilleaccidentattorney.com/",
       "permanent": true
     },
     {

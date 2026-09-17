@@ -121,7 +121,7 @@ NAV = [
     ("Estate Planning", "estate-planning-attorney", HUB_SPOKES["estate-planning-attorney"][:8], "All estate planning services"),
     ("Probate", "probate", HUB_SPOKES["probate"], "All probate services"),
     ("Criminal Defense", "criminal-defense", [s for s in HUB_SPOKES["criminal-defense"] if s != "dui-lawyer-summerville-sc"], "All criminal defense services"),
-    ("Personal Injury", "personal-injury", [], ""),
+    ("Personal Injury", PI_SITE, [], ""),  # external: the injury site owns every injury page
     ("About", "about-us", ["attorneys/jack-frost", "attorneys/tara-frost", "reviews", "service-areas", "faq"], "Our team"),
     ("In the Know", "blog", [], ""),
 ]
@@ -141,7 +141,8 @@ AREA_SERVED = ["Summerville", "Goose Creek", "Ladson", "North Charleston", "Monc
 # Old address (regex, no leading slash) -> new address. Applied in .htaccess as 301s.
 REDIRECTS = [
     ("probate-2/?", "/probate/"),
-    ("motor-vehicle-personal-injury/?", "/personal-injury/"),
+    ("motor-vehicle-personal-injury/?", PI_SITE + "practice-areas/car-accidents/"),  # injury pages live on the injury site (audit rule 1)
+    ("personal-injury/?", PI_SITE),
     ("author/.*", "/about-us/"),
     ("durable-power-of-attorney/?", "/power-of-attorney/"),
     ("healthcare-power-of-attorney/?", "/power-of-attorney/"),

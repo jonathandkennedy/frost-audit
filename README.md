@@ -21,7 +21,7 @@ measurement plan, and appendices (data tables, redirect map, proposed title tags
 
 ## Website rebuild
 
-`website/` is a deployable static rebuild of frostlawgroupsc.com (78 pages) generated from `site/`:
+`website/` is a deployable static rebuild of frostlawgroupsc.com (77 pages) generated from `site/`:
 
 ```bash
 python3 site/build_local_data.py       # optional: regenerate site/content/local_data.json from facts.json (uses OSRM for routes)
