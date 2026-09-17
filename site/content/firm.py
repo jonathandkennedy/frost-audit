@@ -31,7 +31,7 @@ DIRECTIONS_URL = "https://www.google.com/maps/dir/?api=1&destination=" + MAP_QUE
 # Business Profile "write a review" address and is updated once the place id is confirmed.
 GBP_URL = "https://maps.google.com/maps?cid=6320073536186250254"  # resolved from the firm's share.google link (CID 6320073536186250254)
 GBP_SHARE_URL = "https://share.google/CBpXoFvmaAoVP0HuZ"
-REVIEW_URL = "https://maps.google.com/maps?cid=6320073536186250254"  # TODO: replace with the "Ask for reviews" link from the Business Profile dashboard
+REVIEW_URL = "https://search.google.com/local/writereview?placeid=ChIJ4Vm83lNj_ogRDnS6XmVptVc"  # the Business Profile "write a review" link, opens the review box directly
 YELP_URL = "https://www.yelp.com/biz/frost-law-group-summerville"  # canonical form of https://yelp.to/t18_URraS3
 PREFERRED_SOURCE_URL = "https://www.google.com/preferences/source?q=https://frostlawgroupsc.com"  # non-www, matching the canonical host; no account-specific parameters
 FACEBOOK = "https://www.facebook.com/frostlawgroupsc/"
